@@ -112,7 +112,8 @@ ul li {
   height: calc(100vh - 130px);
 }
 
-.menuListInner li, .treeList ul li {
+.menuListInner li,
+.treeList ul li {
   list-style: none;
   font-size: 13px;
   cursor: pointer;
@@ -151,13 +152,28 @@ ul li {
   right: 10px;
   top: 0px;
 }
-
+.treeList .treeListIcons {
+  visibility: hidden;
+}
+.treeList ul {
+  display: none;
+}
+.menuShow ul {
+  display: block;
+}
+.treeList.treeNode .treeListIcons {
+  visibility: visible;
+}
 .material-icons.treeListIcons {
   font-size: 18px;
   position: relative;
-  top: 3px;
+  top: 4px;
+  transform: rotate(-90deg);
+  transition: 0.5s;
 }
-
+.menuShow .material-icons.treeListIcons {
+  transform: rotate(0deg);
+}
 .menuActive .menuText {
   color: #0846a9;
   background-color: rgba(56, 56, 56, 0.1);
@@ -167,7 +183,7 @@ ul li {
 .mytaskArea {
   width: 420px;
   border-right: 1px solid #e1e1e1;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 98px);
 }
 
 .taskareaHeader {
@@ -186,6 +202,7 @@ ul li {
 
 .taskAreaList li {
   border-left: 3px solid transparent;
+  cursor: default;
 }
 
 .taskAreaList li:hover {
@@ -203,7 +220,7 @@ ul li {
 
 .taskListArea {
   border-top: 1px solid #e1e1e1;
-  height: calc(100vh - 230px);
+  height: calc(100vh - 241px);
   overflow: auto;
 }
 
@@ -241,11 +258,11 @@ ul li {
   background-color: #eee;
 }
 
-.checkBoxLabel:hover input~.checkBoxMark {
+.checkBoxLabel:hover input ~ .checkBoxMark {
   background-color: #ccc;
 }
 
-.checkBoxLabel input:checked~.checkBoxMark {
+.checkBoxLabel input:checked ~ .checkBoxMark {
   background-color: #2196f3;
 }
 
@@ -255,7 +272,7 @@ ul li {
   display: none;
 }
 
-.checkBoxLabel input:checked~.checkBoxMark:after {
+.checkBoxLabel input:checked ~ .checkBoxMark:after {
   display: block;
 }
 
@@ -271,7 +288,10 @@ ul li {
   transform: rotate(45deg);
 }
 
-.taskInnerHead, .taskInnerHeadLeft, .taskPageInner, .taskDetailsHead {
+.taskInnerHead,
+.taskInnerHeadLeft,
+.taskPageInner,
+.taskDetailsHead {
   display: flex;
 }
 
@@ -296,7 +316,7 @@ ul li {
 }
 
 .taskRisk {
-  color: #CE0000;
+  color: #ce0000;
 }
 
 .taskInnerContent h2 {
@@ -361,19 +381,24 @@ ul li {
   padding: 0px 12px 0px 12px;
 }
 
-.rightArrow .material-icons, .leftArrow .material-icons {
+.rightArrow .material-icons,
+.leftArrow .material-icons {
   font-size: 16px;
   line-height: 70px;
 }
 
 .taskDetails {
   padding: 16px;
-  width: calc(100% - 680px);
-  height: calc(100vh - 89px);
+  width: calc(100% - 420px);
+  height: calc(100vh - 130px);
   overflow: auto;
+  display: none;
 }
-
-.taskDetailsHeadLeft, .taskDetailsHeadRight {
+.taskDetails.showtaskDetails {
+  display: block;
+}
+.taskDetailsHeadLeft,
+.taskDetailsHeadRight {
   width: 50%;
 }
 
@@ -413,7 +438,7 @@ ul li {
   height: 32px;
   margin-left: 16px;
   border: none;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   font-size: 12px;
   color: #383838;
   padding: 0px 10px;
@@ -429,7 +454,8 @@ ul li {
   color: #383838;
 }
 
-.taskTimeArea, .taskTimeAreainner {
+.taskTimeArea,
+.taskTimeAreainner {
   display: flex;
   font-size: 11px;
 }
@@ -470,11 +496,12 @@ ul li {
   border-bottom: 3px solid transparent;
   font-weight: 600;
   color: rgba(56, 56, 56, 0.7);
+  cursor: pointer;
 }
 
 .tabList li.active {
-  border-bottom: 3px solid #0846A9;
-  color: #0846A9;
+  border-bottom: 3px solid #0846a9;
+  color: #0846a9;
 }
 
 table {
@@ -484,7 +511,8 @@ table {
   margin: 16px 0px;
 }
 
-th, td {
+th,
+td {
   text-align: left;
   padding: 12px;
   font-size: 12px;
@@ -492,7 +520,7 @@ th, td {
 
 th {
   font-weight: 600;
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
 }
 
 td {
@@ -500,7 +528,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
 }
 
 .filterIcons {
@@ -526,10 +554,37 @@ tr:nth-child(even) {
   color: rgba(56, 56, 56, 0.7);
   font-size: 18px;
   position: relative;
-  top: 8px;
-  margin-left: 10px;
+  top: 6px;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 .tabBodyInner {
   padding: 16px 0px;
+}
+
+ul.taskTabHeader li {
+  display: inline-block;
+  padding: 11px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+ul.taskTabHeader li p {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.rightSideBar {
+  width: calc(100% - 260px);
+}
+.rightSideBarInner {
+  display: flex;
+}
+.taskTabHeader {
+  border-bottom: 1px solid #e1e1e1;
+}
+ul.taskTabHeader li.active {
+  border-bottom: 3px solid #0846a9;
+  color: #0846a9;
 }
