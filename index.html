@@ -165,7 +165,7 @@
                         </div>
                         <div class="taskListArea">
                             <ul class="taskAreaList">
-                                <li>
+                                <li class="riskTask">
                                     <div class="taskAreaListInner">
                                         <div class="taskInnerHead">
                                             <div class="taskInnerHeadLeft">
@@ -185,7 +185,30 @@
                                             <h2>Project name Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                                             <p>Chapter name Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
-                                        <span class="stageMessage">stage - activity</span>
+                                        <span class="stageMessage risk">stage - activity</span>
+                                    </div>
+                                </li>
+                                <li class="riskTask">
+                                    <div class="taskAreaListInner">
+                                        <div class="taskInnerHead">
+                                            <div class="taskInnerHeadLeft">
+                                                <label class="checkBoxLabel">PR id xxxx
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkBoxMark"></span>
+                                                </label>
+                                                <span class="material-icons taskIcons taskRisk">
+                                                    double_arrow
+                                                </span>
+                                            </div>
+                                            <div class="taskInnerHeadright">
+                                                <p>8 Mar 2021</p>
+                                            </div>
+                                        </div>
+                                        <div class="taskInnerContent">
+                                            <h2>Project name Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                            <p>Chapter name Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <span class="stageMessage risk">stage - activity</span>
                                     </div>
                                 </li>
                                 <li>
@@ -208,7 +231,7 @@
                                             <h2>Project name Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                                             <p>Chapter name Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
-                                        <span class="stageMessage">stage - activity</span>
+                                        <span class="stageMessage completed">stage - activity</span>
                                     </div>
                                 </li>
                                 <li>
@@ -231,7 +254,7 @@
                                             <h2>Project name Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                                             <p>Chapter name Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
-                                        <span class="stageMessage">stage - activity</span>
+                                        <span class="stageMessage completed">stage - activity</span>
                                     </div>
                                 </li>
                                 <li>
@@ -254,7 +277,7 @@
                                             <h2>Project name Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                                             <p>Chapter name Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
-                                        <span class="stageMessage">stage - activity</span>
+                                        <span class="stageMessage completed">stage - activity</span>
                                     </div>
                                 </li>
                                 <li>
@@ -277,30 +300,7 @@
                                             <h2>Project name Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                                             <p>Chapter name Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
-                                        <span class="stageMessage">stage - activity</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="taskAreaListInner">
-                                        <div class="taskInnerHead">
-                                            <div class="taskInnerHeadLeft">
-                                                <label class="checkBoxLabel">PR id xxxx
-                                                    <input type="checkbox" checked="checked">
-                                                    <span class="checkBoxMark"></span>
-                                                </label>
-                                                <span class="material-icons taskIcons taskRisk">
-                                                    double_arrow
-                                                </span>
-                                            </div>
-                                            <div class="taskInnerHeadright">
-                                                <p>8 Mar 2021</p>
-                                            </div>
-                                        </div>
-                                        <div class="taskInnerContent">
-                                            <h2>Project name Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                                            <p>Chapter name Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </div>
-                                        <span class="stageMessage">stage - activity</span>
+                                        <span class="stageMessage completed">stage - activity</span>
                                     </div>
                                 </li>
                             </ul>
@@ -360,6 +360,131 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="tableArea">
+                            <div class="filterTable">
+                                <div></div>
+                                <div class="filterTableInner">
+                                    <div class="searchArea">
+                                        <span class="material-icons">
+                                            search
+                                        </span>
+                                        <input type="text" class="searchInput" placeholder="Search files">
+                                    </div>
+                                    <div>
+                                        <span class="material-icons filterIcons">
+                                            filter_list
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S. No.</th>
+                                        <th>Chapter name</th>
+                                        <th>Due date</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Project name Lorem ipsum dolor</td>
+                                        <td>01 Jan 2021</td>
+                                        <td>YTS</td>
+                                        <td class="actionBtn">
+                                            <button>
+                                                <div class="spriteImage wordImg"></div>
+                                            </button>
+                                            <button>
+                                                <div class="spriteImage indesignImg"></div>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Project name Lorem ipsum dolor</td>
+                                        <td>01 Jan 2021</td>
+                                        <td>YTS</td>
+                                        <td class="actionBtn">
+                                            <button>
+                                                <div class="spriteImage wordImg"></div>
+                                            </button>
+                                            <button>
+                                                <div class="spriteImage indesignImg"></div>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Project name Lorem ipsum dolor</td>
+                                        <td>01 Jan 2021</td>
+                                        <td>YTS</td>
+                                        <td class="actionBtn">
+                                            <button>
+                                                <div class="spriteImage wordImg"></div>
+                                            </button>
+                                            <button>
+                                                <div class="spriteImage indesignImg"></div>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Project name Lorem ipsum dolor</td>
+                                        <td>01 Jan 2021</td>
+                                        <td>YTS</td>
+                                        <td class="actionBtn">
+                                            <button>
+                                                <div class="spriteImage wordImg"></div>
+                                            </button>
+                                            <button>
+                                                <div class="spriteImage indesignImg"></div>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Project name Lorem ipsum dolor</td>
+                                        <td>01 Jan 2021</td>
+                                        <td>YTS</td>
+                                        <td class="actionBtn">
+                                            <button>
+                                                <div class="spriteImage wordImg"></div>
+                                            </button>
+                                            <button>
+                                                <div class="spriteImage indesignImg"></div>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Project name Lorem ipsum dolor</td>
+                                        <td>01 Jan 2021</td>
+                                        <td>YTS</td>
+                                        <td class="actionBtn">
+                                            <button>
+                                                <div class="spriteImage wordImg"></div>
+                                            </button>
+                                            <button>
+                                                <div class="spriteImage indesignImg"></div>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="listSoftware">
+                                <button class="listSoftwareBtn">
+                                    <div class="spriteImage wordImg"></div>
+                                    <div class="btnText">MsWord<br /><span>Editing</span></div>
+                                </button>
+                                <button class="listSoftwareBtn">
+                                    <div class="spriteImage indesignImg"></div>
+                                    <div class="btnText">InDesign<br /><span>Editing</span></div>
+                                </button>
+                            </div>
+                        </div>
                         <div class="taskTabList">
                             <ul class="tabList">
                                 <li class="active">Files</li>
@@ -369,78 +494,6 @@
                             </ul>
                             <div class="tabBody">
                                 <div class="tabBodyInner">
-                                    <div class="filterTable">
-                                        <div></div>
-                                        <div class="filterTableInner">
-                                            <div class="searchArea">
-                                                <span class="material-icons">
-                                                    search
-                                                </span>
-                                                <input type="text" class="searchInput" placeholder="Search files">
-                                            </div>
-                                            <div>
-                                                <span class="material-icons filterIcons">
-                                                    filter_list
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>S. No.</th>
-                                                <th>Chapter name</th>
-                                                <th>Due date</th>
-                                                <th>Status</th>
-                                                <th>Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Project name Lorem ipsum dolor</td>
-                                                <td>01 Jan 2021</td>
-                                                <td>YTS</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Project name Lorem ipsum dolor</td>
-                                                <td>01 Jan 2021</td>
-                                                <td>YTS</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Project name Lorem ipsum dolor</td>
-                                                <td>01 Jan 2021</td>
-                                                <td>YTS</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Project name Lorem ipsum dolor</td>
-                                                <td>01 Jan 2021</td>
-                                                <td>YTS</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>Project name Lorem ipsum dolor</td>
-                                                <td>01 Jan 2021</td>
-                                                <td>YTS</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>Project name Lorem ipsum dolor</td>
-                                                <td>01 Jan 2021</td>
-                                                <td>YTS</td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
                                 </div>
                             </div>
                         </div>

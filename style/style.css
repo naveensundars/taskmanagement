@@ -43,7 +43,9 @@ ul {
   margin: 0px;
   padding: 0px;
 }
-
+button {
+  cursor: pointer;
+}
 ul li {
   list-style: none;
 }
@@ -205,11 +207,11 @@ ul li {
   cursor: default;
 }
 
-.taskAreaList li:hover {
+.taskAreaList li:hover, .taskCalendarList li:hover {
   background-color: #fafafa;
 }
 
-.taskAreaList li.active {
+.taskAreaList li.riskTask {
   border-left: 3px solid #fb0d0d;
 }
 
@@ -345,10 +347,16 @@ ul li {
 .stageMessage {
   font-size: 10px;
   font-weight: 700;
-  background-color: #ffc400;
   border-radius: 2px;
   padding: 4px 8px;
   text-transform: uppercase;
+}
+.risk {
+  background-color: #ffc400;
+}
+.completed {
+  background-color: #99ca3c;
+  color: #fff;
 }
 
 .dayName {
@@ -374,6 +382,7 @@ ul li {
   display: inline-block;
   width: 48px;
   text-align: center;
+  cursor: pointer;
 }
 
 .taskCalendar {
@@ -514,10 +523,10 @@ table {
 th,
 td {
   text-align: left;
-  padding: 12px;
+  padding: 8px;
   font-size: 12px;
+  height: 40px;
 }
-
 th {
   font-weight: 600;
   background-color: #f2f2f2;
@@ -587,4 +596,57 @@ ul.taskTabHeader li p {
 ul.taskTabHeader li.active {
   border-bottom: 3px solid #0846a9;
   color: #0846a9;
+}
+.spriteImage {
+  width: 28px;
+  height: 28px;
+  background: url("../images/sprit.png");
+}
+.wordImg {
+  background-position: -62px -14px;
+  margin-right: 8px;
+}
+.listSoftware {
+  display: flex;
+  margin-bottom: 16px;
+}
+.listSoftwareBtn {
+  display: flex;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 8px 16px 8px 8px;
+  background-color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  margin-right: 16px;
+}
+
+.listSoftwareBtn span {
+  font-size: 8px;
+  color: rgba(56, 56, 56, 0.7);
+}
+
+.btnText {
+  padding-top: 5px;
+  line-height: 12px;
+}
+.indesignImg {
+  background-position: -16px -16px;
+  margin-right: 8px;
+}
+.actionBtn{
+  padding: 0px;
+}
+.actionBtn button {
+  border: none;
+  background: transparent;
+}
+.actionBtn button .wordImg {
+  background-position: -124px -14px;
+  margin-right:0px;
+}
+.actionBtn button .indesignImg {
+  background-position: -96px -14px;
+  margin-right:0px;
 }
