@@ -27,6 +27,15 @@ $(document).ready(function () {
     /** task area start**/
     $('.taskAreaList li').click(function () {
         $('.taskDetails').addClass('showtaskDetails');
+        var bodylistClass = $('.viewPortArea').attr("class");
+        var bodylistClassSplit = bodylistClass.split(" ");
+        var bodylistClassSplitName = bodylistClassSplit[1];
+        if (bodylistClassSplitName == "gridView") {
+            $('.rightSideBarInner').addClass('taskDetailsSplit');
+        } else {
+            $('.rightSideBarInner').removeClass('taskDetailsSplit');
+        }
+
         $('.taskAreaList li').removeClass('active');
         $(this).addClass('active');
     })
@@ -46,6 +55,28 @@ $(document).ready(function () {
         $(this).addClass('active');
     })
     /** task tablist end**/
-    
+
+    /** grid view and listview start **/
+    $('.viewPortList li').click(function () {
+        $('.viewPortList li').removeClass('active');
+        var bodylistClass = $('.viewPortArea').attr("class");
+        var bodylistClassSplit = bodylistClass.split(" ");
+        var bodylistClassSplitName = bodylistClassSplit[1];
+        if (bodylistClassSplitName == "gridView") {
+            $('.viewPortArea').removeClass('gridView');
+        } else {
+            $('.viewPortArea').removeClass('listView');
+        }
+        var buttonClass = $(this).children().attr("class");
+        if (buttonClass == "gridView") {
+            $(this).addClass('active');
+            $('.viewPortArea').addClass('gridView');
+        } else {
+            $(this).addClass('active');
+            $('.viewPortArea').addClass('listView');
+            $('.rightSideBarInner').removeClass('taskDetailsSplit');
+        }
+    })
+    /** grid view and listview  end**/
 });
 
