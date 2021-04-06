@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 
     /** task area start**/
-    $('.taskAreaList li').click(function () {
+    $('.taskAreaListInner').click(function () {
         $('.taskDetails').addClass('showtaskDetails');
         var bodylistClass = $('.viewPortArea').attr("class");
         var bodylistClassSplit = bodylistClass.split(" ");
@@ -46,6 +46,9 @@ $(document).ready(function () {
     $('.tabList li').click(function () {
         $('.tabList li').removeClass('active');
         $(this).addClass('active');
+        $('.tabInner').removeClass('tabShow');
+        var TabName = $(this).attr("Tabid");
+        $('#' + TabName).addClass('tabShow');
     })
     /** task tablist end**/
 
@@ -53,6 +56,9 @@ $(document).ready(function () {
     $('.taskTabHeader li').click(function () {
         $('.taskTabHeader li').removeClass('active');
         $(this).addClass('active');
+        $('.tabBodyInner').removeClass('tabShow');
+        var TabName = $(this).attr("Tabid");
+        $('#' + TabName).addClass('tabShow');
     })
     /** task tablist end**/
 
@@ -78,5 +84,28 @@ $(document).ready(function () {
         }
     })
     /** grid view and listview  end**/
+
+    /**  task close button start **/
+    $('.taskCloseButton').click(function () {
+        $('.taskDetails').removeClass('showtaskDetails');
+    })
+    /**  task close button end **/
+
+    /** collapse start **/
+    $('.groupTaskHead').click(function () {
+        // $('.groupTaskHead').removeClass('active');
+        if ($(this).hasClass('active') == true) {
+            $(this).removeClass('active');
+            $(this).next().removeClass('active');
+        } else {
+            $(this).addClass('active');
+            $(this).next().addClass('active');
+        }
+        // $('.groupTaskInner').removeClass('active');
+
+    })
+    /** collapse end **/
+
+
 });
 
