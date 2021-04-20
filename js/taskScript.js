@@ -32,6 +32,7 @@ $(document).ready(function () {
         var bodylistClassSplitName = bodylistClassSplit[1];
         if (bodylistClassSplitName == "gridView") {
             $('.rightSideBarInner').addClass('taskDetailsSplit');
+            $('.viewPortArea').addClass('gridViewSplit');
         } else {
             $('.rightSideBarInner').removeClass('taskDetailsSplit');
         }
