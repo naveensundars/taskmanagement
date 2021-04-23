@@ -636,6 +636,8 @@ ul.taskTabHeader li p {
 }
 .rightSideBarInner {
   display: flex;
+  height: calc(100vh - 116px);
+  overflow: auto;
 }
 .taskTabHeader {
   border-bottom: 1px solid #e1e1e1;
@@ -852,7 +854,15 @@ tr.tablesubHead th {
   text-align: center;
 }
 tr.tableHeadMain th {
+  padding: 0px;
+  background: transparent;
+}
+tr.tableHeadMain p {
+  margin: 0;
   background-color: #dce4ef;
+  height: 40px;
+  margin-bottom: 5px;
+  line-height: 40px;
 }
 .tableRepotArea {
   overflow: auto;
@@ -862,6 +872,7 @@ tr.tablesubHead th {
 }
 tr .material-icons {
   font-size: 21px;
+  cursor: pointer;
 }
 .material-icons.tsk_completed {
   color: #95d791;
@@ -876,3 +887,56 @@ tr .material-icons {
 .material-icons.tsk_inprogress {
   color: #0099ff;
 }
+
+.tableRepotArea tbody tr {
+  cursor: pointer;
+}
+input.tblCheckBox {
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+}
+.tbStatus {
+  display: flex;
+  line-height: 25px;
+}
+.tbStatus .material-icons {
+  margin-right: 6px;
+}
+.tableRepotTabArea {
+  padding-top: 16px;
+}
+/** report tab table **/
+/** report tab filter **/
+ul.tableOptionList {
+  float: right;
+  padding-top: 8px;
+}
+ul.tableOptionList li {
+  display: inline;
+  float: left;
+  border-right: 1px dashed #e1e1e1;
+}
+.tableOptionList li:last-child {
+  border-right: none;
+}
+.optionListButton {
+  background-color: transparent;
+  border: none;
+  padding: 0px 12px;
+  font-size: 13px;
+  color: #26589d;
+  height: 26px;
+  display: flex;
+}
+.optionListButton .material-icons {
+  font-size: 20px;
+  margin-right: 6px;
+}
+.tableRepotTabArea .tabList {
+  border-bottom: none;
+}
+.tableRepotTabArea .tblFilterArea {
+  border-bottom: 1px solid #e1e1e1;
+}
+/** report tab filter **/
