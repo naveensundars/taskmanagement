@@ -1935,24 +1935,39 @@
                     <div class="tabBodyInner" id="Dashboard">Dashboard</div>
                     <div class="tabBodyInner" id="Report">
                         <div class="row ReportTabArea">
-                            <!-- <div class="col-lg-6">
-                            </div>
-                            <div class="col-lg-6">5</div> -->
+                                <div class="row tblFilterArea">
+                                        <div class="col-lg-6">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <ul class="tableOptionList">
+                                                <li><button class="optionListButton"><span class="material-icons">
+                                                        save_alt
+                                                        </span>Download</button></li>
+                                                <li><button class="optionListButton"><span class="material-icons">
+                                                        print
+                                                        </span>Print</button>
+                                                    </li>
+                                                <li><button class="optionListButton exportBtn"><span class="material-icons">
+                                                        save_alt
+                                                        </span> Export</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                             <div class="col-lg-12 tableRepotArea">
                                 <table>
                                     <thead>
                                         <tr class="tableHeadMain">
-                                            <th></th>
-                                            <th></th>
-                                            <th colspan="9">Pre-Production</th>
-                                            <th colspan="18">Proof</th>
-                                            <th colspan="11">Revises</th>
-                                            <th colspan="9">Finals</th>
+                                            <th><p></p></th>
+                                            <th><p></p></th>
+                                            <th colspan="9"><p>Pre-Production</p></th>
+                                            <th colspan="18"><p>Proof</p></th>
+                                            <th colspan="11"><p>Revises</p></th>
+                                            <th colspan="9"><p>Finals</p></th>
                                         </tr>
                                         <tr class="tablesubHead">
-                                            <th>Boo</th>
-                                            <th>cha</th>
-                                            <th>pmb</th>
+                                            <th title="Boo">Boo</th>
+                                            <th title="cha">cha</th>
+                                            <th title="pmb">pmb</th>
                                             <th>spl</th>
                                             <th>scn</th>
                                             <th>art</th>
@@ -2874,6 +2889,146 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="col-lg-12 tableRepotTabArea">
+                                <div class="row tblFilterArea">
+                                    <div class="col-lg-6">
+                                        <ul class="tabList">
+                                            <li class="active" Tabid="Details">Details</li>
+                                            <li Tabid="Files1">Files</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="tableOptionList">
+                                            <li><button class="optionListButton"><span class="material-icons">
+                                                    save_alt
+                                                    </span>Download</button></li>
+                                            <li><button class="optionListButton"><span class="material-icons">
+                                                    print
+                                                    </span>Print</button>
+                                                </li>
+                                            <li><button class="optionListButton"><span class="material-icons">
+                                                    save_alt
+                                                    </span> Export</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tabBody">
+                                    <div id="Details" class="tabInner tabShow">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <table id="taskDatatable" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Book Code</th>
+                                                            <th>Chapter Name</th>
+                                                            <th>Process</th>
+                                                            <th>Process Type</th>
+                                                            <th>SI No</th>
+                                                            <th>Emp Name</th>
+                                                            <th>Emp ID</th>
+                                                            <th>Start Time</th>
+                                                            <th>Due Time</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>235364</td>
+                                                            <td>Chapter 65</td>
+                                                            <td>Proof</td>
+                                                            <td>ozone stamping</td>
+                                                            <td>64e75867</td>
+                                                            <td>Andrew</td>
+                                                            <td>204578</td>
+                                                            <td>01:20pm</td>
+                                                            <td>02:20pm</td>
+                                                            <td>
+                                                                <div class="tbStatus"><span class="material-icons tsk_error">
+                                                                        cancel
+                                                                    </span> Error</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>235364</td>
+                                                            <td>Chapter 65</td>
+                                                            <td>Proof</td>
+                                                            <td>ozone stamping</td>
+                                                            <td>64e75867</td>
+                                                            <td>Andrew</td>
+                                                            <td>204578</td>
+                                                            <td>01:20pm</td>
+                                                            <td>02:20pm</td>
+                                                            <td>
+                                                                <div class="tbStatus"><span class="material-icons tsk_error">
+                                                                        cancel
+                                                                    </span> Error</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>235364</td>
+                                                            <td>Chapter 65</td>
+                                                            <td>Proof</td>
+                                                            <td>ozone stamping</td>
+                                                            <td>64e75867</td>
+                                                            <td>Andrew</td>
+                                                            <td>204578</td>
+                                                            <td>01:20pm</td>
+                                                            <td>02:20pm</td>
+                                                            <td>
+                                                                <div class="tbStatus"><span class="material-icons tsk_error">
+                                                                        cancel
+                                                                    </span> Error</div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="Files1" class="tabInner">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <table id="taskDatatable" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th><input type="checkbox" class="tblCheckBox"> S. No.</th>
+                                                            <th>File name</th>
+                                                            <th>File Size</th>
+                                                            <th>Last Modified</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><input type="checkbox" class="tblCheckBox"> 1</td>
+                                                            <td>Project name Lorem ipsum dolor</td>
+                                                            <td>01 Jan 2021</td>
+                                                            <td>12:45pm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="checkbox" class="tblCheckBox"> 1</td>
+                                                            <td>Project name Lorem ipsum dolor</td>
+                                                            <td>01 Jan 2021</td>
+                                                            <td>12:45pm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="checkbox" class="tblCheckBox"> 1</td>
+                                                            <td>Project name Lorem ipsum dolor</td>
+                                                            <td>01 Jan 2021</td>
+                                                            <td>12:45pm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="checkbox" class="tblCheckBox"> 1</td>
+                                                            <td>Project name Lorem ipsum dolor</td>
+                                                            <td>01 Jan 2021</td>
+                                                            <td>12:45pm</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
