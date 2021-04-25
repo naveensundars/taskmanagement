@@ -190,6 +190,7 @@ ul li {
   width: 100%;
   border-right: 1px solid #e1e1e1;
   height: calc(100vh - 116px);
+  min-width: 420px;
 }
 .mytaskArea.ListView {
   width: 420px;
@@ -910,7 +911,7 @@ input.tblCheckBox {
 /** report tab filter **/
 ul.tableOptionList {
   float: right;
-  padding-top: 8px;
+  padding-top: 10px;
 }
 ul.tableOptionList li {
   display: inline;
@@ -940,3 +941,40 @@ ul.tableOptionList li {
   border-bottom: 1px solid #e1e1e1;
 }
 /** report tab filter **/
+
+/** book filter **/
+.bookName {
+  display: flex;
+  padding-top: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.bookNameList {
+  border: 1px solid #e1e1e1;
+  width: 250px;
+  padding: 10px;
+  position: absolute;
+  background: #fff;
+  display: none;
+}
+.bookNameSearch {
+  height: 26px;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  padding: 0px 5px;
+}
+.bookListInner {
+  margin-top: 10px;
+  max-height: 100px;
+  overflow: auto;
+}
+.bookListInner li {
+  margin-bottom: 4px;
+}
+.bookNameSearch::placeholder {
+  font-size: 13px;
+}
+.bookNameList.showFilter {
+  display: block;
+}
+/** book filter **/
