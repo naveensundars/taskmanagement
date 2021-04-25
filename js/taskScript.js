@@ -106,7 +106,11 @@ $(document).ready(function () {
 
     })
     /** collapse end **/
-
+    /** book click event**/
+    $('.bookName').click(function () {
+        $('.bookNameList').toggleClass('showFilter');
+    })
+    /** book click event**/
 
 });
 
