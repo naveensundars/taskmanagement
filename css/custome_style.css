@@ -14,7 +14,7 @@ body {
 
 header {
   background-color: #26599a;
-  height: 44px;
+  height: 40px;
   display: flex;
 }
 
@@ -25,7 +25,7 @@ header {
 .headerTitle {
   margin: 0px;
   color: #fff;
-  padding: 6px 24px;
+  padding: 4px 24px;
   letter-spacing: 2px;
   font-size: 26px;
 }
@@ -40,7 +40,7 @@ header {
 
 .headerRight {
   margin-left: auto;
-  padding: 6px 24px;
+  padding: 4px 24px;
 }
 
 ul {
@@ -80,9 +80,9 @@ ul li {
 }
 
 .leftsideBar {
-  width: 260px;
+  width: 200px;
   border-right: 1px solid #e1e1e1;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 60px);
   background-color: #fafafa;
 }
 
@@ -189,7 +189,7 @@ ul li {
 .mytaskArea {
   width: 100%;
   border-right: 1px solid #e1e1e1;
-  height: calc(100vh - 116px);
+  height: calc(100vh - 106px);
   min-width: 420px;
 }
 .mytaskArea.ListView {
@@ -204,7 +204,7 @@ ul li {
 .mytaskArea .searchArea {
   border-bottom: 0px;
   background-color: #fafafa;
-  width: calc(100% - 165px);
+  width: calc(100% - 135px);
   margin: 16px 10px;
   padding: 0px 0px 0px 18px;
 }
@@ -246,7 +246,7 @@ ul li {
 
 .taskListArea {
   border-top: 1px solid #e1e1e1;
-  height: calc(100vh - 258px);
+  height: calc(100vh - 248px);
   overflow: auto;
 }
 
@@ -318,13 +318,12 @@ ul li {
 .taskInnerHead,
 .taskInnerHeadLeft,
 .taskPageInner,
-.taskDetailsHead,
 .subHeadList,
 .viewPortArea {
   display: flex;
 }
 .taskPageInner {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 60px);
 }
 .taskInnerHeadright {
   margin-left: auto;
@@ -432,7 +431,7 @@ ul li {
 .taskDetails {
   padding: 16px;
   /* width: calc(100% - 420px); */
-  height: calc(100vh - 117px);
+  height: calc(100vh - 107px);
   overflow: auto;
   display: none;
   width: 100%;
@@ -440,11 +439,6 @@ ul li {
 .taskDetails.showtaskDetails {
   display: block;
 }
-.taskDetailsHeadLeft,
-.taskDetailsHeadRight {
-  width: 50%;
-}
-
 .taskNameStaus p {
   font-size: 10px;
   margin: 0px;
@@ -479,7 +473,7 @@ ul li {
 
 .btnStyle {
   height: 32px;
-  margin-left: 16px;
+  margin-right: 16px;
   border: none;
   background-color: #f5f5f5;
   font-size: 12px;
@@ -533,9 +527,9 @@ ul li {
   font-weight: 600;
 }
 
-.taskDetailsHeadRight {
+/* .taskDetailsHeadRight {
   text-align: end;
-}
+} */
 
 .tabList {
   border-bottom: 1px solid #e1e1e1;
@@ -633,11 +627,11 @@ ul.taskTabHeader li p {
   font-size: 14px;
 }
 .rightSideBar {
-  width: calc(100% - 260px);
+  width: calc(100% - 200px);
 }
 .rightSideBarInner {
   display: flex;
-  height: calc(100vh - 116px);
+  height: calc(100vh - 106px);
   overflow: auto;
 }
 .taskTabHeader {
@@ -753,16 +747,24 @@ ul.taskTabHeader li.active {
 }
 /** footer start **/
 footer {
-  height: 21px;
+  height: 20px;
   background: #fff;
-  border-top: 1px solid #e1e1e1;
+  position: relative;
+}
+footer::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  top: 0px;
 }
 .sidebarFooter p {
   color: rgba(56, 56, 56, 0.7);
   font-size: 10px;
   text-align: center;
   font-weight: 500;
-  margin-top: 8px;
+  line-height: 20px;
 }
 /** footer end **/
 
