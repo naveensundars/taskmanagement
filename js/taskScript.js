@@ -78,10 +78,13 @@ $(document).ready(function () {
         if (buttonClass == "gridView") {
             $(this).addClass('active');
             $('.viewPortArea').addClass('gridView');
+            $('.viewPortArea').removeClass('listView');
         } else {
             $(this).addClass('active');
             $('.viewPortArea').addClass('listView');
             $('.rightSideBarInner').removeClass('taskDetailsSplit');
+            $('.viewPortArea').removeClass('gridView');
+            $('.viewPortArea').removeClass('gridViewSplit');
         }
     })
     /** grid view and listview  end**/
@@ -89,6 +92,8 @@ $(document).ready(function () {
     /**  task close button start **/
     $('.taskCloseButton').click(function () {
         $('.taskDetails').removeClass('showtaskDetails');
+        $('.viewPortArea').removeClass('gridViewSplit');
+        $('.rightSideBarInner').removeClass('taskDetailsSplit');         
     })
     /**  task close button end **/
 
@@ -111,6 +116,12 @@ $(document).ready(function () {
         $('.bookNameList').toggleClass('showFilter');
     })
     /** book click event**/
+
+     $('#taskDatatable').DataTable( {
+        fixedHeader: {
+            header: true
+        }
+    } );
 
 });
 
