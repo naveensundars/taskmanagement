@@ -19,12 +19,17 @@
         <div class="container-fluidInner">
             <div class="leftsideBar">
                 <div class="searchArea">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <input type="text" class="searchInput" placeholder="Search menu">
+                    <div class="input-group">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search menu">
+                    </div>
                 </div>
                 <div class="menuArea">
                     <ul>
-                        <li class="activeMenu"><a href="">
+                        <li><a href="index.html">
+                                <img src="./images/icons.svg#dashboard" class="iconsSvg" />
                                 <p>Dashboard</p>
                             </a></li>
                         <li><a href="">
@@ -33,16 +38,16 @@
                         <li><a href="">
                                 <p>Inflow</p>
                             </a></li>
-                        <li><a href="">
+                        <li><a href=""><img src="./images/icons.svg#list" class="iconsSvg" />
                                 <p>Personal</p>
                             </a></li>
                         <li><a href="">
                                 <p>My Task</p>
                             </a></li>
-                        <li><a href="allbooks.html">
+                        <li class="activeMenu"><a href="allbooks.html">
                                 <p>All Books</p>
                             </a></li>
-                        <li><a href="">
+                        <li><a href=""><img src="./images/icons.svg#notification" class="iconsSvg" />
                                 <p>Report</p>
                             </a></li>
                         <li><a href="">
@@ -63,14 +68,571 @@
                 <div class="mainBodyInner">
                     <div class="row filterArea">
                         <div class="col-lg-6 filterAreaButton">
-                            <button class="btn"><i class="fa fa-plus" aria-hidden="true"></i> Add Books</button>
-                            <button class="btn"><i class="fa fa-filter" aria-hidden="true"></i> Filter</button>
+                            <button class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> Add
+                                Books</button>
+                            <button class="btn btn-outline-primary"><i class="fa fa-filter" aria-hidden="true"></i>
+                                Filter</button>
                         </div>
                         <div class="col-lg-6 SearchInputArea text-right">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
+                                <input type="text" class="form-control" placeholder="Search..."
+                                    aria-describedby="basic-addon2">
                                 <div class="input-group-append">
-                                    <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                    <span class="input-group-text"><i class="fa fa-search"
+                                            aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <!-- <ul><li></li><li></li></ul> -->
+                        </div>
+                    </div>
+                    <div class="row bookGrid">
+                        <div class="col-lg-4">
+                            <div class="bookGridInner">
+                                <div class="bookIconOption">
+                                    <ul>
+                                        <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
+                                        </li>
+                                        <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row bookFlipFront">
+                                    <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="bookHeadingTop">
+                                            <div class="bookIds">
+                                                <p>Orlando_9781003018230</p>
+                                            </div>
+                                        </div>
+                                        <div class="bookDescGroup">
+                                            <h1>Economic Change and Wellbeing</h1>
+                                            <p>by Fabio D’Orlando, Francesco Ferrante, Albertina Oliverio</p>
+                                            <ul class="bookDescList">
+                                                <li>
+                                                    <p>Simple</p>
+                                                </li>
+                                                <li>
+                                                    <p>First Proof</p>
+                                                </li>
+                                                <li>
+                                                    <p>Yet to Start</p>
+                                                </li>
+                                            </ul>
+                                            <p class="updateDesc"> <img src="./images/icons.svg#update"
+                                                    class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                            <p class="completedStatus">Completed - 0%</p>
+                                            <div class="completeProgressBar">
+                                                <div class="completeProgressBarInner" style="width:0%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bookFlipBack">
+                                    <h2>First Proof</h2>
+                                    <ul class="bookDescList">
+                                        <li class="selectProof">
+                                            <p>Logistics</p>
+                                        </li>
+                                        <li>
+                                            <p>Pre-Editing</p>
+                                        </li>
+                                        <li>
+                                            <p>Copyediting</p>
+                                        </li>
+                                        <li>
+                                            <p>XML</p>
+                                        </li>
+                                        <li>
+                                            <p>Art Work</p>
+                                        </li>
+                                        <li>
+                                            <p>Pagination</p>
+                                        </li>
+                                        <li>
+                                            <p>Book Building</p>
+                                        </li>
+                                        <li>
+                                            <p>PM Review</p>
+                                        </li>
+                                        <li>
+                                            <p>Packaging</p>
+                                        </li>
+                                        <li>
+                                            <p>Dispatch</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="bookGridInner">
+                                <div class="bookIconOption">
+                                    <ul>
+                                        <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
+                                        </li>
+                                        <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row bookFlipFront">
+                                    <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="bookHeadingTop">
+                                            <div class="bookIds">
+                                                <p>Orlando_9781003018230</p>
+                                            </div>
+                                        </div>
+                                        <div class="bookDescGroup">
+                                            <h1>Economic Change and Wellbeing</h1>
+                                            <p>by Fabio D’Orlando, Francesco Ferrante, Albertina Oliverio</p>
+                                            <ul class="bookDescList">
+                                                <li>
+                                                    <p>Simple</p>
+                                                </li>
+                                                <li>
+                                                    <p>First Proof</p>
+                                                </li>
+                                                <li>
+                                                    <p>Yet to Start</p>
+                                                </li>
+                                            </ul>
+                                            <p class="updateDesc"> <img src="./images/icons.svg#update"
+                                                    class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                            <p class="completedStatus">Completed - 0%</p>
+                                            <div class="completeProgressBar">
+                                                <div class="completeProgressBarInner" style="width:80%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bookFlipBack">
+                                    <h2>First Proof</h2>
+                                    <ul class="bookDescList">
+                                        <li class="selectProof">
+                                            <p>Logistics</p>
+                                        </li>
+                                        <li>
+                                            <p>Pre-Editing</p>
+                                        </li>
+                                        <li>
+                                            <p>Copyediting</p>
+                                        </li>
+                                        <li>
+                                            <p>XML</p>
+                                        </li>
+                                        <li>
+                                            <p>Art Work</p>
+                                        </li>
+                                        <li>
+                                            <p>Pagination</p>
+                                        </li>
+                                        <li>
+                                            <p>Book Building</p>
+                                        </li>
+                                        <li>
+                                            <p>PM Review</p>
+                                        </li>
+                                        <li>
+                                            <p>Packaging</p>
+                                        </li>
+                                        <li>
+                                            <p>Dispatch</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="bookGridInner">
+                                <div class="bookIconOption">
+                                    <ul>
+                                        <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
+                                        </li>
+                                        <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row bookFlipFront">
+                                    <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="bookHeadingTop">
+                                            <div class="bookIds">
+                                                <p>Orlando_9781003018230</p>
+                                            </div>
+                                        </div>
+                                        <div class="bookDescGroup">
+                                            <h1>Economic Change and Wellbeing</h1>
+                                            <p>by Fabio D’Orlando, Francesco Ferrante, Albertina Oliverio</p>
+                                            <ul class="bookDescList">
+                                                <li>
+                                                    <p>Simple</p>
+                                                </li>
+                                                <li>
+                                                    <p>First Proof</p>
+                                                </li>
+                                                <li>
+                                                    <p>Yet to Start</p>
+                                                </li>
+                                            </ul>
+                                            <p class="updateDesc"> <img src="./images/icons.svg#update"
+                                                    class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                            <p class="completedStatus">Completed - 0%</p>
+                                            <div class="completeProgressBar">
+                                                <div class="completeProgressBarInner" style="width:0%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bookFlipBack">
+                                    <h2>First Proof</h2>
+                                    <ul class="bookDescList">
+                                        <li class="selectProof">
+                                            <p>Logistics</p>
+                                        </li>
+                                        <li>
+                                            <p>Pre-Editing</p>
+                                        </li>
+                                        <li>
+                                            <p>Copyediting</p>
+                                        </li>
+                                        <li>
+                                            <p>XML</p>
+                                        </li>
+                                        <li>
+                                            <p>Art Work</p>
+                                        </li>
+                                        <li>
+                                            <p>Pagination</p>
+                                        </li>
+                                        <li>
+                                            <p>Book Building</p>
+                                        </li>
+                                        <li>
+                                            <p>PM Review</p>
+                                        </li>
+                                        <li>
+                                            <p>Packaging</p>
+                                        </li>
+                                        <li>
+                                            <p>Dispatch</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="bookGridInner">
+                                <div class="bookIconOption">
+                                    <ul>
+                                        <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
+                                        </li>
+                                        <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row bookFlipFront">
+                                    <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="bookHeadingTop">
+                                            <div class="bookIds">
+                                                <p>Orlando_9781003018230</p>
+                                            </div>
+                                        </div>
+                                        <div class="bookDescGroup">
+                                            <h1>Economic Change and Wellbeing</h1>
+                                            <p>by Fabio D’Orlando, Francesco Ferrante, Albertina Oliverio</p>
+                                            <ul class="bookDescList">
+                                                <li>
+                                                    <p>Simple</p>
+                                                </li>
+                                                <li>
+                                                    <p>First Proof</p>
+                                                </li>
+                                                <li>
+                                                    <p>Yet to Start</p>
+                                                </li>
+                                            </ul>
+                                            <p class="updateDesc"> <img src="./images/icons.svg#update"
+                                                    class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                            <p class="completedStatus">Completed - 0%</p>
+                                            <div class="completeProgressBar">
+                                                <div class="completeProgressBarInner" style="width:10%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bookFlipBack">
+                                    <h2>First Proof</h2>
+                                    <ul class="bookDescList">
+                                        <li class="selectProof">
+                                            <p>Logistics</p>
+                                        </li>
+                                        <li>
+                                            <p>Pre-Editing</p>
+                                        </li>
+                                        <li>
+                                            <p>Copyediting</p>
+                                        </li>
+                                        <li>
+                                            <p>XML</p>
+                                        </li>
+                                        <li>
+                                            <p>Art Work</p>
+                                        </li>
+                                        <li>
+                                            <p>Pagination</p>
+                                        </li>
+                                        <li>
+                                            <p>Book Building</p>
+                                        </li>
+                                        <li>
+                                            <p>PM Review</p>
+                                        </li>
+                                        <li>
+                                            <p>Packaging</p>
+                                        </li>
+                                        <li>
+                                            <p>Dispatch</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="bookGridInner">
+                                <div class="bookIconOption">
+                                    <ul>
+                                        <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
+                                        </li>
+                                        <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" /></li>
+                                    </ul>
+                                </div>
+                                <div class="row bookFlipFront">
+                                    <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="bookHeadingTop">
+                                            <div class="bookIds">
+                                                <p>Orlando_9781003018230</p>
+                                            </div>
+                                        </div>
+                                        <div class="bookDescGroup">
+                                            <h1>Economic Change and Wellbeing</h1>
+                                            <p>by Fabio D’Orlando, Francesco Ferrante, Albertina Oliverio</p>
+                                            <ul class="bookDescList">
+                                                <li>
+                                                    <p>Simple</p>
+                                                </li>
+                                                <li>
+                                                    <p>First Proof</p>
+                                                </li>
+                                                <li>
+                                                    <p>Yet to Start</p>
+                                                </li>
+                                            </ul>
+                                            <p class="updateDesc"> <img src="./images/icons.svg#update"
+                                                    class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                            <p class="completedStatus">Completed - 0%</p>
+                                            <div class="completeProgressBar">
+                                                <div class="completeProgressBarInner" style="width:60%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bookFlipBack">
+                                    <h2>First Proof</h2>
+                                    <ul class="bookDescList">
+                                        <li class="selectProof">
+                                            <p>Logistics</p>
+                                        </li>
+                                        <li>
+                                            <p>Pre-Editing</p>
+                                        </li>
+                                        <li>
+                                            <p>Copyediting</p>
+                                        </li>
+                                        <li>
+                                            <p>XML</p>
+                                        </li>
+                                        <li>
+                                            <p>Art Work</p>
+                                        </li>
+                                        <li>
+                                            <p>Pagination</p>
+                                        </li>
+                                        <li>
+                                            <p>Book Building</p>
+                                        </li>
+                                        <li>
+                                            <p>PM Review</p>
+                                        </li>
+                                        <li>
+                                            <p>Packaging</p>
+                                        </li>
+                                        <li>
+                                            <p>Dispatch</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="bookGridInner">
+                                <div class="bookIconOption">
+                                    <ul>
+                                        <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
+                                        </li>
+                                        <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" /></li>
+                                    </ul>
+                                </div>
+                                <div class="row bookFlipFront">
+                                    <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="bookHeadingTop">
+                                            <div class="bookIds">
+                                                <p>Orlando_9781003018230</p>
+                                            </div>
+                                        </div>
+                                        <div class="bookDescGroup">
+                                            <h1>Economic Change and Wellbeing</h1>
+                                            <p>by Fabio D’Orlando, Francesco Ferrante, Albertina Oliverio</p>
+                                            <ul class="bookDescList">
+                                                <li>
+                                                    <p>Simple</p>
+                                                </li>
+                                                <li>
+                                                    <p>First Proof</p>
+                                                </li>
+                                                <li>
+                                                    <p>Yet to Start</p>
+                                                </li>
+                                            </ul>
+                                            <p class="updateDesc"> <img src="./images/icons.svg#update"
+                                                    class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                            <p class="completedStatus">Completed - 0%</p>
+                                            <div class="completeProgressBar">
+                                                <div class="completeProgressBarInner" style="width:30%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bookFlipBack">
+                                    <h2>First Proof</h2>
+                                    <ul class="bookDescList">
+                                        <li class="selectProof">
+                                            <p>Logistics</p>
+                                        </li>
+                                        <li>
+                                            <p>Pre-Editing</p>
+                                        </li>
+                                        <li>
+                                            <p>Copyediting</p>
+                                        </li>
+                                        <li>
+                                            <p>XML</p>
+                                        </li>
+                                        <li>
+                                            <p>Art Work</p>
+                                        </li>
+                                        <li>
+                                            <p>Pagination</p>
+                                        </li>
+                                        <li>
+                                            <p>Book Building</p>
+                                        </li>
+                                        <li>
+                                            <p>PM Review</p>
+                                        </li>
+                                        <li>
+                                            <p>Packaging</p>
+                                        </li>
+                                        <li>
+                                            <p>Dispatch</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="bookGridInner">
+                                <div class="bookIconOption">
+                                    <ul>
+                                        <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
+                                        </li>
+                                        <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" /></li>
+                                    </ul>
+                                </div>
+                                <div class="row bookFlipFront">
+                                    <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="bookHeadingTop">
+                                            <div class="bookIds">
+                                                <p>Orlando_9781003018230</p>
+                                            </div>
+                                        </div>
+                                        <div class="bookDescGroup">
+                                            <h1>Economic Change and Wellbeing</h1>
+                                            <p>by Fabio D’Orlando, Francesco Ferrante, Albertina Oliverio</p>
+                                            <ul class="bookDescList">
+                                                <li>
+                                                    <p>Simple</p>
+                                                </li>
+                                                <li>
+                                                    <p>First Proof</p>
+                                                </li>
+                                                <li>
+                                                    <p>Yet to Start</p>
+                                                </li>
+                                            </ul>
+                                            <p class="updateDesc"> <img src="./images/icons.svg#update"
+                                                    class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                            <p class="completedStatus">Completed - 0%</p>
+                                            <div class="completeProgressBar">
+                                                <div class="completeProgressBarInner" style="width:20%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bookFlipBack">
+                                    <h2>First Proof</h2>
+                                    <ul class="bookDescList">
+                                        <li class="selectProof">
+                                            <p>Logistics</p>
+                                        </li>
+                                        <li>
+                                            <p>Pre-Editing</p>
+                                        </li>
+                                        <li>
+                                            <p>Copyediting</p>
+                                        </li>
+                                        <li>
+                                            <p>XML</p>
+                                        </li>
+                                        <li>
+                                            <p>Art Work</p>
+                                        </li>
+                                        <li>
+                                            <p>Pagination</p>
+                                        </li>
+                                        <li>
+                                            <p>Book Building</p>
+                                        </li>
+                                        <li>
+                                            <p>PM Review</p>
+                                        </li>
+                                        <li>
+                                            <p>Packaging</p>
+                                        </li>
+                                        <li>
+                                            <p>Dispatch</p>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -93,16 +655,7 @@
         </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/bootstrap-datepicker.js"></script>
-        <script src="js/highcharts.src.js"></script>
-        <script src="js/highChartData.js"></script>
-        <script type="text/javascript">
-            $(function () {
-                $('#txtDate').datepicker({
-                    format: "dd MM yyyy"
-                });
-            });
-        </script>
+        <script src="js/Script.js"></script>
 </body>
 
 </html>

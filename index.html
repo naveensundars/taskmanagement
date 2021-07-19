@@ -19,12 +19,17 @@
         <div class="container-fluidInner">
             <div class="leftsideBar">
                 <div class="searchArea">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <input type="text" class="searchInput" placeholder="Search menu">
+                    <div class="input-group">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search menu">
+                    </div>
                 </div>
                 <div class="menuArea">
                     <ul>
-                        <li class="activeMenu"><a href="">
+                        <li class="activeMenu"><a href="index.html">
+                                <img src="./images/icons.svg#dashboard" class="iconsSvg" />
                                 <p>Dashboard</p>
                             </a></li>
                         <li><a href="">
@@ -33,7 +38,7 @@
                         <li><a href="">
                                 <p>Inflow</p>
                             </a></li>
-                        <li><a href="">
+                        <li><a href=""><img src="./images/icons.svg#list" class="iconsSvg" />
                                 <p>Personal</p>
                             </a></li>
                         <li><a href="">
@@ -42,7 +47,7 @@
                         <li><a href="allbooks.html">
                                 <p>All Books</p>
                             </a></li>
-                        <li><a href="">
+                        <li><a href=""><img src="./images/icons.svg#notification" class="iconsSvg" />
                                 <p>Report</p>
                             </a></li>
                         <li><a href="">
@@ -65,15 +70,18 @@
                         <div class="col-lg-6 datePickerInput">
                             <div class="input-group">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
-                                <input id="txtDate" type="text" class="form-control date-input" readonly value="20 June 2020">
+                                <input id="txtDate" type="text" class="form-control date-input" readonly
+                                    value="20 June 2020">
                                 <i class="fa fa-sort-desc" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="col-lg-6 SearchInputArea text-right">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
+                                <input type="text" class="form-control" placeholder="Search..."
+                                    aria-describedby="basic-addon2">
                                 <div class="input-group-append">
-                                    <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                    <span class="input-group-text"><i class="fa fa-search"
+                                            aria-hidden="true"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +135,7 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>SI.No</th>
+                                        <th style="min-width:70px;">SI.No</th>
                                         <th>Book ID</th>
                                         <th>Title</th>
                                         <th>Authors/Editors</th>
@@ -135,7 +143,7 @@
                                         <th>PM Name</th>
                                         <th>Received Date</th>
                                         <th>Pages Printer</th>
-                                        <th>Date</th>
+                                        <th>Printer Date</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
