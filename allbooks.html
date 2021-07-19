@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Straive - All Books</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/customstyle.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datepicker.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+        </header>
+        <div class="container-fluidInner">
+            <div class="leftsideBar">
+                <div class="searchArea">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" class="searchInput" placeholder="Search menu">
+                </div>
+                <div class="menuArea">
+                    <ul>
+                        <li class="activeMenu"><a href="">
+                                <p>Dashboard</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>General</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>Inflow</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>Personal</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>My Task</p>
+                            </a></li>
+                        <li><a href="allbooks.html">
+                                <p>All Books</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>Report</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>File Status</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>BG Health</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainBody">
+                <div class="beardScrumListTop">
+                    <ul>
+                        <li class="active">All Books</li>
+                    </ul>
+                </div>
+                <div class="mainBodyInner">
+                    <div class="row filterArea">
+                        <div class="col-lg-6 filterAreaButton">
+                            <button class="btn"><i class="fa fa-plus" aria-hidden="true"></i> Add Books</button>
+                            <button class="btn"><i class="fa fa-filter" aria-hidden="true"></i> Filter</button>
+                        </div>
+                        <div class="col-lg-6 SearchInputArea text-right">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="row">
+                    <div class="col-lg-3 text-left">
+                        <p>Design last updated date: <span>16 July 2021</span></p>
+                    </div>
+                    <div class="col-lg-7 text-center">
+                        <p>&#169; 2021 | www.stravie.com. All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-2 text-right">
+                        <p>Status: <span>Online</span></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/highcharts.src.js"></script>
+        <script src="js/highChartData.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('#txtDate').datepicker({
+                    format: "dd MM yyyy"
+                });
+            });
+        </script>
+</body>
+
+</html>

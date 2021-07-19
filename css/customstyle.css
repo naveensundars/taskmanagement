@@ -1,0 +1,337 @@
+/** fornt import **/
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../fonts/roboto-regular.eot");
+  src: url("../fonts/roboto-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto-regular.svg#roboto-regular") format("svg"),
+    url("../fonts/roboto-regular.ttf") format("truetype"),
+    url("../fonts/roboto-regular.woff") format("woff"),
+    url("../fonts/roboto-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../fonts/roboto-bold.eot");
+  src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto-bold.svg#roboto-bold") format("svg"),
+    url("../fonts/roboto-bold.ttf") format("truetype"),
+    url("../fonts/roboto-bold.woff") format("woff"),
+    url("../fonts/roboto-bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.container-fluid {
+  padding: 0px;
+  font-family: "roboto-regular";
+}
+/** header start **/
+header {
+  height: 57px;
+  background-color: #0846a9;
+  position: sticky;
+  top: 0px;
+  z-index: 150;
+}
+/** header end **/
+/** footer start **/
+footer {
+  height: 35px;
+  background-color: #f8f9fb;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid #e9e7ea;
+  padding: 0px 16px;
+}
+footer p {
+  font-size: 12px;
+  color: rgba(51, 51, 51, 1);
+  line-height: 35px;
+}
+footer p span {
+  font-weight: 600;
+}
+/** footer end **/
+/** common style start **/
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+.fa {
+  font-size: 16px !important;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+  font-family: "roboto-regular";
+}
+/** common style end **/
+/** leftsidebar start **/
+.searchArea {
+  height: 40px;
+  padding: 0px 0px 0px 16px;
+  border-bottom: 1px solid #e9e7ea;
+  line-height: 40px;
+}
+.searchArea .fa-search {
+  color: rgba(56, 56, 56, 0.7);
+  font-size: 14px !important;
+  position: relative;
+  top: 0px;
+}
+.searchInput {
+  width: 85%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  height: 32px;
+}
+.searchInput::placeholder {
+  font-size: 13px;
+}
+.datePickerInput .input-group {
+  width: 200px;
+  color: #fff;
+  position: relative;
+}
+.datePickerInput .form-control {
+  border-radius: 6px !important;
+  padding-left: 38px;
+  color: #fff;
+}
+.datePickerInput .fa-calendar {
+  position: absolute;
+  z-index: 10;
+  top: 7px;
+  left: 16px;
+}
+.datePickerInput .fa-sort-desc {
+  position: absolute;
+  z-index: 10;
+  top: 8px;
+  right: 16px;
+  font-size: 10px !important;
+}
+.datePickerInput .input-group .form-control {
+  background: #0078d4;
+  cursor: pointer;
+}
+.SearchInputArea .input-group-text {
+  background-color: #0078d4;
+  color: #fff;
+}
+.SearchInputArea .input-group {
+  width: 50%;
+  margin-left: auto;
+}
+.input-group,
+.form-control {
+  height: 32px;
+}
+.form-control::placeholder {
+  font-size: 14px;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.menuArea li {
+  padding: 6px;
+  position: relative;
+}
+.menuArea li:hover,
+.menuArea li.activeMenu {
+  background-color: #f8f9fb;
+}
+.menuArea li.activeMenu:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #0846a9;
+}
+.menuArea li a {
+  text-decoration: none;
+}
+.menuArea li p {
+  margin: 0px;
+  margin-left: 36px;
+  color: #333333;
+  font-size: 14px;
+}
+/** leftsidebar end **/
+/** container-fluidInner start **/
+.container-fluidInner {
+  display: flex;
+}
+.leftsideBar {
+  width: 224px;
+  border-right: 1px solid #e9e7ea;
+  height: calc(100vh - 92px);
+}
+.mainBody {
+  width: calc(100% - 224px);
+  height: calc(100vh - 92px);
+  overflow: auto;
+}
+.mainBodyInner {
+  padding: 16px;
+}
+/** container-fluidInner end **/
+/** beardScrumList start **/
+.beardScrumListTop {
+  border-bottom: 1px solid #e9e7ea;
+}
+.beardScrumListTop ul {
+  height: 40px;
+  display: inline-block;
+}
+.beardScrumListTop ul li {
+  line-height: 40px;
+  padding: 0px 16px;
+}
+.beardScrumListTop ul li.active {
+  border-bottom: 2px solid #2089d9;
+}
+/** beardScrumList end **/
+/** filter area start **/
+.filterArea {
+  margin-bottom: 16px;
+}
+/** filter area end **/
+/** statusListDiv start **/
+.statusListDiv {
+  display: flex;
+}
+.statusListDivinner {
+  padding: 10px;
+  border: 1px solid #33333329;
+  width: 14.28571428571429%;
+  margin: 8px;
+  border-radius: 4px;
+}
+.statusListDivinner:first-child {
+  margin-left: 0px;
+}
+.statusListDivinner:last-child {
+  margin-right: 0px;
+}
+.statusListDivinner.active {
+  box-shadow: 0px 0px 6px #0078d47a;
+}
+.statusListDivinner h1 {
+  font-size: 32px;
+  font-family: "roboto-bold";
+  margin: 0px;
+}
+.statusListDivinner span {
+  font-size: 14px;
+}
+/** statusListDiv end **/
+/** table start **/
+.tableArea {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.tableFixHead {
+  overflow: auto;
+  max-height: 305px;
+}
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  min-width: 125px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+thead tr th {
+  background-color: #f3f2f1;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 2px;
+}
+th,
+td {
+  padding: 0px 16px;
+  color: #333333;
+  font-size: 14px;
+}
+tbody tr {
+  background-color: #f8f9fb;
+  border-top: 4px solid #fff;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 2px;
+}
+tbody tr p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0px;
+  max-width: 200px;
+}
+tbody tr p img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  margin-right: 4px;
+}
+.actionTable ul li {
+  display: inline;
+  margin-right: 12px;
+  cursor: pointer;
+  color: #a9aaab;
+}
+.tableFixHead::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  cursor: default;
+  background-color: #c8c6c4;
+}
+.tableFixHead::-webkit-scrollbar-thumb {
+  background-color: #8c8b8a;
+  border-radius: 2px;
+  /* outline: 1px solid slategrey; */
+}
+/**table end **/
+/** chart area start **/
+.chartArea > div {
+  margin-bottom: 16px;
+}
+.chartAreaInner {
+  border: 1px solid #e9e7ea;
+  padding: 8px 0px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.highcharts-credits {
+  display: none;
+}
+.highcharts-title {
+  font-family: "roboto-bold";
+}
+/** chart area end **/
+
+/** media query start
+@media screen and (max-width: 1380px) {
+  .leftsideBar {
+    width: 50px;
+  }
+  .menuArea ul li p, .searchArea {
+    display: none;
+  }
+  .mainBody {
+    width: 100%;
+  }
+}
+/** media query end**/
