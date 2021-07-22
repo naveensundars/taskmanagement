@@ -24,11 +24,70 @@
 /** header start **/
 
 header {
-  height: 57px;
+  height: 40px;
   background-color: #0846a9;
   position: sticky;
   top: 0px;
   z-index: 150;
+  color: #ffffff;
+  padding: 0px 16px;
+}
+
+.headerCard {
+  display: flex;
+}
+
+.logoArea h1 {
+  margin: 0;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+.logoArea span {
+  font-size: 9px;
+  position: relative;
+  top: -10px;
+  letter-spacing: 0.5px;
+}
+
+.rightsideArea {
+  margin-left: auto;
+  padding-top: 6px;
+}
+
+.rightsideArea ul li {
+  display: inline-block;
+  margin-left: 8px;
+  position: relative;
+}
+
+.rightsideArea ul li span {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #f75858;
+  position: absolute;
+  top: 3px;
+  left: 9px;
+}
+
+.userProfile p {
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+
+.userProfile p img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  margin-right: 4px;
+}
+
+.userProfile .fa {
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
 }
 
 /** header end **/
@@ -36,7 +95,7 @@ header {
 /** footer start **/
 
 footer {
-  height: 35px;
+  height: 20px;
   background-color: #f8f9fb;
   position: fixed;
   bottom: 0px;
@@ -46,9 +105,9 @@ footer {
 }
 
 footer p {
-  font-size: 12px;
+  font-size: 10px;
   color: rgba(51, 51, 51, 1);
-  line-height: 35px;
+  line-height: 20px;
 }
 
 footer p span {
@@ -62,10 +121,11 @@ footer p span {
 ul {
   padding: 0px;
   margin: 0px;
+  list-style: none;
 }
 
 .fa {
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 
 input, button, select, optgroup, textarea {
@@ -77,13 +137,30 @@ input, button, select, optgroup, textarea {
   height: 16px;
 }
 
+.iconsSvgWidth {
+  width: 22px;
+  height: 22px;
+}
+
 .btn {
-  font-size: 12px;
-  margin-right: 16px;
+  font-size: 10px;
+  margin-right: 8px;
+  height: 26px;
+  padding: 0px 16px;
+}
+
+.btn-primary-save {
+  background-color: #01A450;
+  color: #ffffff;
+}
+
+.btn-outline-primary-cancel {
+  background-color: #FFFFFF;
+  border: 1px solid #33333366;
 }
 
 .btn .fa {
-  font-size: 14px !important;
+  font-size: 10px !important;
 }
 
 .btn-primary, .btn-primary:hover {
@@ -100,17 +177,53 @@ input, button, select, optgroup, textarea {
   color: #0078D4;
 }
 
+.innerScrollBar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  cursor: default;
+  background-color: #c8c6c4;
+}
+
+.innerScrollBar::-webkit-scrollbar-thumb {
+  background-color: #8c8b8a;
+  border-radius: 2px;
+  /* outline: 1px solid slategrey; */
+}
+
+.breadcrumb {
+  padding: 0;
+  background: transparent;
+  font-size: 12px;
+}
+
+:hover {
+  transition: 0.5s;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-group label span {
+  font-size: 10px;
+  color: #0078D4;
+  position: relative;
+  top: -4px;
+  left: 2px;
+}
+
 /** common style end **/
 
 /** leftsidebar start **/
 
 .searchArea {
-  height: 40px;
+  height: 36px;
   border-bottom: 1px solid #e9e7ea;
 }
 
 .searchArea .input-group, .searchArea .form-control {
-  height: 39px;
+  height: 35px;
   border-radius: 0px;
   border: none;
   padding-left: 0px;
@@ -136,7 +249,7 @@ input, button, select, optgroup, textarea {
 .datePickerInput .fa-calendar {
   position: absolute;
   z-index: 10;
-  top: 7px;
+  top: 8px;
   left: 16px;
 }
 
@@ -164,10 +277,10 @@ input, button, select, optgroup, textarea {
 }
 
 .input-group, .form-control {
-  height: 32px;
+  height: 30px;
 }
 
-.form-control::placeholder {
+.form-control::placeholder, .form-control {
   font-size: 13px;
 }
 
@@ -176,7 +289,7 @@ input, button, select, optgroup, textarea {
 }
 
 .menuArea {
-  height: calc(100vh - 132px);
+  height: calc(100vh - 100px);
   overflow: auto;
 }
 
@@ -207,27 +320,14 @@ input, button, select, optgroup, textarea {
 
 .menuArea li img {
   position: absolute;
-  top: 9px;
+  top: 7px;
 }
 
 .menuArea li p {
   margin: 0px;
   margin-left: 26px;
   color: #333333;
-  font-size: 14px;
-}
-
-.menuArea::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-  cursor: default;
-  background-color: #c8c6c4;
-}
-
-.menuArea::-webkit-scrollbar-thumb {
-  background-color: #8c8b8a;
-  border-radius: 2px;
-  /* outline: 1px solid slategrey; */
+  font-size: 13px;
 }
 
 /** leftsidebar end **/
@@ -239,14 +339,14 @@ input, button, select, optgroup, textarea {
 }
 
 .leftsideBar {
-  width: 224px;
+  width: 200px;
   border-right: 1px solid #e9e7ea;
-  height: calc(100vh - 92px);
+  height: calc(100vh - 60px);
 }
 
 .mainBody {
-  width: calc(100% - 224px);
-  height: calc(100vh - 92px);
+  width: calc(100% - 200px);
+  height: calc(100vh - 60px);
   overflow: auto;
 }
 
@@ -263,13 +363,14 @@ input, button, select, optgroup, textarea {
 }
 
 .beardScrumListTop ul {
-  height: 40px;
+  height: 35px;
   display: inline-block;
 }
 
 .beardScrumListTop ul li {
-  line-height: 40px;
+  line-height: 35px;
   padding: 0px 16px;
+  font-size: 16px;
 }
 
 .beardScrumListTop ul li.active {
@@ -309,17 +410,17 @@ input, button, select, optgroup, textarea {
 }
 
 .statusListDivinner.active {
-  box-shadow: 0px 0px 6px #0078d47a;
+  box-shadow: 0px 0px 4px rgb(0 120 212 / 40%)
 }
 
 .statusListDivinner h1 {
-  font-size: 32px;
+  font-size: 30px;
   font-family: "roboto-bold";
   margin: 0px;
 }
 
 .statusListDivinner span {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 /** statusListDiv end **/
@@ -358,7 +459,7 @@ thead tr th {
 th, td {
   padding: 0px 16px;
   color: #333333;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 tbody tr {
@@ -375,6 +476,7 @@ tbody tr p {
   white-space: nowrap;
   margin: 0px;
   max-width: 200px;
+  font-size: 12px;
 }
 
 tbody tr p img {
@@ -390,19 +492,6 @@ tbody tr p img {
   margin-right: 12px;
   cursor: pointer;
   color: #a9aaab;
-}
-
-.tableFixHead::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-  cursor: default;
-  background-color: #c8c6c4;
-}
-
-.tableFixHead::-webkit-scrollbar-thumb {
-  background-color: #8c8b8a;
-  border-radius: 2px;
-  /* outline: 1px solid slategrey; */
 }
 
 /**table end **/
@@ -429,7 +518,7 @@ tbody tr p img {
 }
 
 .highcharts-container {
-  height: 345px !important;
+  height: 300px !important;
 }
 
 /** chart area end **/
@@ -485,14 +574,30 @@ tbody tr p img {
   z-index: 10;
 }
 
-.bookIconOption ul li {
+.bookIconOption ul li, .listStyle li {
   list-style: none;
   display: inline;
   cursor: pointer;
 }
 
+.listStyle li {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  position: relative;
+  top: 4px;
+}
+
+.listStyle li.active {
+  color: #1784d7;
+}
+
+.SearchInputArea {
+  display: flex;
+}
+
 .bookDescGroup h1 {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "roboto-bold";
   overflow: hidden;
   text-overflow: ellipsis;
@@ -505,7 +610,7 @@ tbody tr p img {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-bottom: 12px;
-  color: #ccc
+  color: #9f9f9f;
 }
 
 .bookDescList li {
@@ -571,6 +676,151 @@ tbody tr p img {
 .selectProof p {
   background-color: #48D6D2 !important;
   color: #fff !important;
+}
+
+.listGrid {
+  overflow-x: auto;
+}
+
+.listGrid tr {
+  background-color: transparent;
+}
+
+.listGrid td {
+  max-width: 120px;
+  min-width: 80px;
+  padding: 6px 16px;
+}
+
+.bookViewScreen.active .bookGrid, .listGrid {
+  display: none;
+}
+
+.bookViewScreen.active .listGrid {
+  display: block;
+}
+
+.listGridImg {
+  border-radius: 2px;
+  height: 40px;
+  width: 28px;
+  margin-right: 8px;
+}
+
+.bookHeadTitle {
+  font-size: 24px;
+  margin: 12px 0px;
+}
+
+.bookDetailTabList {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.bookDetailTabList li {
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+  padding: 6px 0px;
+}
+
+.bookDetailTabList a {
+  color: #333333;
+  text-decoration: none;
+  padding: 6px 16px;
+}
+
+.bookDetailTabList li:hover {
+  background-color: #f7f7f7;
+}
+
+.bookDetailTab {
+  margin-bottom: 12px;
+}
+
+.bookDetailTabList li a.active:before {
+  content: '';
+  height: 2px;
+  background-color: #0078D4;
+  width: 100%;
+  bottom: -1px;
+  position: absolute;
+  left: 0px;
+}
+
+.accordion {
+  background-color: #F8F9FB;
+  color: #333333;
+  cursor: pointer;
+  padding: 0px 16px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+  transition: 0.4s;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion .fa {
+  margin-right: 4px;
+  transition: 0.5s;
+  color: #333333;
+}
+
+.accordion.active .fa {
+  transform: rotate(90deg);
+}
+
+.changeCoverBtn {
+  color: #0078D4;
+  border: 1px solid #0078D4;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.bookCoverImgAdd img {
+  margin-bottom: 8px;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+}
+
+.customeWidth {
+  max-height: 90%;
+}
+
+.tableFixHead .form-check-input {
+  position: relative;
+  margin: 0px;
+  top: 2px;
+  margin-right: 4px;
+}
+
+.removeIns p {
+  opacity: 0.5;
+}
+
+.removeIns td:nth-child(3) p {
+  text-decoration: line-through 1px red;
+}
+
+.accordion label {
+  font-size: 11px;
+  position: absolute;
+  right: 16px;
+  top: 12px;
 }
 
 /** book page style end **/
