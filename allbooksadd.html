@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Straive - All Books</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/customstyle.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datepicker.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="headerCard">
+            <div class="logoArea">
+                <h1>Straive</h1>
+                <span>Publishing Platform</span>
+            </div>
+            <div class="rightsideArea">
+                <ul>
+                    <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-th" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-bell" aria-hidden="true"></i> <span></span></li>
+                    <li class="userProfile">
+                        <p> <img src="./images/profile.jpg"> Accounts Manager <i class="fa fa-angle-down"
+                                aria-hidden="true"></i></p>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="container-fluidInner">
+            <div class="leftsideBar">
+                <div class="searchArea">
+                    <div class="input-group">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search menu">
+                    </div>
+                </div>
+                <div class="menuArea innerScrollBar">
+                    <ul>
+                        <li><a href="index.html">
+                                <img src="./images/icons.svg#dashboard" class="iconsSvg" />
+                                <p>Dashboard</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>General</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>Inflow</p>
+                            </a></li>
+                        <li><a href=""><img src="./images/icons.svg#list" class="iconsSvg" />
+                                <p>Personal</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>My Task</p>
+                            </a></li>
+                        <li class="activeMenu"><a href="allbooks.html">
+                                <p>All Books</p>
+                            </a></li>
+                        <li><a href=""><img src="./images/icons.svg#notification" class="iconsSvg" />
+                                <p>Report</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>File Status</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>BG Health</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainBody">
+                <div class="beardScrumListTop">
+                    <ul>
+                        <li class="active">All Books</li>
+                    </ul>
+                </div>
+                <div class="mainBodyInner">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">All Books</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Economic Change and Wellbeing</li>
+                        </ol>
+                    </nav>
+                    <h1 class="bookHeadTitle">Economic Change and Wellbeing</h1>
+                    <div class="bookDetailTab">
+                        <ul class="nav nav-tabs bookDetailTabList">
+                            <li><a data-toggle="tab" href="#BookProperties" class="active">Book Properties</a></li>
+                            <li><a data-toggle="tab" href="#Milestone">Milestone</a></li>
+                            <li><a data-toggle="tab" href="#TOC">TOC</a></li>
+                            <li><a data-toggle="tab" href="#Chapters">Chapters</a></li>
+                            <li><a data-toggle="tab" href="#Users">Users</a></li>
+                            <li><a data-toggle="tab" href="#Files">Files</a></li>
+                            <li><a data-toggle="tab" href="#Instructions">Instructions</a></li>
+                            <li><a data-toggle="tab" href="#Queries">Queries</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div id="BookProperties" class="row accordionArea tab-pane fade in active show">
+                            <div class="col-lg-12 filterArea">
+                                <div class="row">
+                                    <div class="col-lg-6 filterAreaButton">
+                                        <button class="btn btn-primary-save">Save</button>
+                                        <button class="btn btn-outline-primary-cancel">Cancel</button>
+                                    </div>
+                                    <div class="col-lg-6 SearchInputArea text-right">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search..."
+                                                aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-search"
+                                                        aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button class="accordion"><i class="fa fa-caret-right" aria-hidden="true"></i> Job
+                                    Details</button>
+                                <div class="row panel">
+                                    <div class="col-lg-10">
+                                        <div class="row">
+                                            <div class="col-lg-6 form-group">
+                                                <label for="Title">Title <span>*</span></label>
+                                                <input type="text" class="form-control" id="Title">
+                                            </div>
+                                            <div class="col-lg-6 form-group">
+                                                <label for="Author">Author <span>*</span></label>
+                                                <input type="text" class="form-control" id="Author">
+                                            </div>
+                                            <div class="col-lg-6 form-group">
+                                                <label for="SubTitle">Sub Title</label>
+                                                <input type="text" class="form-control" id="SubTitle">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="row">
+                                                    <div class="col-lg-6 form-group">
+                                                        <label for="BookID">Book ID <span>*</span></label>
+                                                        <input type="text" class="form-control" id="BookID">
+                                                    </div>
+                                                    <div class="col-lg-6 form-group">
+                                                        <label for="ISBN(Hardback)">ISBN (Hardback)</label>
+                                                        <input type="text" class="form-control" id="ISBN(Hardback)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="row">
+                                                    <div class="col-lg-6 form-group">
+                                                        <label for="ISBN(Paperback)">ISBN (Paperback)</label>
+                                                        <input type="text" class="form-control" id="ISBN(Paperback)">
+                                                    </div>
+                                                    <div class="col-lg-6 form-group">
+                                                        <label for="ISBN(E-book))">ISBN (E-book)</label>
+                                                        <input type="text" class="form-control" id="ISBN(E-book))">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="row">
+                                                    <div class="col-lg-6 form-group">
+                                                        <label for="ISBN(E-Pub)">ISBN (E-Pub)</label>
+                                                        <input type="text" class="form-control" id="ISBN(E-Pub)">
+                                                    </div>
+                                                    <div class="col-lg-6 form-group">
+                                                        <label for="DOI">DOI</label>
+                                                        <input type="text" class="form-control" id="DOI">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 bookCoverImgAdd"><img src="./images/book.jpg"
+                                            class="img-fluid" />
+                                        <button class="btn changeCoverBtn">Change Cover Image</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button class="accordion"><i class="fa fa-caret-right" aria-hidden="true"></i> General
+                                    Informations</button>
+                                <div class="row panel">
+                                    <div class="col-lg-3 form-group">
+                                        <label for="ProductionEditor">Production Editor</label>
+                                        <select class="form-control" id="ProductionEditor">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="PublisherImprintName">Publisher Imprint Name</label>
+                                        <select class="form-control" id="PublisherImprintName">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="PublisherLocation">Publisher Location</label>
+                                        <select class="form-control" id="PublisherLocation">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="TemplateFormate">Template Formate</label>
+                                        <select class="form-control" id="TemplateFormate">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="WorkType">Work Type <span>*</span></label>
+                                        <select class="form-control" id="WorkType">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="CopyEditingLevel">Copy Editing Level</label>
+                                        <select class="form-control" id="CopyEditingLevel">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="CopyEditingLocation">Copy Editing Location</label>
+                                        <select class="form-control" id="CopyEditingLocation">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="TextDesign">Text Design</label>
+                                        <select class="form-control" id="TextDesign">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="TextFace">Text Face</label>
+                                        <select class="form-control" id="TextFace">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="OffshoreIndexing">Offshore Indexing</label>
+                                        <select class="form-control" id="OffshoreIndexing">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="Formate">Formate</label>
+                                        <select class="form-control" id="Formate">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="Index">Index <span>*</span></label>
+                                        <select class="form-control" id="Index">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="pmlevel">PM Level</label>
+                                        <select class="form-control" id="pmlevel">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="wordcount">Word Count</label>
+                                        <input type="text" class="form-control" id="wordcount">
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="Proof">Proof</label>
+                                        <select class="form-control" id="Proof">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="proofingsystem">Proofing System</label>
+                                        <input type="text" class="form-control" id="proofingsystem">
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="booktype">Book Type <span>*</span></label>
+                                        <select class="form-control" id="booktype">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="offshorepm">Offshore Pm</label>
+                                        <select class="form-control" id="offshorepm">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="jobcolorprofile">Job Color Profile</label>
+                                        <select class="form-control" id="jobcolorprofile">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="Titlecategory">Title Category</label>
+                                        <select class="form-control" id="Titlecategory">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="duedate">Due Date</label>
+                                        <input type="text" class="form-control" id="duedate">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button class="accordion"><i class="fa fa-caret-right" aria-hidden="true"></i> Publisher
+                                    Details</button>
+                                <div class="row panel">
+                                    <div class="col-lg-3 form-group">
+                                        <label for="publishername">Publisher Name <span>*</span></label>
+                                        <input type="text" class="form-control" id="publishername">
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="publisherimprintname">Publisher Imprint Name</label>
+                                        <input type="text" class="form-control" id="publisherimprintname">
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="publisherlocation">Publisher Location</label>
+                                        <input type="text" class="form-control" id="publisherlocation">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button class="accordion"><i class="fa fa-caret-right" aria-hidden="true"></i> PM
+                                    Details</button>
+                                <div class="row panel">
+                                    <div class="col-lg-3 form-group">
+                                        <label for="selectpm">Select PM <span>*</span></label>
+                                        <select class="form-control" id="selectpm">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 form-group">
+                                        <label for="location">Location <span>*</span></label>
+                                        <select class="form-control" id="location">
+                                            <option>-Select-</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Chapters" class="row tab-pane fade">
+                            <div class="col-lg-12 filterArea">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                    </div>
+                                    <div class="col-lg-6 SearchInputArea text-right">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search..."
+                                                aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-search"
+                                                        aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="tableFixHead innerScrollBar customeWidth">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Chapter Name</th>
+                                                <th>MS Pages</th>
+                                                <th>Start Page</th>
+                                                <th>End Page</th>
+                                                <th>Total Pages</th>
+                                                <th>Received Date</th>
+                                                <th>Due Date</th>
+                                                <th>Current process</th>
+                                                <th>Status</th>
+                                                <th>Instruction</th>
+                                                <th>Query</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>Frontmatter</p>
+                                                </td>
+                                                <td>
+                                                    <p>10</p>
+                                                </td>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>xii</p>
+                                                </td>
+                                                <td>
+                                                    <p>12</p>
+                                                </td>
+                                                <td>
+                                                    <p>10 June 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>25 July 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>PM Review</p>
+                                                </td>
+                                                <td>
+                                                    <p>On Hold</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-info-circle" aria-hidden="true"></i> 3
+                                                        Instruction</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-comments" aria-hidden="true"></i> 1 Query</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Frontmatter</p>
+                                                </td>
+                                                <td>
+                                                    <p>10</p>
+                                                </td>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>xii</p>
+                                                </td>
+                                                <td>
+                                                    <p>12</p>
+                                                </td>
+                                                <td>
+                                                    <p>10 June 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>25 July 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>PM Review</p>
+                                                </td>
+                                                <td>
+                                                    <p>On Hold</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-info-circle" aria-hidden="true"></i> 3
+                                                        Instruction</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-comments" aria-hidden="true"></i> 1 Query</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Frontmatter</p>
+                                                </td>
+                                                <td>
+                                                    <p>10</p>
+                                                </td>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>xii</p>
+                                                </td>
+                                                <td>
+                                                    <p>12</p>
+                                                </td>
+                                                <td>
+                                                    <p>10 June 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>25 July 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>PM Review</p>
+                                                </td>
+                                                <td>
+                                                    <p>On Hold</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-info-circle" aria-hidden="true"></i> 3
+                                                        Instruction</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-comments" aria-hidden="true"></i> 1 Query</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Frontmatter</p>
+                                                </td>
+                                                <td>
+                                                    <p>10</p>
+                                                </td>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>xii</p>
+                                                </td>
+                                                <td>
+                                                    <p>12</p>
+                                                </td>
+                                                <td>
+                                                    <p>10 June 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>25 July 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>PM Review</p>
+                                                </td>
+                                                <td>
+                                                    <p>On Hold</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-info-circle" aria-hidden="true"></i> 3
+                                                        Instruction</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-comments" aria-hidden="true"></i> 1 Query</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Frontmatter</p>
+                                                </td>
+                                                <td>
+                                                    <p>10</p>
+                                                </td>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>xii</p>
+                                                </td>
+                                                <td>
+                                                    <p>12</p>
+                                                </td>
+                                                <td>
+                                                    <p>10 June 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>25 July 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>PM Review</p>
+                                                </td>
+                                                <td>
+                                                    <p>On Hold</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-info-circle" aria-hidden="true"></i> 3
+                                                        Instruction</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-comments" aria-hidden="true"></i> 1 Query</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Frontmatter</p>
+                                                </td>
+                                                <td>
+                                                    <p>10</p>
+                                                </td>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>xii</p>
+                                                </td>
+                                                <td>
+                                                    <p>12</p>
+                                                </td>
+                                                <td>
+                                                    <p>10 June 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>25 July 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>PM Review</p>
+                                                </td>
+                                                <td>
+                                                    <p>On Hold</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-info-circle" aria-hidden="true"></i> 3
+                                                        Instruction</p>
+                                                </td>
+                                                <td>
+                                                    <p><i class="fa fa-comments" aria-hidden="true"></i> 1 Query</p>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="Users" class="row tab-pane fade">
+                            <div class="col-lg-12 filterArea">
+                                <div class="row">
+                                    <div class="col-lg-6 filterAreaButton">
+                                        <button class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>
+                                            Add
+                                            User</button>
+                                        <button class="btn btn-outline-primary">
+                                            Remove User</button>
+                                    </div>
+                                    <div class="col-lg-6 SearchInputArea text-right">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search..."
+                                                aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-search"
+                                                        aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="tableFixHead innerScrollBar customeWidth">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th><input type="checkbox" class="form-check-input"> S.No</th>
+                                                <th>Name</th>
+                                                <th>Email ID</th>
+                                                <th>Emp ID</th>
+                                                <th>Role</th>
+                                                <th>Location</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p><input type="checkbox" class="form-check-input"> 1</p>
+                                                </td>
+                                                <td>
+                                                    <p><img src="./images/profile.jpg"> Amith Kumar A</p>
+                                                </td>
+                                                <td>
+                                                    <p>amithkumar.anilkumar@straive.com</p>
+                                                </td>
+                                                <td>
+                                                    <p>e206988</p>
+                                                </td>
+                                                <td>
+                                                    <p>Logistic Operator</p>
+                                                </td>
+                                                <td>
+                                                    <p>Chennai - Adyar</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><input type="checkbox" class="form-check-input"> 1</p>
+                                                </td>
+                                                <td>
+                                                    <p><img src="./images/profile.jpg"> Amith Kumar A</p>
+                                                </td>
+                                                <td>
+                                                    <p>amithkumar.anilkumar@straive.com</p>
+                                                </td>
+                                                <td>
+                                                    <p>e206988</p>
+                                                </td>
+                                                <td>
+                                                    <p>Logistic Operator</p>
+                                                </td>
+                                                <td>
+                                                    <p>Chennai - Adyar</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><input type="checkbox" class="form-check-input"> 1</p>
+                                                </td>
+                                                <td>
+                                                    <p><img src="./images/profile.jpg"> Amith Kumar A</p>
+                                                </td>
+                                                <td>
+                                                    <p>amithkumar.anilkumar@straive.com</p>
+                                                </td>
+                                                <td>
+                                                    <p>e206988</p>
+                                                </td>
+                                                <td>
+                                                    <p>Logistic Operator</p>
+                                                </td>
+                                                <td>
+                                                    <p>Chennai - Adyar</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><input type="checkbox" class="form-check-input"> 1</p>
+                                                </td>
+                                                <td>
+                                                    <p><img src="./images/profile.jpg"> Amith Kumar A</p>
+                                                </td>
+                                                <td>
+                                                    <p>amithkumar.anilkumar@straive.com</p>
+                                                </td>
+                                                <td>
+                                                    <p>e206988</p>
+                                                </td>
+                                                <td>
+                                                    <p>Logistic Operator</p>
+                                                </td>
+                                                <td>
+                                                    <p>Chennai - Adyar</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="Files" class="row tab-pane fade">
+                            <div class="col-lg-12 filterArea">
+                                <div class="row">
+                                    <div class="col-lg-6 filterAreaButton">
+                                        <button class="btn btn-outline-primary">
+                                            Download</button>
+                                    </div>
+                                    <div class="col-lg-6 SearchInputArea text-right">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search..."
+                                                aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-search"
+                                                        aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="tableFixHead innerScrollBar customeWidth">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th><input type="checkbox" class="form-check-input"> S.No</th>
+                                                <th>Name</th>
+                                                <th>File Size</th>
+                                                <th>Last Modified</th>
+                                                <th>File Type</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p><input type="checkbox" class="form-check-input"> 1</p>
+                                                </td>
+                                                <td>
+                                                    <p>File Name</p>
+                                                </td>
+                                                <td>
+                                                    <p>124 KB</p>
+                                                </td>
+                                                <td>
+                                                    <p>08 July 2021, 08:02:22 AM</p>
+                                                </td>
+                                                <td>
+                                                    <p>PDF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><input type="checkbox" class="form-check-input"> 1</p>
+                                                </td>
+                                                <td>
+                                                    <p>File Name</p>
+                                                </td>
+                                                <td>
+                                                    <p>124 KB</p>
+                                                </td>
+                                                <td>
+                                                    <p>08 July 2021, 08:02:22 AM</p>
+                                                </td>
+                                                <td>
+                                                    <p>PDF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><input type="checkbox" class="form-check-input"> 1</p>
+                                                </td>
+                                                <td>
+                                                    <p>File Name</p>
+                                                </td>
+                                                <td>
+                                                    <p>124 KB</p>
+                                                </td>
+                                                <td>
+                                                    <p>08 July 2021, 08:02:22 AM</p>
+                                                </td>
+                                                <td>
+                                                    <p>PDF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><input type="checkbox" class="form-check-input"> 1</p>
+                                                </td>
+                                                <td>
+                                                    <p>File Name</p>
+                                                </td>
+                                                <td>
+                                                    <p>124 KB</p>
+                                                </td>
+                                                <td>
+                                                    <p>08 July 2021, 08:02:22 AM</p>
+                                                </td>
+                                                <td>
+                                                    <p>PDF</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="Instructions" class="row tab-pane fade">
+                            <div class="col-lg-12 filterArea">
+                                <div class="row">
+                                    <div class="col-lg-6 filterAreaButton">
+                                        <button class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>
+                                            Add Instruction</button>
+                                        <button class="btn btn-outline-primary">
+                                            Delete Instruction</button>
+                                    </div>
+                                    <div class="col-lg-6 SearchInputArea text-right">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search..."
+                                                aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-search"
+                                                        aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="tableFixHead innerScrollBar customeWidth">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th><input type="checkbox" class="form-check-input"> S.No</th>
+                                                <th>Chapter Name</th>
+                                                <th>Instruction</th>
+                                                <th>Last Modified</th>
+                                                <th>Added by</th>
+                                                <th>Removed by</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p><input type="checkbox" class="form-check-input"> 1</p>
+                                                </td>
+                                                <td>
+                                                    <p>All Chapters</p>
+                                                </td>
+                                                <td>
+                                                    <p>Use copy rights of 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>07 July 2021, 10:54:12 AM</p>
+                                                </td>
+                                                <td>
+                                                    <p><img src="./images/profile.jpg"> Amith Kumar A</p>
+                                                </td>
+                                                <td>
+                                                    <p></p>
+                                                </td>
+                                            </tr>
+                                            <tr class="removeIns">
+                                                <td>
+                                                    <p><input type="checkbox" class="form-check-input"> 1</p>
+                                                </td>
+                                                <td>
+                                                    <p>All Chapters</p>
+                                                </td>
+                                                <td>
+                                                    <p>Use copy rights of 2021</p>
+                                                </td>
+                                                <td>
+                                                    <p>07 July 2021, 10:54:12 AM</p>
+                                                </td>
+                                                <td>
+                                                    <p><img src="./images/profile.jpg"> Amith Kumar A</p>
+                                                </td>
+                                                <td>
+                                                    <p><img src="./images/profile.jpg"> Saravan A</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="Queries" class="row accordionArea tab-pane fade">
+                            <div class="col-lg-12 filterArea">
+                                <div class="row">
+                                    <div class="col-lg-6 filterAreaButton">
+                                        <button class="btn btn-primary-save">Raise Query</button>
+                                    </div>
+                                    <div class="col-lg-6 SearchInputArea text-right">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search..."
+                                                aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-search"
+                                                        aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button class="accordion"><i class="fa fa-caret-right" aria-hidden="true"></i> All Chapters <label>25 July 2021, 05:00:21 PM</label></button>
+                                <div class="row panel">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button class="accordion"><i class="fa fa-caret-right" aria-hidden="true"></i> Chapters 3</button>
+                                <div class="row panel">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="row">
+                    <div class="col-lg-3 text-left">
+                        <p>Design last updated date: <span>16 July 2021</span></p>
+                    </div>
+                    <div class="col-lg-7 text-center">
+                        <p>&#169; 2021 | www.stravie.com. All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-2 text-right">
+                        <p>Status: <span>Online</span></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/Script.js"></script>
+</body>
+
+</html>
