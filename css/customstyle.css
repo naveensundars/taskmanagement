@@ -3,7 +3,11 @@
 @font-face {
   font-family: "roboto-regular";
   src: url("../fonts/roboto-regular.eot");
-  src: url("../fonts/roboto-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular.svg#roboto-regular") format("svg"), url("../fonts/roboto-regular.ttf") format("truetype"), url("../fonts/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular.woff2") format("woff2");
+  src: url("../fonts/roboto-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto-regular.svg#roboto-regular") format("svg"),
+    url("../fonts/roboto-regular.ttf") format("truetype"),
+    url("../fonts/roboto-regular.woff") format("woff"),
+    url("../fonts/roboto-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,7 +15,11 @@
 @font-face {
   font-family: "roboto-bold";
   src: url("../fonts/roboto-bold.eot");
-  src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold.svg#roboto-bold") format("svg"), url("../fonts/roboto-bold.ttf") format("truetype"), url("../fonts/roboto-bold.woff") format("woff"), url("../fonts/roboto-bold.woff2") format("woff2");
+  src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto-bold.svg#roboto-bold") format("svg"),
+    url("../fonts/roboto-bold.ttf") format("truetype"),
+    url("../fonts/roboto-bold.woff") format("woff"),
+    url("../fonts/roboto-bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -20,7 +28,10 @@
   padding: 0px;
   font-family: "roboto-regular";
 }
-
+/* body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+} */
 /** header start **/
 
 header {
@@ -128,7 +139,11 @@ ul {
   font-size: 14px !important;
 }
 
-input, button, select, optgroup, textarea {
+input,
+button,
+select,
+optgroup,
+textarea {
   font-family: "roboto-regular";
 }
 
@@ -150,12 +165,12 @@ input, button, select, optgroup, textarea {
 }
 
 .btn-primary-save {
-  background-color: #01A450;
+  background-color: #01a450;
   color: #ffffff;
 }
 
 .btn-outline-primary-cancel {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #33333366;
 }
 
@@ -163,18 +178,19 @@ input, button, select, optgroup, textarea {
   font-size: 10px !important;
 }
 
-.btn-primary, .btn-primary:hover {
-  background-color: #0078D4;
+.btn-primary,
+.btn-primary:hover {
+  background-color: #0078d4;
 }
 
 .btn-outline-primary {
-  color: #0078D4;
-  border-color: #0078D4;
+  color: #0078d4;
+  border-color: #0078d4;
 }
 
 .btn-outline-primary:hover {
   background-color: transparent;
-  color: #0078D4;
+  color: #0078d4;
 }
 
 .innerScrollBar::-webkit-scrollbar {
@@ -207,7 +223,7 @@ input, button, select, optgroup, textarea {
 
 .form-group label span {
   font-size: 10px;
-  color: #0078D4;
+  color: #0078d4;
   position: relative;
   top: -4px;
   left: 2px;
@@ -222,7 +238,8 @@ input, button, select, optgroup, textarea {
   border-bottom: 1px solid #e9e7ea;
 }
 
-.searchArea .input-group, .searchArea .form-control {
+.searchArea .input-group,
+.searchArea .form-control {
   height: 35px;
   border-radius: 0px;
   border: none;
@@ -276,11 +293,13 @@ input, button, select, optgroup, textarea {
   margin-left: auto;
 }
 
-.input-group, .form-control {
+.input-group,
+.form-control {
   height: 30px;
 }
 
-.form-control::placeholder, .form-control {
+.form-control::placeholder,
+.form-control {
   font-size: 13px;
 }
 
@@ -299,7 +318,8 @@ input, button, select, optgroup, textarea {
   padding-left: 16px;
 }
 
-.menuArea li:hover, .menuArea li.activeMenu {
+.menuArea li:hover,
+.menuArea li.activeMenu {
   background-color: #f8f9fb;
 }
 
@@ -410,7 +430,7 @@ input, button, select, optgroup, textarea {
 }
 
 .statusListDivinner.active {
-  box-shadow: 0px 0px 4px rgb(0 120 212 / 40%)
+  box-shadow: 0px 0px 4px rgb(0 120 212 / 40%);
 }
 
 .statusListDivinner h1 {
@@ -456,9 +476,10 @@ thead tr th {
   border-radius: 2px;
 }
 
-th, td {
+th,
+td {
   padding: 0px 16px;
-  color: #333333;
+  color: #80807f;
   font-size: 13px;
 }
 
@@ -498,7 +519,7 @@ tbody tr p img {
 
 /** chart area start **/
 
-.chartArea>div {
+.chartArea > div {
   margin-bottom: 16px;
 }
 
@@ -551,7 +572,7 @@ tbody tr p img {
   font-size: 12px;
 }
 
-.bookGrid>div {
+.bookGrid > div {
   margin-bottom: 16px;
 }
 
@@ -564,7 +585,7 @@ tbody tr p img {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-bottom: 0;
-  color: #ccc
+  color: #ccc;
 }
 
 .bookIconOption {
@@ -574,7 +595,8 @@ tbody tr p img {
   z-index: 10;
 }
 
-.bookIconOption ul li, .listStyle li {
+.bookIconOption ul li,
+.listStyle li {
   list-style: none;
   display: inline;
   cursor: pointer;
@@ -621,7 +643,7 @@ tbody tr p img {
 }
 
 .bookDescList li p {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   border-radius: 25px;
   padding: 4px 8px;
   margin-bottom: 0px;
@@ -644,12 +666,12 @@ tbody tr p img {
 
 .completeProgressBar {
   height: 5px;
-  background-color: #0846A914;
+  background-color: #0846a914;
   border-radius: 5px;
 }
 
 .completeProgressBarInner {
-  background-color: #0846A93D;
+  background-color: #0846a93d;
   height: 5px;
   border-radius: 5px;
 }
@@ -674,7 +696,7 @@ tbody tr p img {
 }
 
 .selectProof p {
-  background-color: #48D6D2 !important;
+  background-color: #48d6d2 !important;
   color: #fff !important;
 }
 
@@ -692,7 +714,8 @@ tbody tr p img {
   padding: 6px 16px;
 }
 
-.bookViewScreen.active .bookGrid, .listGrid {
+.bookViewScreen.active .bookGrid,
+.listGrid {
   display: none;
 }
 
@@ -739,9 +762,9 @@ tbody tr p img {
 }
 
 .bookDetailTabList li a.active:before {
-  content: '';
+  content: "";
   height: 2px;
-  background-color: #0078D4;
+  background-color: #0078d4;
   width: 100%;
   bottom: -1px;
   position: absolute;
@@ -749,8 +772,8 @@ tbody tr p img {
 }
 
 .accordion {
-  background-color: #F8F9FB;
-  color: #333333;
+  background-color: #f8f9fb;
+  color: #858585;
   cursor: pointer;
   padding: 0px 16px;
   width: 100%;
@@ -776,7 +799,7 @@ tbody tr p img {
 .accordion .fa {
   margin-right: 4px;
   transition: 0.5s;
-  color: #333333;
+  color: #858585;
 }
 
 .accordion.active .fa {
@@ -784,8 +807,8 @@ tbody tr p img {
 }
 
 .changeCoverBtn {
-  color: #0078D4;
-  border: 1px solid #0078D4;
+  color: #0078d4;
+  border: 1px solid #0078d4;
   border-radius: 4px;
   width: 100%;
   margin-bottom: 8px;
@@ -822,7 +845,10 @@ tbody tr p img {
   right: 16px;
   top: 12px;
 }
-
+.panel .form-group label,
+.panel .form-control {
+  color: #858585;
+}
 /** book page style end **/
 
 /** media query start
