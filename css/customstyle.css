@@ -1,4 +1,5 @@
 /** fornt import **/
+@import url("font-awesome.min.css");
 
 @font-face {
   font-family: "roboto-regular";
@@ -148,7 +149,9 @@ input, button, select, optgroup, textarea {
   height: 26px;
   padding: 0px 16px;
 }
-
+.modal-title{
+  font-size: 1rem;
+}
 .btn-primary-save {
   background-color: #01A450;
   color: #ffffff;
@@ -177,14 +180,14 @@ input, button, select, optgroup, textarea {
   color: #0078D4;
 }
 
-.innerScrollBar::-webkit-scrollbar {
+::-webkit-scrollbar{
   width: 4px;
   height: 4px;
   cursor: default;
   background-color: #c8c6c4;
 }
 
-.innerScrollBar::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
   background-color: #8c8b8a;
   border-radius: 2px;
   /* outline: 1px solid slategrey; */
@@ -212,7 +215,34 @@ input, button, select, optgroup, textarea {
   top: -4px;
   left: 2px;
 }
+.dataTables_filter label {
+  display: inline;
+}
+.dataTables_filter label input{
+  width:60% !important;
+  margin-right: 30px;
+}
+.dataTables_filter{position: relative;}
+.dataTables_filter:after{
+  font-family: 'FontAwesome';
+  content: "\f002";
+  width: 30px;
+  height: 30px;
+  background-color: #0078d4;
+  position: absolute;
+  right: 2px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  text-align: center;
+  color: #fff;
+  line-height: 28px;
+}
 
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 650px;
+}
+}
 /** common style end **/
 
 /** leftsidebar start **/
@@ -384,7 +414,16 @@ input, button, select, optgroup, textarea {
 .filterArea {
   margin-bottom: 16px;
 }
-
+.tab-pane{
+  position: relative;
+}
+.tab-pane .filterArea{
+  position: absolute;
+  z-index: 1;
+}
+#Queries .filterArea, #BookProperties .filterArea{
+  position: relative;
+}
 /** filter area end **/
 
 /** statusListDiv start **/
@@ -437,7 +476,7 @@ input, button, select, optgroup, textarea {
   max-height: 305px;
 }
 
-.tableFixHead thead th {
+table thead th {
   position: sticky;
   top: 0;
   z-index: 1;
@@ -456,7 +495,7 @@ thead tr th {
   border-radius: 2px;
 }
 
-th, td {
+th, td , .table th, .table td{
   padding: 0px 16px;
   color: #80807f;
   font-size: 12px;
@@ -469,17 +508,32 @@ tbody tr {
   line-height: 40px;
   border-radius: 2px;
 }
-
-tbody tr p {
+.table-striped tbody tr:nth-of-type(odd){
+  background-color: #f8f9fb !important;
+}
+.dataTables_scrollHeadInner, div.dataTables_scrollHead table.table-bordered{
+  width:100% !important;
+}
+.table-bordered, .table th, .table td, .table-bordered th, .table-bordered td{
+  border:none;
+}
+.table-bordered thead th, .table-bordered thead td{
+  border-bottom-width: 4px;
+}
+.table thead th , .table-bordered td{
+  vertical-align: bottom;
+  border-bottom: 4px solid #ffffff !important;
+}
+tbody tr, table.dataTable td, table.dataTable th {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin: 0px;
-  max-width: 200px;
+  max-width: 125px;
   font-size: 12px;
 }
 
-tbody tr p img {
+tbody tr img {
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -494,6 +548,9 @@ tbody tr p img {
   color: #a9aaab;
 }
 
+table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:before, table.dataTable>thead .sorting_asc:after, table.dataTable>thead .sorting_desc:before, table.dataTable>thead .sorting_desc:after, table.dataTable>thead .sorting_asc_disabled:before, table.dataTable>thead .sorting_asc_disabled:after, table.dataTable>thead .sorting_desc_disabled:before, table.dataTable>thead .sorting_desc_disabled:after{
+  bottom:0em !important;
+}
 /**table end **/
 
 /** chart area start **/
@@ -805,7 +862,7 @@ tbody tr p img {
   max-height: 90%;
 }
 
-.tableFixHead .form-check-input {
+.form-check-input {
   position: relative;
   margin: 0px;
   top: 2px;
