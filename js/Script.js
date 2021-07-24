@@ -30,6 +30,14 @@ $(document).ready(function () {
         });
     }
     //accordion end
-
-    $('#example').DataTable();
+    $('#tocTable, #ChaptersTable, #UsersTable, #InstructionsTable, #FilesTable').DataTable({
+        "paging": false,
+        "info": false,
+        language: { search: '', searchPlaceholder: "Search..." },
+        "stripeClasses": [],
+        fixedHeader: true,
+        scrollY: '45vh',
+        scrollX: true,
+        scrollCollapse: true,
+    });
 });
