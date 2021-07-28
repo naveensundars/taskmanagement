@@ -101,7 +101,7 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  border-top: 1px solid #e9e7ea;
+  border-top: 1px solid #e1e1e1;
   padding: 0px 16px;
 }
 
@@ -130,7 +130,7 @@ ul {
 }
 
 input, button, select, optgroup, textarea {
-  font-family: "roboto-regular";
+  font-weight: 600;
 }
 
 .iconsSvg {
@@ -273,7 +273,7 @@ input, button, select, optgroup, textarea {
 
 .searchArea {
   height: 36px;
-  border-bottom: 1px solid #e9e7ea;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .searchArea .input-group, .searchArea .form-control {
@@ -394,7 +394,7 @@ input, button, select, optgroup, textarea {
 
 .leftsideBar {
   width: 200px;
-  border-right: 1px solid #e9e7ea;
+  border-right: 1px solid #e1e1e1;
   height: calc(100vh - 60px);
 }
 
@@ -413,7 +413,7 @@ input, button, select, optgroup, textarea {
 /** beardScrumList start **/
 
 .beardScrumListTop {
-  border-bottom: 1px solid #e9e7ea;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .beardScrumListTop ul {
@@ -448,7 +448,7 @@ input, button, select, optgroup, textarea {
   z-index: 1;
 }
 
-#Queries .filterArea, #BookProperties .filterArea {
+#Queries .filterArea, #BookProperties .filterArea, #Milestone .filterArea {
   position: relative;
 }
 
@@ -482,7 +482,7 @@ input, button, select, optgroup, textarea {
 
 .statusListDivinner h1 {
   font-size: 1.5vw;
-  font-family: "roboto-bold";
+  font-weight: 600;
   margin: 0px;
 }
 
@@ -518,8 +518,8 @@ table {
 
 thead tr th {
   background-color: #f3f2f1;
-  height: 42px;
-  line-height: 42px;
+  height: 38px;
+  line-height: 38px;
   border-radius: 2px;
 }
 
@@ -532,8 +532,8 @@ th, td, .table th, .table td {
 tbody tr {
   background-color: #f8f9fb;
   border-top: 4px solid #fff;
-  height: 40px;
-  line-height: 40px;
+  height: 38px;
+  line-height: 38px;
   border-radius: 2px;
 }
 
@@ -558,7 +558,7 @@ tbody tr {
   border-bottom: 4px solid #ffffff !important;
 }
 
-tbody tr, table.dataTable td, table.dataTable th {
+tbody tr, table.dataTable td, table.dataTable th, tbody tr td, tbody tr td p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -586,6 +586,15 @@ table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, tab
   bottom: 0em !important;
 }
 
+.statusTxt {
+  position: absolute;
+  top: 6px;
+}
+
+tbody td .completeProgressBar {
+  margin-left: 25px;
+}
+
 /**table end **/
 
 /** chart area start **/
@@ -595,7 +604,7 @@ table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, tab
 }
 
 .chartAreaInner {
-  border: 1px solid #e9e7ea;
+  border: 1px solid #e1e1e1;
   padding: 8px 0px;
   border-radius: 4px;
   background-color: #ffffff;
@@ -606,7 +615,7 @@ table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, tab
 }
 
 .highcharts-title {
-  font-family: "roboto-bold";
+  font-weight: 600;
 }
 
 .highcharts-container {
@@ -625,7 +634,7 @@ table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, tab
 
 .bookCoverImg {
   border-radius: 4px;
-  border: 1px solid #e9e7ea;
+  border: 1px solid #e1e1e1;
 }
 
 .bookHeadingTop {
@@ -693,7 +702,7 @@ table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, tab
 
 .bookDescGroup h1 {
   font-size: 16px;
-  font-family: "roboto-bold";
+  font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -730,7 +739,7 @@ table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, tab
 }
 
 .updateDesc span {
-  font-family: "roboto-bold";
+  font-weight: 600;
   color: #333333;
 }
 
@@ -758,7 +767,7 @@ table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, tab
 
 .bookFlipBack h2 {
   font-size: 16px;
-  font-family: "roboto-bold";
+  font-weight: 600;
 }
 
 .bookFlip .bookFlipFront {
@@ -786,6 +795,7 @@ table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, tab
   max-width: 120px;
   min-width: 80px;
   padding: 6px 16px;
+  position: relative;
 }
 
 .bookViewScreen.active .bookGrid, .listGrid {
@@ -979,6 +989,113 @@ table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, tab
   margin: 8px 0px;
   color: #3333339c;
   font-size: 13px;
+}
+
+.MilestoneHeader .row {
+  background-color: #F3F2F1;
+  height: 38px;
+  padding: 0px 16px;
+  margin: 0px;
+}
+
+.MilestoneHeader p {
+  font-size: 13px;
+  margin-bottom: 0px;
+  line-height: 38px;
+  font-weight: 600;
+}
+
+.timeLineArea li {
+  border-radius: 2px;
+  margin: 5px 0px;
+  padding: 0px 4px;
+}
+
+.timeLineArea, .timeLineAreaChild, .timeLineAreaSecondChild {
+  position: relative;
+}
+
+.timeLineAreaSecondChild {
+  padding: 0px 56px;
+}
+
+.timeLineAreaSecondChild li {
+  display: flex;
+  position: relative;
+  padding: 0px 32px;
+}
+
+.timeLineArea:before, .timeLineAreaChild:before, .timeLineAreaSecondChild:before {
+  content: '';
+  width: 1px;
+  background-color: #e1e1e1;
+  height: 100%;
+  position: absolute;
+  left: 33px;
+  z-index: -1;
+}
+
+.timeLineAreaChild:before {
+  left: 77px;
+}
+
+.timeLineAreaSecondChild:before {
+  left: 71px;
+  top: 10px;
+  height: 70%;
+}
+
+.timeLineArea li .row {
+  padding: 0px 16px;
+  margin: 0px;
+  background-color: #F8F9FB;
+}
+
+.timeLineAreaSecondChild .circleAreaTime {
+  width: 16px;
+  height: 16px;
+  left: 7px;
+  top: 9px;
+}
+
+.timeLineArea li p {
+  margin: 0px;
+  font-size: 12px;
+  line-height: 34px;
+}
+
+.timeLineHead {
+  padding-left: 36px;
+  display: flex;
+  position: relative;
+}
+
+.timeLineHead p {
+  font-weight: 600;
+  font-size: 14px !important;
+}
+
+.timeLineHead .fa {
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  transition: 0.5s;
+  color: #858585;
+}
+
+.timeLineAreaChild {
+  padding: 0px 42px;
+}
+
+.circleAreaTime {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #EFEFEF;
+  position: absolute;
+  left: 5px;
+  top: 6px;
 }
 
 /** book page style end **/
