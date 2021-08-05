@@ -29,6 +29,16 @@ $(document).ready(function () {
             }
         });
     }
+    //login password 
+    $('.passwordIcons').click(function () {
+        $(this).toggleClass('hide');
+        if ($('#Password').attr("type") === "text") {
+            $('#Password').attr("type", "password");
+        } else {
+            $('#Password').attr("type", "text");
+        }
+
+    });
     //accordion end
     $('#tocTable, #ChaptersTable, #UsersTable, #InstructionsTable, #FilesTable').DataTable({
         "paging": false,
@@ -40,4 +50,5 @@ $(document).ready(function () {
         scrollX: true,
         scrollCollapse: true,
     });
+
 });
