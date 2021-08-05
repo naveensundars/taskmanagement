@@ -205,6 +205,10 @@ input, button, select, optgroup, textarea {
   transition: 0.5s;
 }
 
+.form-group {
+  text-align: left;
+}
+
 .form-group label {
   font-size: 13px;
   font-weight: 600;
@@ -400,12 +404,12 @@ input, button, select, optgroup, textarea {
 
 .mainBody {
   width: calc(100% - 200px);
-  height: calc(100vh - 60px);
-  overflow: auto;
 }
 
 .mainBodyInner {
   padding: 16px;
+  height: calc(100vh - 77px);
+  overflow: auto;
 }
 
 /** container-fluidInner end **/
@@ -418,13 +422,13 @@ input, button, select, optgroup, textarea {
 
 .beardScrumListTop ul {
   height: 35px;
-  display: inline-block;
 }
 
 .beardScrumListTop ul li {
   line-height: 35px;
   padding: 0px 16px;
   font-size: 1vw;
+  display: inline-block;
 }
 
 .beardScrumListTop ul li.active {
@@ -1099,6 +1103,163 @@ tbody td .completeProgressBar {
 }
 
 /** book page style end **/
+
+/** login start **/
+
+.loginPageArea {
+  padding: 48px;
+  background-color: #0846A9;
+}
+
+.loginPageAreaInner {
+  border-radius: 5px;
+  background-image: url("../images/bookImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loginPageAreaInner>div {
+  height: calc(100vh - 96px);
+  position: relative;
+}
+
+.loginRightSide {
+  width: 350px;
+  max-width: 350px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.loginRightSide input {
+  background-color: #F4F5F7;
+  border-color: #F4F5F7;
+}
+
+.loginRightSideOuter {
+  border-left: 1px solid #e1e1e1;
+  background-color: #fff;
+}
+
+.loginRightSide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loginRightSide h1 {
+  font-size: 44px;
+  margin: 0px;
+  font-size: 600;
+}
+
+.loginRightSide p {
+  font-size: 14px;
+  color: #858585;
+  margin: 0px;
+}
+
+.loginRightSide .form-group label {
+  color: #858585;
+}
+
+.loginRightSide button {
+  width: 100%;
+  height: 30px;
+  margin-top: 16px;
+}
+
+.checkBoxArea {
+  padding: 0px 16px;
+  font-size: 12px;
+  color: #858585;
+}
+
+.checkBoxArea {
+  display: flex;
+  width: 100%;
+}
+
+.checkBoxArea>div {
+  width: 50%;
+}
+
+.rememberBox {
+  text-align: start;
+}
+
+.forgetPass {
+  text-align: end;
+}
+
+.loginRightSide .form-group {
+  position: relative;
+}
+
+.passwordIcons {
+  position: absolute;
+  right: 24px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.passwordIcons .fa-eye, .passwordIcons.hide .fa-eye-slash {
+  display: none;
+}
+
+.passwordIcons .fa-eye-slash, .passwordIcons.hide .fa-eye {
+  display: block;
+}
+
+.logoLogin {
+  margin: 28px 16px;
+}
+
+.versionTextArea h1 {
+  font-size: 24px;
+  margin: 12px 0px;
+}
+
+.versionTextArea {
+  position: absolute;
+  width: 100%;
+  bottom: 32px;
+  left: 0px;
+  padding: 8px 8px 8px 16px;
+  background-image: linear-gradient(to right, #fff, rgb(255 255 255 / 20%));
+}
+
+.versionTextArea p {
+  font-size: 13px;
+  margin: 6px 0px;
+}
+
+.versionTextArea ul {
+  padding-left: 26px;
+}
+
+.versionTextArea ul li {
+  position: relative;
+}
+
+.versionTextArea ul li::before {
+  content: "-";
+  position: absolute;
+  left: -10px;
+  top: -4px;
+}
+
+.loginFooter {
+  font-size: 12px;
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  color: #858585;
+}
+
+/** login end **/
 
 /** media query start **/
 
