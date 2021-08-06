@@ -1,6 +1,7 @@
 /** fornt import **/
 
 @import url("font-awesome.min.css");
+@import url("taskPaginator.css");
 @font-face {
   font-family: "roboto-regular";
   src: url("../fonts/roboto-regular.eot");
@@ -154,7 +155,7 @@ input, button, select, optgroup, textarea {
   font-size: 1rem;
 }
 
-.btn-primary-save {
+.btn-primary-save, .btn-primary-save:hover {
   background-color: #01A450;
   color: #ffffff;
 }
@@ -426,7 +427,7 @@ input, button, select, optgroup, textarea {
 
 .beardScrumListTop ul li {
   line-height: 35px;
-  padding: 0px 16px;
+  padding: 0px 18px;
   font-size: 1vw;
   display: inline-block;
 }

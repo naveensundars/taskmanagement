@@ -1,0 +1,93 @@
+/** task paginator start **/
+
+.taskPaginatorInner, .taskDetailsHead {
+    display: flex;
+}
+
+.taskLeft {
+    width: 350px;
+    padding: 8px;
+    height: calc(100vh - 95px);
+    overflow: auto;
+}
+
+.taskRight {
+    width: calc(100% - 350px);
+    padding: 8px;
+    height: calc(100vh - 95px);
+    border-left: 1px solid #e1e1e1;
+}
+
+/* .taskLeft .SearchInputArea {
+    position: sticky;
+    top: 0;
+} */
+
+.taskLeft .input-group {
+    width: 100% !important;
+    margin-bottom: 5px;
+}
+
+.mainBodyInner.taskPaginator, .taskPaginatorInner .panel {
+    padding: 0px;
+}
+
+.taskPaginatorInner .accordion {
+    margin: 2px 0px;
+}
+
+.taskDetailsBox {
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    padding: 8px;
+    margin: 3px 0px;
+}
+
+.taskDetailsBox h1 {
+    font-size: 16px;
+    margin: 5px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px 0px;
+}
+
+.taskDetailsBox p {
+    font-size: 11px;
+    margin: 8px 0px 0px 0px;
+    color: #858585;
+}
+
+.taskDetailsBox p strong {
+    color: #000;
+}
+
+.taskDetailsHead p {
+    margin: 0px 0px 5px 0px;
+}
+
+.taskDetailsHead div {
+    width: 50%;
+}
+
+.taskRightHeader h1 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.taskPaginatorInner .tableArea {
+    margin-top: 16px;
+}
+
+.taskRightHeader {
+    position: relative;
+}
+
+.closeIcons {
+    position: absolute;
+    right: 16px;
+    top: -3px;
+    font-size: 26px !important;
+}
+
+/** task paginator end **/
