@@ -51,4 +51,15 @@ $(document).ready(function () {
         scrollCollapse: true,
     });
 
+    $('#paginatorTable').DataTable({
+        "paging": false,
+        "info": false,
+        "search":false,
+        "stripeClasses": [],
+        fixedHeader: true,
+        scrollY: '45vh',
+        scrollX: true,
+        scrollCollapse: true,
+    });
+
 });
