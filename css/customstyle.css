@@ -5,7 +5,11 @@
 @font-face {
   font-family: "roboto-regular";
   src: url("../fonts/roboto-regular.eot");
-  src: url("../fonts/roboto-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular.svg#roboto-regular") format("svg"), url("../fonts/roboto-regular.ttf") format("truetype"), url("../fonts/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular.woff2") format("woff2");
+  src: url("../fonts/roboto-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto-regular.svg#roboto-regular") format("svg"),
+    url("../fonts/roboto-regular.ttf") format("truetype"),
+    url("../fonts/roboto-regular.woff") format("woff"),
+    url("../fonts/roboto-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +17,11 @@
 @font-face {
   font-family: "roboto-bold";
   src: url("../fonts/roboto-bold.eot");
-  src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold.svg#roboto-bold") format("svg"), url("../fonts/roboto-bold.ttf") format("truetype"), url("../fonts/roboto-bold.woff") format("woff"), url("../fonts/roboto-bold.woff2") format("woff2");
+  src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto-bold.svg#roboto-bold") format("svg"),
+    url("../fonts/roboto-bold.ttf") format("truetype"),
+    url("../fonts/roboto-bold.woff") format("woff"),
+    url("../fonts/roboto-bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -130,7 +138,11 @@ ul {
   font-size: 14px !important;
 }
 
-input, button, select, optgroup, textarea {
+input,
+button,
+select,
+optgroup,
+textarea {
   font-weight: 600;
 }
 
@@ -145,18 +157,19 @@ input, button, select, optgroup, textarea {
 }
 
 .btn {
-  font-size: 10px;
+  font-size: 12px;
   margin-right: 8px;
-  height: 26px;
-  padding: 0px 16px;
+  height: 28px;
+  padding: 0px 20px;
 }
 
 .modal-title {
   font-size: 1rem;
 }
 
-.btn-primary-save, .btn-primary-save:hover {
-  background-color: #01A450;
+.btn-primary-save,
+.btn-primary-save:hover {
+  background-color: #01a450;
   color: #ffffff;
 }
 
@@ -169,18 +182,19 @@ input, button, select, optgroup, textarea {
   font-size: 10px !important;
 }
 
-.btn-primary, .btn-primary:hover {
-  background-color: #0078D4;
+.btn-primary,
+.btn-primary:hover {
+  background-color: #0078d4;
 }
 
 .btn-outline-primary {
-  color: #0078D4;
-  border-color: #0078D4;
+  color: #0078d4;
+  border-color: #0078d4;
 }
 
 .btn-outline-primary:hover {
   background-color: transparent;
-  color: #0078D4;
+  color: #0078d4;
 }
 
 ::-webkit-scrollbar {
@@ -217,7 +231,7 @@ input, button, select, optgroup, textarea {
 
 .form-group label span {
   font-size: 10px;
-  color: #0078D4;
+  color: #0078d4;
   position: relative;
   top: -4px;
   left: 2px;
@@ -226,18 +240,28 @@ input, button, select, optgroup, textarea {
 .dataTables_filter label {
   display: inline;
 }
-
-.dataTables_filter label input {
-  width: 60% !important;
-  margin-right: 30px;
+div.dataTables_filter {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-left: auto;
 }
-
+.dataTables_filter label input {
+  width: 45% !important;
+  margin-right: 30px;
+  border: 1px solid #e1e1e1;
+  padding: 2px 8px;
+  border-radius: 2px;
+  font-family: system-ui;
+}
+.dataTables_filter label input::placeholder {
+  font-size: 13px;
+}
 .dataTables_filter {
   position: relative;
 }
 
 .dataTables_filter:after {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   content: "\f002";
   width: 30px;
   height: 30px;
@@ -281,7 +305,8 @@ input, button, select, optgroup, textarea {
   border-bottom: 1px solid #e1e1e1;
 }
 
-.searchArea .input-group, .searchArea .form-control {
+.searchArea .input-group,
+.searchArea .form-control {
   height: 35px;
   border-radius: 0px;
   border: none;
@@ -335,11 +360,13 @@ input, button, select, optgroup, textarea {
   margin-left: auto;
 }
 
-.input-group, .form-control {
+.input-group,
+.form-control {
   height: 32px;
 }
 
-.form-control::placeholder, .form-control {
+.form-control::placeholder,
+.form-control {
   font-size: 13px;
 }
 
@@ -358,7 +385,8 @@ input, button, select, optgroup, textarea {
   padding-left: 16px;
 }
 
-.menuArea li:hover, .menuArea li.activeMenu {
+.menuArea li:hover,
+.menuArea li.activeMenu {
   background-color: #f8f9fb;
 }
 
@@ -372,21 +400,13 @@ input, button, select, optgroup, textarea {
   background-color: #0846a9;
 }
 
-.menuArea li a {
+.menuArea li .nav-link {
   text-decoration: none;
   display: flex;
-}
-
-.menuArea li img {
-  position: absolute;
-  top: 7px;
-}
-
-.menuArea li p {
   margin: 0px;
-  margin-left: 26px;
   color: #333333;
   font-size: 13px;
+  cursor: pointer;
 }
 
 /** leftsidebar end **/
@@ -453,7 +473,9 @@ input, button, select, optgroup, textarea {
   z-index: 1;
 }
 
-#Queries .filterArea, #BookProperties .filterArea, #Milestone .filterArea {
+#Queries .filterArea,
+#BookProperties .filterArea,
+#Milestone .filterArea {
   position: relative;
 }
 
@@ -482,7 +504,7 @@ input, button, select, optgroup, textarea {
 }
 
 .statusListDivinner.active {
-  box-shadow: 0px 0px 4px rgb(0 120 212 / 40%)
+  box-shadow: 0px 0px 4px rgb(0 120 212 / 40%);
 }
 
 .statusListDivinner h1 {
@@ -528,7 +550,10 @@ thead tr th {
   border-radius: 2px;
 }
 
-th, td, .table th, .table td {
+th,
+td,
+.table th,
+.table td {
   padding: 0px 16px;
   color: #80807f;
   font-size: 12px;
@@ -546,24 +571,35 @@ tbody tr {
   background-color: #f8f9fb !important;
 }
 
-.dataTables_scrollHeadInner, div.dataTables_scrollHead table.table-bordered {
+.dataTables_scrollHeadInner,
+div.dataTables_scrollHead table.table-bordered {
   width: 100% !important;
 }
 
-.table-bordered, .table th, .table td, .table-bordered th, .table-bordered td {
+.table-bordered,
+.table th,
+.table td,
+.table-bordered th,
+.table-bordered td {
   border: none;
 }
 
-.table-bordered thead th, .table-bordered thead td {
+.table-bordered thead th,
+.table-bordered thead td {
   border-bottom-width: 4px;
 }
 
-.table thead th, .table-bordered td {
+.table thead th,
+.table-bordered td {
   vertical-align: bottom;
   border-bottom: 4px solid #ffffff !important;
 }
 
-tbody tr, table.dataTable td, table.dataTable th, tbody tr td, tbody tr td p {
+tbody tr,
+table.dataTable td,
+table.dataTable th,
+tbody tr td,
+tbody tr td p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -587,7 +623,16 @@ tbody tr img {
   color: #a9aaab;
 }
 
-table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:before, table.dataTable>thead .sorting_asc:after, table.dataTable>thead .sorting_desc:before, table.dataTable>thead .sorting_desc:after, table.dataTable>thead .sorting_asc_disabled:before, table.dataTable>thead .sorting_asc_disabled:after, table.dataTable>thead .sorting_desc_disabled:before, table.dataTable>thead .sorting_desc_disabled:after {
+table.dataTable > thead .sorting:before,
+table.dataTable > thead .sorting:after,
+table.dataTable > thead .sorting_asc:before,
+table.dataTable > thead .sorting_asc:after,
+table.dataTable > thead .sorting_desc:before,
+table.dataTable > thead .sorting_desc:after,
+table.dataTable > thead .sorting_asc_disabled:before,
+table.dataTable > thead .sorting_asc_disabled:after,
+table.dataTable > thead .sorting_desc_disabled:before,
+table.dataTable > thead .sorting_desc_disabled:after {
   bottom: 0em !important;
 }
 
@@ -604,7 +649,7 @@ tbody td .completeProgressBar {
 
 /** chart area start **/
 
-.chartArea>div {
+.chartArea > div {
   margin-bottom: 16px;
 }
 
@@ -658,7 +703,7 @@ tbody td .completeProgressBar {
   font-size: 12px;
 }
 
-.bookGrid>div {
+.bookGrid > div {
   margin-bottom: 16px;
   width: 225px;
   min-width: 225px;
@@ -673,7 +718,7 @@ tbody td .completeProgressBar {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-bottom: 0;
-  color: #ccc
+  color: #ccc;
 }
 
 .bookIconOption {
@@ -683,7 +728,8 @@ tbody td .completeProgressBar {
   z-index: 10;
 }
 
-.bookIconOption ul li, .listStyle li {
+.bookIconOption ul li,
+.listStyle li {
   list-style: none;
   display: inline;
   cursor: pointer;
@@ -730,7 +776,7 @@ tbody td .completeProgressBar {
 }
 
 .bookDescList li p {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   border-radius: 25px;
   padding: 4px 8px;
   margin-bottom: 0px;
@@ -754,12 +800,12 @@ tbody td .completeProgressBar {
 
 .completeProgressBar {
   height: 5px;
-  background-color: #0846A914;
+  background-color: #0846a914;
   border-radius: 5px;
 }
 
 .completeProgressBarInner {
-  background-color: #0846A93D;
+  background-color: #0846a93d;
   height: 5px;
   border-radius: 5px;
 }
@@ -784,7 +830,7 @@ tbody td .completeProgressBar {
 }
 
 .selectProof p {
-  background-color: #48D6D2 !important;
+  background-color: #48d6d2 !important;
   color: #fff !important;
 }
 
@@ -803,7 +849,8 @@ tbody td .completeProgressBar {
   position: relative;
 }
 
-.bookViewScreen.active .bookGrid, .listGrid {
+.bookViewScreen.active .bookGrid,
+.listGrid {
   display: none;
 }
 
@@ -850,9 +897,9 @@ tbody td .completeProgressBar {
 }
 
 .bookDetailTabList li a.active:before {
-  content: '';
+  content: "";
   height: 2px;
-  background-color: #0078D4;
+  background-color: #0078d4;
   width: 100%;
   bottom: -1px;
   position: absolute;
@@ -934,7 +981,8 @@ tbody td .completeProgressBar {
   top: 12px;
 }
 
-.panel .form-group label, .panel .form-control {
+.panel .form-group label,
+.panel .form-control {
   color: #858585;
 }
 
@@ -970,7 +1018,7 @@ tbody td .completeProgressBar {
 
 .profAreaDif {
   padding: 8px 16px;
-  background-color: #F2F6F9;
+  background-color: #f2f6f9;
   border-radius: 7px;
   font-size: 12px;
   position: relative;
@@ -997,7 +1045,7 @@ tbody td .completeProgressBar {
 }
 
 .MilestoneHeader .row {
-  background-color: #F3F2F1;
+  background-color: #f3f2f1;
   height: 38px;
   padding: 0px 16px;
   margin: 0px;
@@ -1016,7 +1064,9 @@ tbody td .completeProgressBar {
   padding: 0px 4px;
 }
 
-.timeLineArea, .timeLineAreaChild, .timeLineAreaSecondChild {
+.timeLineArea,
+.timeLineAreaChild,
+.timeLineAreaSecondChild {
   position: relative;
 }
 
@@ -1030,8 +1080,10 @@ tbody td .completeProgressBar {
   padding: 0px 32px;
 }
 
-.timeLineArea:before, .timeLineAreaChild:before, .timeLineAreaSecondChild:before {
-  content: '';
+.timeLineArea:before,
+.timeLineAreaChild:before,
+.timeLineAreaSecondChild:before {
+  content: "";
   width: 1px;
   background-color: #e1e1e1;
   height: 100%;
@@ -1053,7 +1105,7 @@ tbody td .completeProgressBar {
 .timeLineArea li .row {
   padding: 0px 16px;
   margin: 0px;
-  background-color: #F8F9FB;
+  background-color: #f8f9fb;
 }
 
 .timeLineAreaSecondChild .circleAreaTime {
@@ -1097,7 +1149,7 @@ tbody td .completeProgressBar {
   height: 20px;
   border-radius: 50%;
   border: 2px solid #fff;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   position: absolute;
   left: 5px;
   top: 6px;
@@ -1109,7 +1161,7 @@ tbody td .completeProgressBar {
 
 .loginPageArea {
   padding: 48px;
-  background-color: #0846A9;
+  background-color: #0846a9;
 }
 
 .loginPageAreaInner {
@@ -1119,7 +1171,7 @@ tbody td .completeProgressBar {
   background-size: cover;
 }
 
-.loginPageAreaInner>div {
+.loginPageAreaInner > div {
   height: calc(100vh - 96px);
   position: relative;
 }
@@ -1132,8 +1184,8 @@ tbody td .completeProgressBar {
 }
 
 .loginRightSide input {
-  background-color: #F4F5F7;
-  border-color: #F4F5F7;
+  background-color: #f4f5f7;
+  border-color: #f4f5f7;
 }
 
 .loginRightSideOuter {
@@ -1181,7 +1233,7 @@ tbody td .completeProgressBar {
   width: 100%;
 }
 
-.checkBoxArea>div {
+.checkBoxArea > div {
   width: 50%;
 }
 
@@ -1204,11 +1256,13 @@ tbody td .completeProgressBar {
   cursor: pointer;
 }
 
-.passwordIcons .fa-eye, .passwordIcons.hide .fa-eye-slash {
+.passwordIcons .fa-eye,
+.passwordIcons.hide .fa-eye-slash {
   display: none;
 }
 
-.passwordIcons .fa-eye-slash, .passwordIcons.hide .fa-eye {
+.passwordIcons .fa-eye-slash,
+.passwordIcons.hide .fa-eye {
   display: block;
 }
 

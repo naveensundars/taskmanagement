@@ -1,21 +1,22 @@
 /** task paginator start **/
 
-.taskPaginatorInner, .taskDetailsHead {
-    display: flex;
+.taskPaginatorInner,
+.taskDetailsHead {
+  display: flex;
 }
 
 .taskLeft {
-    width: 350px;
-    padding: 8px;
-    height: calc(100vh - 95px);
-    overflow: auto;
+  min-width: 350px;
+  padding: 8px;
+  height: calc(100vh - 95px);
+  overflow: auto;
 }
 
 .taskRight {
-    width: calc(100% - 350px);
-    padding: 8px;
-    height: calc(100vh - 95px);
-    border-left: 1px solid #e1e1e1;
+  flex: auto;
+  padding: 8px;
+  height: calc(100vh - 95px);
+  border-left: 1px solid #e1e1e1;
 }
 
 /* .taskLeft .SearchInputArea {
@@ -24,70 +25,130 @@
 } */
 
 .taskLeft .input-group {
-    width: 100% !important;
-    margin-bottom: 5px;
+  width: 100% !important;
+  margin-bottom: 5px;
 }
 
-.mainBodyInner.taskPaginator, .taskPaginatorInner .panel {
-    padding: 0px;
+.mainBodyInner.taskPaginator,
+.taskPaginatorInner .panel {
+  padding: 0px;
 }
 
 .taskPaginatorInner .accordion {
-    margin: 2px 0px;
+  margin: 2px 0px;
 }
 
 .taskDetailsBox {
-    border-radius: 5px;
-    border: 1px solid #e1e1e1;
-    padding: 8px;
-    margin: 3px 0px;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+  padding: 8px;
+  margin: 3px 0px;
 }
 
 .taskDetailsBox h1 {
-    font-size: 16px;
-    margin: 5px 0px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 2px 0px;
+  font-size: 16px;
+  margin: 5px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2px 0px;
 }
 
 .taskDetailsBox p {
-    font-size: 11px;
-    margin: 8px 0px 0px 0px;
-    color: #858585;
+  font-size: 11px;
+  margin: 8px 0px 0px 0px;
+  color: #858585;
 }
 
 .taskDetailsBox p strong {
-    color: #000;
+  color: #000;
 }
 
 .taskDetailsHead p {
-    margin: 0px 0px 5px 0px;
+  margin: 0px 0px 5px 0px;
 }
 
 .taskDetailsHead div {
-    width: 50%;
+  width: 50%;
 }
 
 .taskRightHeader h1 {
-    font-size: 22px;
-    margin-bottom: 16px;
+  font-size: 22px;
+  margin-bottom: 16px;
 }
-
+.taskRightHeader h1 span {
+  color: #858585;
+  font-size: 13px;
+}
 .taskPaginatorInner .tableArea {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .taskRightHeader {
-    position: relative;
+  position: relative;
 }
 
 .closeIcons {
-    position: absolute;
-    right: 16px;
-    top: -3px;
-    font-size: 26px !important;
+  position: absolute;
+  right: 16px;
+  top: -3px;
+  font-size: 26px !important;
+}
+.timeSoltList li {
+  display: inline-block;
+  padding: 0px 6px;
+  border-right: 1px dotted #e1e1e1;
+  margin-top: 6px;
+}
+.timeSoltList li:last-child {
+  border: none;
+}
+.timeSoltList li:last-child p strong {
+  color: #0078d4;
+}
+.timeSoltList li p {
+  font-size: 13px;
+  color: #858585;
+  margin: 0px;
+}
+.timeSoltList li p strong {
+  color: #000;
+}
+.iconsStatus ul {
+  display: inline-flex;
+}
+.iconsStatus li {
+  display: flex;
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-right: 8px;
+  height: 48px;
+  width: 120px;
+}
+.iconsStatus {
+  background-color: #f3f2f1;
+  padding: 12px;
+  margin: 0px 8px;
+}
+.iconsStatus li img {
+  width: 36px;
+  margin-right: 6px;
+}
+.iconsStatus li p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.iconsStatus li span {
+  font-size: 10px;
+  color: #858585;
+  position: relative;
+  top: -8px;
+}
+#queries .filterArea {
+  position: relative;
+  z-index: 1;
 }
 
 /** task paginator end **/
