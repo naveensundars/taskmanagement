@@ -380,17 +380,17 @@ div.dataTables_filter {
 }
 
 .menuArea li {
-  padding: 4px;
+  /* padding: 4px; */
   position: relative;
   padding-left: 16px;
 }
 
 .menuArea li:hover,
-.menuArea li.activeMenu {
+.menuArea li .nav-link.active {
   background-color: #f8f9fb;
 }
 
-.menuArea li.activeMenu:before {
+.menuArea li .nav-link:before {
   content: "";
   width: 3px;
   height: 100%;
