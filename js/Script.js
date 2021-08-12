@@ -15,20 +15,25 @@ $(document).ready(function () {
     })
     //list and grid  start
     //accordion start
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+    // var acc = document.getElementsByClassName("accordion");
+    // var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
+    // for (i = 0; i < acc.length; i++) {
+    //     acc[i].addEventListener("click", function () {
+    //         this.classList.toggle("active");
+    //         var panel = this.nextElementSibling;
+    //         if (panel.style.maxHeight) {
+    //             panel.style.maxHeight = null;
+    //         } else {
+    //             panel.style.maxHeight = panel.scrollHeight + "px";
+    //         }
+    //     });
+    // }
+    $('.accordion').click(function () {
+        $(this).toggleClass('active');
+        $(this).closest('.accordionGroup').toggleClass('active');       
+    });
+    //accordion end
     //login password 
     $('.passwordIcons').click(function () {
         $(this).toggleClass('hide');
@@ -39,7 +44,7 @@ $(document).ready(function () {
         }
 
     });
-    //accordion end
+
     $('#tocTable, #ChaptersTable, #UsersTable, #InstructionsTable, #FilesTable').DataTable({
         "paging": false,
         "info": false,
