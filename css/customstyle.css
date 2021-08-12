@@ -471,7 +471,7 @@ div.dataTables_filter {
   z-index: 1;
 }
 
-#Queries .filterArea, #BookProperties .filterArea, #Milestone .filterArea {
+#Queries .filterArea, #BookProperties .filterArea, #Milestone .filterArea{
   position: relative;
 }
 
@@ -1293,6 +1293,29 @@ tbody td .completeProgressBar {
 }
 
 /** login end **/
+
+/** task page start**/
+
+.mainBodyInner.taskPageInner {
+  display: flex;
+  padding: 0px;
+}
+
+.taskPageInner .panel {
+  padding: 0px;
+}
+
+.taskPageInner .accordion {
+  margin: 2px 0px;
+}
+
+.taskPageInner .tab-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 220px);
+}
+
+/** task page end**/
 
 /** media query start **/
 
