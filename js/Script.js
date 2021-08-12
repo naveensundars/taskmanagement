@@ -31,7 +31,7 @@ $(document).ready(function () {
     // }
     $('.accordion').click(function () {
         $(this).toggleClass('active');
-        $(this).closest('.accordionGroup').toggleClass('active');       
+        $(this).closest('.accordionGroup').toggleClass('active');
     });
     //accordion end
     //login password 
@@ -45,7 +45,7 @@ $(document).ready(function () {
 
     });
 
-    $('#tocTable, #ChaptersTable, #UsersTable, #InstructionsTable, #FilesTable').DataTable({
+    $('#tocTable, #ChaptersTable, #UsersTable, #InstructionsTable, #FilesTable, #AssignuserTable').DataTable({
         "paging": false,
         "info": false,
         language: { search: '', searchPlaceholder: "Search..." },
