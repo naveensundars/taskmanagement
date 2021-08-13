@@ -69,7 +69,7 @@ header {
   border-radius: 5px;
   background-color: #f75858;
   position: absolute;
-  top: 3px;
+  top: -5px;
   left: 9px;
 }
 
@@ -78,18 +78,36 @@ header {
   margin-bottom: 0px;
 }
 
-.userProfile p img {
-  width: 22px;
-  height: 22px;
+.userProfile img {
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 1px solid #ffffff;
   margin-right: 4px;
 }
 
-.userProfile .fa {
-  margin-left: 4px;
+.rightsideArea ul li .fa {
   position: relative;
-  top: 1px;
+  top: -8px;
+}
+
+.userProfile>div {
+  display: flex;
+}
+
+.userProfile label {
+  margin-bottom: 0px;
+  font-size: 10px;
+  position: relative;
+  top: -6px;
+}
+
+.rightsideArea img.iconsSvg {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: -5px;
+  cursor: pointer;
 }
 
 /** header end **/
@@ -471,7 +489,7 @@ div.dataTables_filter {
   z-index: 1;
 }
 
-#Queries .filterArea, #BookProperties .filterArea, #Milestone .filterArea{
+#Queries .filterArea, #BookProperties .filterArea, #Milestone .filterArea {
   position: relative;
 }
 
