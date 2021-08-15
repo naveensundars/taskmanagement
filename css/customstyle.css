@@ -2,6 +2,7 @@
 
 @import url("font-awesome.min.css");
 @import url("taskPaginator.css");
+@import url("proofDispatch.css");
 @font-face {
   font-family: "roboto-regular";
   src: url("../fonts/roboto-regular.eot");
@@ -1323,6 +1324,10 @@ tbody td .completeProgressBar {
   padding: 0px;
 }
 
+.taskRight .panel {
+  padding: 0px 8px;
+}
+
 .taskPageInner .accordion {
   margin: 2px 0px;
 }
@@ -1331,6 +1336,15 @@ tbody td .completeProgressBar {
   overflow-x: hidden;
   overflow-y: auto;
   height: calc(100vh - 220px);
+}
+
+.taskPageInner .bookDetailTab {
+  margin-top: 8px;
+}
+
+.accordion span {
+  position: absolute;
+  right: 16px;
 }
 
 /** task page end**/
