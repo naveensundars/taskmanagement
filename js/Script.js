@@ -63,4 +63,42 @@ $(document).ready(function () {
     $('.cancelTask').click(function () {
         $(".logisticsArea").removeClass('taskStart');
     });
+    $('#dragTableOne, #dragTableTwo').DataTable({
+        "paging": false,
+        "info": false,
+        searching: false,
+        "stripeClasses": [],
+        fixedHeader: true,
+        scrollX: true,
+        scrollCollapse: true,
+    });
+    $('#fixedColumn').DataTable({
+        "paging": false,
+        scrollY: "100px",
+        "info": false,
+        searching: false,
+        "stripeClasses": [],
+        fixedHeader: true,
+        scrollX: true,
+        scrollCollapse: true,
+        fixedColumns: {
+            leftColumns: 2
+        }
+    });
+
+    //drag
+
+    var $tabs = $('#dragTableTwo');
+    $("tbody.connectedSortable")
+        .sortable({
+            connectWith: ".connectedSortable",
+            //  items: "> tr:not(:first)",
+            appendTo: $tabs,
+            helper: "clone",
+            zIndex: 999990
+        })
+        .disableSelection();
+
+
+
 });
