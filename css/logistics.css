@@ -5,3 +5,27 @@
 .taskStart .taskRight {
     width: 100%;
 }
+
+.StructureInner {
+    display: flex;
+}
+
+.dragPoint {
+    margin-right: 4px;
+}
+
+.tblDragAreaLeft {
+    width: 100%;
+}
+
+.tblDragAreaLeft, .tblDragAreaRight {
+    padding: 0px 8px;
+}
+
+.taskStart .tblDragAreaLeft, .taskStart .tblDragAreaRight {
+    width: 40%;
+}
+
+table.colorTable tbody tr td:nth-child(2n-1) {
+    background: #f3f2f1;
+}
