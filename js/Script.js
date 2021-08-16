@@ -56,4 +56,11 @@ $(document).ready(function () {
         scrollCollapse: true,
     });
 
+    $('.startTask').click(function () {
+        $(".logisticsArea").addClass('taskStart');
+    });
+
+    $('.cancelTask').click(function () {
+        $(".logisticsArea").removeClass('taskStart');
+    });
 });
