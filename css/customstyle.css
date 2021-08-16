@@ -3,6 +3,7 @@
 @import url("font-awesome.min.css");
 @import url("taskPaginator.css");
 @import url("proofDispatch.css");
+@import url("logistics.css");
 @font-face {
   font-family: "roboto-regular";
   src: url("../fonts/roboto-regular.eot");
@@ -165,7 +166,6 @@ input, button, select, optgroup, textarea {
 
 .btn {
   font-size: 12px;
-  margin-right: 8px;
   height: 28px;
   padding: 0px 20px;
 }

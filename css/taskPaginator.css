@@ -10,13 +10,13 @@
   height: calc(100vh - 95px);
   overflow: auto;
   padding-top: 0px;
-  border-right: 1px solid #e1e1e1;
 }
 
 .taskRight {
   width: calc(100% - 350px);
   padding: 8px;
   height: calc(100vh - 95px);
+  border-left: 1px solid #e1e1e1;
 }
 
 .taskLeft .SearchInputArea {
@@ -103,7 +103,6 @@
   display: inline-block;
   padding: 0px 3px;
   border-right: 1px dotted #e1e1e1;
-  margin-top: 6px;
 }
 
 .timeSoltList li:last-child {
@@ -112,6 +111,11 @@
 
 .timeSoltList li:last-child p strong {
   color: #0078d4;
+}
+
+.taskRight .bookDetailTab {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .timeSoltList li p {

@@ -1,0 +1,7 @@
+.taskStart .taskLeft {
+    display: none;
+}
+
+.taskStart .taskRight {
+    width: 100%;
+}
