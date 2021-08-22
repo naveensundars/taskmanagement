@@ -1,31 +1,69 @@
 .taskStart .taskLeft {
-    display: none;
+  display: none;
 }
 
 .taskStart .taskRight {
-    width: 100%;
+  width: 100%;
 }
 
-.StructureInner {
-    display: flex;
+.StructureInner,
+.StructureInnerDiv {
+  display: flex;
 }
-
+.StructureInnerDiv {
+  width: calc(100% - 280px);
+}
+.rightSideDet {
+  width: 280px;
+}
 .dragPoint {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 .tblDragAreaLeft {
-    width: 100%;
+  width: 100%;
 }
 
-.tblDragAreaLeft, .tblDragAreaRight {
-    padding: 0px 8px;
+.tblDragAreaLeft,
+.tblDragAreaRight {
+  padding: 0px 8px;
 }
 
-.taskStart .tblDragAreaLeft, .taskStart .tblDragAreaRight {
-    width: 40%;
+.taskStart .tblDragAreaLeft,
+.taskStart .tblDragAreaRight {
+  width: 50%;
+  border-right: 1px solid #e1e1e1;
+  height: calc(100vh - 214px);
+  padding-top: 8px;
 }
 
 table.colorTable tbody tr td:nth-child(2n-1) {
-    background: #f3f2f1;
+  background: #f3f2f1;
+}
+.rightSideDet h2 {
+  background-color: #f8f9fb;
+  font-size: 13px;
+  padding: 6px 12px;
+  margin: 0px;
+}
+
+.logisticsArea .bookDetailTab {
+  margin-bottom: 0px;
+}
+
+.taskPageInner.logisticsArea .tab-content {
+  height: calc(100vh - 214px);
+}
+.chapterGroup div,
+.complexityGroup div {
+  border: 1px solid #e1e1e1;
+  min-height: 18vh;
+  overflow-x: auto;
+}
+.mainfilesGroup div,
+.supplementaryGroup div {
+  border: 1px dashed #e1e1e1;
+  min-height: 14vh;
+  overflow-x: auto;
+  margin: 5px;
 }

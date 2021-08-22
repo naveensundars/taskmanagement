@@ -10,13 +10,13 @@
   height: calc(100vh - 95px);
   overflow: auto;
   padding-top: 0px;
+  border-right: 1px solid #e1e1e1;
 }
 
 .taskRight {
   width: calc(100% - 350px);
   padding: 8px;
   height: calc(100vh - 95px);
-  border-left: 1px solid #e1e1e1;
 }
 
 .taskLeft .SearchInputArea {
