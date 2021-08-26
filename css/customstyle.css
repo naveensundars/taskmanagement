@@ -428,6 +428,13 @@ div.dataTables_filter {
   margin-left: 26px;
   color: #333333;
   font-size: 13px;
+  position: relative;
+  width: 100%;
+}
+
+.menuArea li p span {
+  position: absolute;
+  right: 10px;
 }
 
 /** leftsidebar end **/
