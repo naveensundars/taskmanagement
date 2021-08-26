@@ -69,6 +69,9 @@
 .listStructure {
   width: calc(100% - 250px);
   padding: 0px 16px;
+  height: calc(100vh - 175px);
+  overflow: auto;
+  border-right: 1px solid #e1e1e1;
 }
 
 .proSide {
@@ -87,6 +90,7 @@
   height: 25px;
   line-height: 25px;
 }
+
 .propGroup tr select {
   font-weight: 100;
   border: none;

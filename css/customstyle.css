@@ -474,7 +474,7 @@ div.dataTables_filter {
 }
 
 .beardScrumListTop ul li.active {
-  border-bottom: 2px solid #2089d9;
+  border-bottom: 4px solid #2089d9;
 }
 
 /** beardScrumList end **/
@@ -902,7 +902,7 @@ tbody td .completeProgressBar {
 
 .accordion {
   background-color: #f8f9fb;
-  color: #858585;
+  color: #575656;
   cursor: pointer;
   padding: 0px 16px;
   width: 100%;
@@ -915,6 +915,10 @@ tbody td .completeProgressBar {
   margin-bottom: 10px;
   border-radius: 4px;
   position: relative;
+}
+
+.taskLeft .accordion {
+  background-color: #EFEFEF;
 }
 
 .accordionGroup.active .panel {
@@ -1313,6 +1317,7 @@ tbody td .completeProgressBar {
   text-align: center;
   width: 100%;
   color: #858585;
+  z-index: 1;
 }
 
 /** login end **/
