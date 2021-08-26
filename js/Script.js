@@ -85,7 +85,26 @@ $(document).ready(function () {
             leftColumns: 2
         }
     });
-
+    $('#PaginatorTable').DataTable({
+        "paging": false,
+        "info": false,
+        searching: false,
+        "stripeClasses": [],
+        fixedHeader: true,
+        scrollY: '25vh',
+        scrollX: true,
+        scrollCollapse: true,
+    });
+    $('#workingfilesTable').DataTable({
+        "paging": false,
+        "info": false,
+        searching: false,
+        "stripeClasses": [],
+        fixedHeader: true,
+        scrollY: '12vh',
+        scrollX: true,
+        scrollCollapse: true,
+    });
     //drag
 
     var $tabs = $('#dragTableTwo');
