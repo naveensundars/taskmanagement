@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Straive - Report</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/customstyle.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/dataTables.bootstrap4.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="headerCard">
+            <div class="logoArea">
+                <h1>Straive</h1>
+                <span>Publishing Platform</span>
+            </div>
+            <div class="rightsideArea">
+                <ul>
+                    <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-th" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-bell" aria-hidden="true"></i> <span></span></li>
+                    <li class="userProfile">
+                        <p> <img src="./images/profile.jpg"> Accounts Manager <i class="fa fa-angle-down"
+                                aria-hidden="true"></i></p>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="container-fluidInner">
+            <div class="leftsideBar">
+                <div class="searchArea">
+                    <div class="input-group">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search menu">
+                    </div>
+                </div>
+                <div class="menuArea innerScrollBar">
+                    <ul>
+                        <li class="activeMenu"><a href="index.html">
+                                <img src="./images/icons.svg#dashboard" class="iconsSvg" />
+                                <p>Dashboard</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>General</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>Inflow</p>
+                            </a></li>
+                        <li><a href=""><img src="./images/icons.svg#list" class="iconsSvg" />
+                                <p>Personal</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>My Task</p>
+                            </a></li>
+                        <li><a href="allbooks.html">
+                                <p>All Books</p>
+                            </a></li>
+                        <li><a href=""><img src="./images/icons.svg#notification" class="iconsSvg" />
+                                <p>Report</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>File Status</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>BG Health</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainBody">
+                <div class="beardScrumListTop">
+                    <ul>
+                        <li>All Books</li>
+                        <li>My Task</li>
+                        <li class="active">File Status</li>
+                    </ul>
+                </div>
+                <div class="mainBodyInner ReportPageInner">
+                    <div class="row">
+                        <div class="col-lg-6 btnArea">
+                            <button type="button" class="btn btn-outline-primary">Stages</button>
+                            <button type="button" class="btn btn-outline-primary">Status</button>
+                            <button type="button" class="btn btn-outline-primary">Export to Excel</button>
+                            <button type="button" class="btn btn-outline-primary">Refresh</button>
+                            <button type="button" class="btn btn-outline-primary">Download</button>
+                        </div>
+                        <div class="col-lg-6 fileListStatus text-right">
+                            <span>Status:</span>
+                            <ul>
+                                <li class="yts"><span class="material-icons">
+                                    play_circle_filled
+                                    </span>Yet to Start</li>
+                                <li class="inProg"><span class="material-icons">
+                                    check_circle
+                                    </span>Work in Progress</li>
+                                <li class="Pend"><span class="material-icons">
+                                    pause_circle_filled
+                                    </span> Pending</li>
+                                <li class="bgPro">BG Process</li>
+                                <li class="riskI"><span class="material-icons">
+                                    cancel
+                                    </span>Risk</li>
+                                <li class="compl"><span class="material-icons">
+                                    check_circle
+                                    </span>Completed</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-12 tableFixHead innerScrollBar">
+                            <table>
+                                <thead>
+                                    <tr class="tableHeadMain">
+                                        <th>
+                                            <p></p>
+                                        </th>
+                                        <th>
+                                            <p></p>
+                                        </th>
+                                        <th colspan="9">
+                                            <p>Pre-Production</p>
+                                        </th>
+                                        <th colspan="18">
+                                            <p>Proof</p>
+                                        </th>
+                                        <th colspan="11">
+                                            <p>Revises</p>
+                                        </th>
+                                        <th colspan="9">
+                                            <p>Finals</p>
+                                        </th>
+                                    </tr>
+                                    <tr class="tablesubHead">
+                                        <th title="Boo">Boo</th>
+                                        <th title="cha">cha</th>
+                                        <th title="pmb">pmb</th>
+                                        <th>spl</th>
+                                        <th>scn</th>
+                                        <th>art</th>
+                                        <th>tex</th>
+                                        <th>cuc</th>
+                                        <th>msp</th>
+                                        <th>art</th>
+                                        <th>pmp</th>
+                                        <th>pre</th>
+                                        <th>pre</th>
+                                        <th>pre</th>
+                                        <th>cop</th>
+                                        <th>cep</th>
+                                        <th>par</th>
+                                        <th>par</th>
+                                        <th>art</th>
+                                        <th>art</th>
+                                        <th>xml</th>
+                                        <th>aut</th>
+                                        <th>cap</th>
+                                        <th>dis</th>
+                                        <th>ozo</th>
+                                        <th>prq</th>
+                                        <th>pmr</th>
+                                        <th>pro</th>
+                                        <th>pmt</th>
+                                        <th>xml</th>
+                                        <th>xml</th>
+                                        <th>xml</th>
+                                        <th>art</th>
+                                        <th>art</th>
+                                        <th>aut</th>
+                                        <th>cap</th>
+                                        <th>dis</th>
+                                        <th>ozo</th>
+                                        <th>prq</th>
+                                        <th>pmr</th>
+                                        <th>vou</th>
+                                        <th>mam</th>
+                                        <th>prq</th>
+                                        <th>pmr</th>
+                                        <th>fin</th>
+                                        <th>fin</th>
+                                        <th>ebo</th>
+                                        <th>web</th>
+                                        <th>pac</th>
+                                    </tr>
+                                    <tr class="tablesubHead">
+                                        <th>Chapter ID</th>
+                                        <th>Art Processing</th>
+                                        <th>Low Res. Conversion</th>
+                                        <th>spl</th>
+                                        <th>scn</th>
+                                        <th>art</th>
+                                        <th>tex</th>
+                                        <th>cuc</th>
+                                        <th>msp</th>
+                                        <th>art</th>
+                                        <th>pmp</th>
+                                        <th>pre</th>
+                                        <th>pre</th>
+                                        <th>pre</th>
+                                        <th>cop</th>
+                                        <th>cep</th>
+                                        <th>par</th>
+                                        <th>par</th>
+                                        <th>art</th>
+                                        <th>art</th>
+                                        <th>xml</th>
+                                        <th>aut</th>
+                                        <th>cap</th>
+                                        <th>dis</th>
+                                        <th>ozo</th>
+                                        <th>prq</th>
+                                        <th>pmr</th>
+                                        <th>pro</th>
+                                        <th>pmt</th>
+                                        <th>xml</th>
+                                        <th>xml</th>
+                                        <th>xml</th>
+                                        <th>art</th>
+                                        <th>art</th>
+                                        <th>aut</th>
+                                        <th>cap</th>
+                                        <th>dis</th>
+                                        <th>ozo</th>
+                                        <th>prq</th>
+                                        <th>pmr</th>
+                                        <th>vou</th>
+                                        <th>mam</th>
+                                        <th>prq</th>
+                                        <th>pmr</th>
+                                        <th>fin</th>
+                                        <th>fin</th>
+                                        <th>ebo</th>
+                                        <th>web</th>
+                                        <th>pac</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>B1</td>
+                                        <td>C43</td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>B4</td>
+                                        <td>C61</td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_error">
+                                                cancel
+                                            </span></td>
+                                        <td><span class="material-icons tsk_error">
+                                                cancel
+                                            </span></td>
+                                        <td><span class="material-icons tsk_error">
+                                                cancel
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>B6</td>
+                                        <td>C87</td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inprogress">
+                                                watch_later
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inprogress">
+                                                watch_later
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>B1</td>
+                                        <td>C43</td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>B4</td>
+                                        <td>C61</td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_error">
+                                                cancel
+                                            </span></td>
+                                        <td><span class="material-icons tsk_error">
+                                                cancel
+                                            </span></td>
+                                        <td><span class="material-icons tsk_error">
+                                                cancel
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>B6</td>
+                                        <td>C87</td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_completed">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inprogress">
+                                                watch_later
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inprogress">
+                                                watch_later
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                        <td><span class="material-icons tsk_inactive">
+                                                check_circle
+                                            </span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="bookDetailTab">
+                                <ul class="nav nav-tabs bookDetailTabList">
+                                    <li><a data-toggle="tab" href="#Details" class="active">Details</a></li>
+                                    <li><a data-toggle="tab" href="#files">Files</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content tableFixHead innerScrollBar">
+                                <div id="Details" class="accordionArea tab-pane fade in active show">
+                                    <table style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th><input type="checkbox" class="form-check-input"> S.No</th>
+                                                <th>Book ID</th>
+                                                <th>Chapters</th>
+                                                <th>Start Date & Time</th>
+                                                <th>End Date & Time</th>
+                                                <th>Duration</th>
+                                                <th>Employee Name</th>
+                                                <th>Employee ID</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" class="form-check-input"> 1
+                                                </td>
+                                                <td>
+                                                    12
+                                                </td>
+                                                <td>
+                                                    10 June 2021
+                                                </td>
+                                                <td>
+                                                    25 July 2021
+                                                </td>
+                                                <td>
+                                                    25 July 2021
+                                                </td>
+                                                <td>
+                                                   1hr
+                                                </td>
+                                                <td>
+                                                    Benjamin Ak
+                                                </td>
+                                                <td>
+                                                   E205468
+                                                </td>
+                                                <td>
+                                                   Canceled
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" class="form-check-input"> 1
+                                                </td>
+                                                <td>
+                                                    12
+                                                </td>
+                                                <td>
+                                                    10 June 2021
+                                                </td>
+                                                <td>
+                                                    25 July 2021
+                                                </td>
+                                                <td>
+                                                    25 July 2021
+                                                </td>
+                                                <td>
+                                                   1hr
+                                                </td>
+                                                <td>
+                                                    Benjamin Ak
+                                                </td>
+                                                <td>
+                                                   E205468
+                                                </td>
+                                                <td>
+                                                   Canceled
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" class="form-check-input"> 1
+                                                </td>
+                                                <td>
+                                                    12
+                                                </td>
+                                                <td>
+                                                    10 June 2021
+                                                </td>
+                                                <td>
+                                                    25 July 2021
+                                                </td>
+                                                <td>
+                                                    25 July 2021
+                                                </td>
+                                                <td>
+                                                   1hr
+                                                </td>
+                                                <td>
+                                                    Benjamin Ak
+                                                </td>
+                                                <td>
+                                                   E205468
+                                                </td>
+                                                <td>
+                                                   Canceled
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" class="form-check-input"> 1
+                                                </td>
+                                                <td>
+                                                    12
+                                                </td>
+                                                <td>
+                                                    10 June 2021
+                                                </td>
+                                                <td>
+                                                    25 July 2021
+                                                </td>
+                                                <td>
+                                                    25 July 2021
+                                                </td>
+                                                <td>
+                                                   1hr
+                                                </td>
+                                                <td>
+                                                    Benjamin Ak
+                                                </td>
+                                                <td>
+                                                   E205468
+                                                </td>
+                                                <td>
+                                                   Canceled
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" class="form-check-input"> 1
+                                                </td>
+                                                <td>
+                                                    12
+                                                </td>
+                                                <td>
+                                                    10 June 2021
+                                                </td>
+                                                <td>
+                                                    25 July 2021
+                                                </td>
+                                                <td>
+                                                    25 July 2021
+                                                </td>
+                                                <td>
+                                                   1hr
+                                                </td>
+                                                <td>
+                                                    Benjamin Ak
+                                                </td>
+                                                <td>
+                                                   E205468
+                                                </td>
+                                                <td>
+                                                   Canceled
+                                                 </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="files" class="accordionArea tab-pane fade in">
+                                    <div class="tableFixHead innerScrollBar">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">General</th>
+                                                    <th colspan="2">Statistics</th>
+                                                    <th colspan="2">Complexity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        Chapter Number
+                                                    </td>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td>
+                                                        Total pages
+                                                    </td>
+                                                    <td>
+                                                        32
+                                                    </td>
+                                                    <td>
+                                                        All
+                                                    </td>
+                                                    <td>
+                                                        Simple
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Chapter Number
+                                                    </td>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td>
+                                                        Total pages
+                                                    </td>
+                                                    <td>
+                                                        32
+                                                    </td>
+                                                    <td>
+                                                        All
+                                                    </td>
+                                                    <td>
+                                                        Simple
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="row">
+                    <div class="col-lg-3 text-left">
+                        <p>Design last updated date: <span>16 July 2021</span></p>
+                    </div>
+                    <div class="col-lg-7 text-center">
+                        <p>&#169; 2021 | www.stravie.com. All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-2 text-right">
+                        <p>Status: <span>Online</span></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables.bootstrap4.min.js"></script>
+        <script src="js/Script.js"></script>
+</body>
+
+</html>
