@@ -4,6 +4,7 @@
 @import url("taskPaginator.css");
 @import url("proofDispatch.css");
 @import url("logistics.css");
+@import url("fileReport.css");
 @font-face {
   font-family: "roboto-regular";
   src: url("../fonts/roboto-regular.eot");
@@ -18,6 +19,37 @@
   src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold.svg#roboto-bold") format("svg"), url("../fonts/roboto-bold.ttf") format("truetype"), url("../fonts/roboto-bold.woff") format("woff"), url("../fonts/roboto-bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MaterialIcons-Regular.eot");
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url("../fonts/MaterialIcons-Regular.woff2") format('woff2'), url("../fonts/MaterialIcons-Regular.woff") format('woff'), url("../fonts/MaterialIcons-Regular.ttf") format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 .container-fluid {
@@ -481,7 +513,7 @@ div.dataTables_filter {
 }
 
 .beardScrumListTop ul li.active {
-  border-bottom: 4px solid #2089d9;
+  border-bottom: 2px solid #2089d9;
 }
 
 /** beardScrumList end **/

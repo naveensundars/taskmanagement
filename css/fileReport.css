@@ -1,0 +1,144 @@
+tr.tableHeadMain th, tr.tablesubHead th {
+    text-align: center;
+}
+
+tr.tableHeadMain th {
+    padding: 0px;
+    background: transparent;
+}
+
+tr.tableHeadMain p {
+    margin: 0;
+    background-color: #dce4ef;
+    height: 40px;
+    margin-bottom: 5px;
+    line-height: 40px;
+}
+
+.tableRepotArea {
+    overflow: auto;
+}
+
+tr.tablesubHead th {
+    text-transform: uppercase;
+}
+
+tr .material-icons {
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.material-icons.tsk_completed {
+    color: #95d791;
+}
+
+.material-icons.tsk_inactive {
+    color: #e8e8e8;
+    /* opacity: 0.7; */
+}
+
+.material-icons.tsk_error {
+    color: #ff6060;
+}
+
+.material-icons.tsk_inprogress {
+    color: #0099ff;
+}
+
+.tableRepotArea tbody tr {
+    cursor: pointer;
+}
+
+input.tblCheckBox {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.tbStatus {
+    display: flex;
+    line-height: 25px;
+}
+
+.tbStatus .material-icons {
+    margin-right: 6px;
+}
+
+.tableRepotTabArea {
+    padding-top: 16px;
+}
+
+thead tr.tablesubHead {
+    border-bottom: 4px solid #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0px;
+    max-width: 125px;
+    font-size: 12px;
+}
+
+.ReportPageInner tr {
+    text-align: center;
+}
+
+.ReportPageInner .tableFixHead {
+    max-height: 50vh;
+    min-height: 50vh;
+}
+
+.ReportPageInner .tab-content.tableFixHead {
+    max-height: 20vh;
+    min-height: 10vh;
+}
+
+.btnArea {
+    margin-bottom: 16px;
+}
+
+.fileListStatus ul li {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0 8px 0 18px;
+    position: relative;
+}
+
+.fileListStatus span {
+    font-size: 13px;
+}
+
+.fileListStatus ul li span {
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.fileListStatus ul li:not(:last-child) {
+    border-right: 1px solid #e1e1e1;
+}
+
+.fileListStatus ul {
+    display: inline;
+    margin-left: 4px;
+}
+
+.inProg .material-icons {
+    color: #2A6FDB;
+}
+
+.Pend .material-icons {
+    color: #EF8B01;
+}
+
+.riskI .material-icons {
+    color: #FF0000;
+}
+
+.compl .material-icons {
+    color: #48D6D2;
+}
+
+.yts .material-icons {
+    color: #e1e1e1;
+}
