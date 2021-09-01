@@ -85,8 +85,13 @@ $(document).ready(function () {
             leftColumns: 2
         }
     });
-    //drag
+    var taskHeight = $('.taskRight').height();
+    var calcHeightOne = $('.timeSoltList').height() + 325;
+    var CalcSetHeight = taskHeight - calcHeightOne;
+    $('.divTable').css('max-height', CalcSetHeight + 'px');
+    $('.divTable').css('min-height', CalcSetHeight + 'px');
 
+    //drag
     var $tabs = $('#dragTableTwo');
     $("tbody.connectedSortable")
         .sortable({
@@ -98,6 +103,11 @@ $(document).ready(function () {
         })
         .disableSelection();
 
-
-
+});
+$(window).on('resize', function () {
+    var taskHeight = $('.taskRight').height();
+    var calcHeightOne = $('.timeSoltList').height() + 325;
+    var CalcSetHeight = taskHeight - calcHeightOne;
+    $('.divTable').css('max-height', CalcSetHeight + 'px');
+    $('.divTable').css('min-height', CalcSetHeight + 'px');
 });
