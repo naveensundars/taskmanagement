@@ -478,7 +478,7 @@ div.dataTables_filter {
 }
 
 .leftsideBar {
-  width: 200px;
+  max-width: 200px;
   border-right: 1px solid #e1e1e1;
   height: calc(100vh - 60px);
 }
