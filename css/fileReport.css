@@ -142,3 +142,31 @@ thead tr.tablesubHead {
 .yts .material-icons {
     color: #e1e1e1;
 }
+
+.tblFilterRow {
+    display: flex;
+}
+
+.tblFilterRow select, .tblFilterRow input {
+    height: 40px;
+    border: 1px solid #e1e1e1;
+    padding: 0px 4px;
+}
+
+.tblFilterRow input {
+    border-left: none;
+}
+
+.tblFilterRow div {
+    position: relative;
+}
+
+.tblFilterRow .input-group-text {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 40px;
+    border-radius: 0px;
+    background-color: #0078D4;
+    color: #ffffff;
+}
