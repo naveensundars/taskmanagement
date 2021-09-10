@@ -45,6 +45,11 @@ $(document).ready(function () {
 
     });
 
+    $('.applicationBtn').click(function () {
+        $(this).toggleClass('active');
+    });
+
+    
     $('#tocTable, #ChaptersTable, #UsersTable, #InstructionsTable, #FilesTable, #AssignuserTable').DataTable({
         "paging": false,
         "info": false,
@@ -63,6 +68,7 @@ $(document).ready(function () {
     $('.cancelTask').click(function () {
         $(".logisticsArea").removeClass('taskStart');
     });
+
     $('#dragTableOne, #dragTableTwo').DataTable({
         "paging": false,
         "info": false,
