@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.StructureInner, .StructureInnerDiv {
+.StructureInner, .StructureInnerDiv, .imageuploadArea {
   display: flex;
 }
 
@@ -69,4 +69,36 @@ table.colorTable tbody tr td:nth-child(2n-1) {
   min-height: 14vh;
   overflow-x: auto;
   margin: 5px;
+}
+
+.fileUploadPage .taskRight {
+  padding: 0;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+.taskRightHeader span label {
+  font-weight: 600;
+  color: #000;
+}
+
+.fileUploadPageTble {
+  width: calc(100% - 200px);
+  padding-right: 10px;
+  border-right: 1px solid #e1e1e1;
+  padding-top: 12px;
+}
+
+.imageuploadArea {
+  height: calc(100vh - 230px);
+}
+
+.imageuploadArea .tableFixHead {
+  margin-top: 16px;
+  max-height: calc(100vh - 290px);
+}
+
+.imageuploadArea {
+  position: relative;
+  top: -12px;
 }

@@ -3,14 +3,16 @@
 .taskPaginatorInner, .taskDetailsHead {
   display: flex;
 }
-.taskPaginatorInner{
+
+.taskPaginatorInner {
   margin: 0;
 }
+
 .taskLeft {
   flex: 0 0 25%;
   max-width: 25%;
   padding: 8px;
-  height: calc(100vh - 95px);
+  height: calc(100vh - 110px);
   overflow: auto;
   padding-top: 0px;
   border-right: 1px solid #e1e1e1;
@@ -18,7 +20,7 @@
 
 .taskRight {
   padding: 8px;
-  height: calc(100vh - 95px);
+  height: calc(100vh - 110px);
   flex: 0 0 75%;
   max-width: 75%;
 }
@@ -83,13 +85,15 @@
 .taskDetailsHead p {
   margin: 0px 0px 5px 0px;
 }
-.taskDetailsHead div:first-child{
-  width:40%;
+
+.taskDetailsHead div:first-child {
+  width: 40%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 2px 0px;
 }
+
 .taskDetailsHead div {
   width: 60%;
 }
