@@ -740,32 +740,32 @@ div.dataTables_filter {
   max-height: 305px;
 }
 
-table thead th {
+.tableFixHead table thead th {
   position: sticky;
   top: 0;
   z-index: 1;
   min-width: 125px;
 }
 
-table {
+.tableFixHead table {
   border-collapse: collapse;
   width: 100%;
 }
 
-thead tr th {
+.tableFixHead thead tr th {
   background-color: #f3f2f1;
   height: 38px;
   line-height: 38px;
   border-radius: 2px;
 }
 
-th, td, .table th, .table td {
+.tableFixHead th, .tableFixHead td, .table th, .table td {
   padding: 0px 16px;
   color: #80807f;
   font-size: 12px;
 }
 
-tbody tr {
+.tableFixHead tbody tr, .table tbody tr {
   background-color: #f8f9fb;
   border-top: 4px solid #fff;
   height: 38px;
