@@ -1642,3 +1642,29 @@ tbody td .completeProgressBar {
 }
 
 /** media query end**/
+
+.iconMenu{ 
+  width:40px;
+}
+.iconMenu +.mainBody{
+  width:calc(100% - 40px);
+}
+.iconMenu .searchArea, .iconMenu li a p, .iconMenu .menuFooterLog, .iconMenu .menuArea li{
+  display: none;
+}
+.iconMenu .menuArea li a{
+  height: 30px;
+}
+.iconMenu .menuArea li.ShowMenu{
+  display: block;
+}
+.iconMenu .menuArea{
+  height: calc(100vh - 81px);
+}
+.iconMenu .menuArea li a .iconsSvg {
+  width: 24px;
+  height: 24px;
+}
+.iconMenu .menuArea li img{
+  left:10px;
+}
