@@ -48,6 +48,9 @@ $(document).ready(function () {
     $('.applicationBtn').click(function () {
         $(this).toggleClass('active');
     });
+    
+    var MenuImg =$(".menuArea ul li a img");
+    MenuImg.parent().parent().addClass('ShowMenu');
 
     
     $('#tocTable, #ChaptersTable, #UsersTable, #InstructionsTable, #FilesTable, #AssignuserTable').DataTable({
@@ -109,6 +112,8 @@ $(document).ready(function () {
         })
         .disableSelection();
 
+
+       
 });
 $(window).on('resize', function () {
     var taskHeight = $('.taskRight').height();
@@ -117,3 +122,4 @@ $(window).on('resize', function () {
     $('.divTable').css('max-height', CalcSetHeight + 'px');
     $('.divTable').css('min-height', CalcSetHeight + 'px');
 });
+
