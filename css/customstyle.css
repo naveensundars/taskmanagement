@@ -197,6 +197,8 @@ header {
 .workFlowGroup {
   color: #000;
   display: flex;
+  width: 280px;
+  flex-wrap: wrap;
 }
 
 .workFlowGroup div {
@@ -205,6 +207,7 @@ header {
   text-align: center;
   padding: 4px;
   position: relative;
+  width: 65px;
 }
 .checkBox {
   position: absolute;
