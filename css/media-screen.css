@@ -1,0 +1,46 @@
+@media screen and (max-width:518px) {
+    .statusListDivinner {
+        width: 48% !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .btnArea {
+        margin-bottom: 0;
+    }
+    .btnArea button {
+        margin-bottom: 8px;
+    }
+    .fileListStatus {
+        margin-bottom: 16px;
+        text-align: start !important;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .statusListDivinner {
+        width: 31.5%;
+    }
+    .dataTables_filter label input {
+        width: 85% !important;
+    }
+    .tab-pane .filterArea {
+        position: static;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .bookGridInner .col-lg-7 {
+        padding-left: 16px;
+    }
+}
+
+@media screen and (max-width:1100px) and (min-width:680px) {
+    .statusListDivinner {
+        width: 23.485714%;
+    }
+}
+
+.listGrid table {
+    width: 100%;
+}

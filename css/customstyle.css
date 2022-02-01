@@ -6,359 +6,339 @@
 @import url("logistics.css");
 @import url("fileReport.css");
 @font-face {
-  font-family: "roboto-regular";
-  src: url("../fonts/roboto-regular.eot");
-  src: url("../fonts/roboto-regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/roboto-regular.svg#roboto-regular") format("svg"),
-    url("../fonts/roboto-regular.ttf") format("truetype"),
-    url("../fonts/roboto-regular.woff") format("woff"),
-    url("../fonts/roboto-regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "roboto-regular";
+    src: url("../fonts/roboto-regular.eot");
+    src: url("../fonts/roboto-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular.svg#roboto-regular") format("svg"), url("../fonts/roboto-regular.ttf") format("truetype"), url("../fonts/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "roboto-bold";
-  src: url("../fonts/roboto-bold.eot");
-  src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/roboto-bold.svg#roboto-bold") format("svg"),
-    url("../fonts/roboto-bold.ttf") format("truetype"),
-    url("../fonts/roboto-bold.woff") format("woff"),
-    url("../fonts/roboto-bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "roboto-bold";
+    src: url("../fonts/roboto-bold.eot");
+    src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold.svg#roboto-bold") format("svg"), url("../fonts/roboto-bold.ttf") format("truetype"), url("../fonts/roboto-bold.woff") format("woff"), url("../fonts/roboto-bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/MaterialIcons-Regular.eot");
-  src: local("Material Icons"), local("MaterialIcons-Regular"),
-    url("../fonts/MaterialIcons-Regular.woff2") format("woff2"),
-    url("../fonts/MaterialIcons-Regular.woff") format("woff"),
-    url("../fonts/MaterialIcons-Regular.ttf") format("truetype");
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/MaterialIcons-Regular.eot");
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url("../fonts/MaterialIcons-Regular.woff2") format('woff2'), url("../fonts/MaterialIcons-Regular.woff") format('woff'), url("../fonts/MaterialIcons-Regular.ttf") format('truetype');
 }
 
 .material-icons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: "liga";
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }
 
 .container-fluid {
-  padding: 0px;
-  /* font-family: "roboto-regular"; */
+    padding: 0px;
+    /* font-family: "roboto-regular"; */
 }
+
 
 /** header start **/
 
 header {
-  height: 40px;
-  background-color: #0846a9;
-  position: sticky;
-  top: 0px;
-  z-index: 150;
-  color: #ffffff;
-  padding: 0px 16px;
+    height: 40px;
+    background-color: #0846a9;
+    position: sticky;
+    top: 0px;
+    z-index: 150;
+    color: #ffffff;
+    padding: 0px 16px;
 }
 
 .headerCard {
-  display: flex;
+    display: flex;
 }
 
 .logoArea h1 {
-  margin: 0;
-  font-size: 23px;
-  letter-spacing: 2px;
+    margin: 0;
+    font-size: 23px;
+    letter-spacing: 2px;
 }
 
 .logoArea span {
-  font-size: 9px;
-  position: relative;
-  top: -10px;
-  letter-spacing: 0.5px;
+    font-size: 9px;
+    position: relative;
+    top: -10px;
+    letter-spacing: 0.5px;
 }
 
 .rightsideArea {
-  margin-left: auto;
-  padding-top: 6px;
+    margin-left: auto;
+    padding-top: 6px;
 }
 
 .rightsideArea ul li {
-  display: inline-block;
-  margin-left: 8px;
-  position: relative;
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
 }
 
 .rightsideArea ul li span {
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #f75858;
-  position: absolute;
-  top: -5px;
-  left: 9px;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #f75858;
+    position: absolute;
+    top: -5px;
+    left: 9px;
 }
 
 .userProfile p {
-  font-size: 13px;
-  margin-bottom: 0px;
+    font-size: 13px;
+    margin-bottom: 0px;
 }
 
 .userProfile img {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  margin-right: 4px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin-right: 4px;
 }
 
 .rightsideArea ul li .fa {
-  position: relative;
-  top: -8px;
+    position: relative;
+    top: -8px;
 }
 
-.userProfile > div {
-  display: flex;
+.userProfile>div {
+    display: flex;
 }
 
 .userProfile label {
-  margin-bottom: 0px;
-  font-size: 10px;
-  position: relative;
-  top: -6px;
+    margin-bottom: 0px;
+    font-size: 10px;
+    position: relative;
+    top: -6px;
 }
 
 .rightsideArea img.iconsSvg {
-  width: 22px;
-  height: 22px;
-  position: relative;
-  top: -5px;
-  cursor: pointer;
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
 }
 
 .applicationBtn {
-  position: relative;
-  cursor: pointer;
-  user-select: none;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
 }
 
 .applicationBtn.active .appNotification {
-  display: block;
+    display: block;
 }
 
 .appNotification {
-  background-color: #ffffff;
-  border-radius: 2px;
-  position: absolute;
-  z-index: 100;
-  box-shadow: 0px 0px 1px 1px #e2e1e1;
-  right: -20px;
-  cursor: default;
-  display: none;
+    background-color: #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 100;
+    box-shadow: 0px 0px 1px 1px #e2e1e1;
+    right: -20px;
+    cursor: default;
+    display: none;
 }
 
 .appNotification h3 {
-  color: #000;
-  font-size: 12px;
+    color: #000;
+    font-size: 12px;
 }
 
 .workFlowArea {
-  border-top: 1px solid #e1e1e1;
-  padding: 15px 10px;
+    border-top: 1px solid #e1e1e1;
+    padding: 15px 10px;
 }
 
 .appArea {
-  padding: 10px;
+    padding: 10px;
 }
 
 .appArea img {
-  width: 45px;
+    width: 45px;
 }
 
 .workFlowGroup {
-  color: #000;
-  display: flex;
-  width: 280px;
-  flex-wrap: wrap;
+    color: #000;
+    display: flex;
 }
 
 .workFlowGroup div {
-  border-radius: 4px;
-  border: 1px solid #e1e1e1;
-  text-align: center;
-  padding: 4px;
-  position: relative;
-  width: 65px;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    padding: 4px;
 }
-.checkBox {
-  position: absolute;
-  display: none;
-}
-.workFlowGroup div:hover .checkBox {
-  display: block;
-}
+
 .workFlowGroup div img {
-  margin: 5px;
-  margin-bottom: 0;
+    margin: 5px;
+    margin-bottom: 0;
 }
 
 .workFlowGroup div:not(:last-child) {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .workFlowGroup img {
-  width: 45px;
+    width: 45px;
 }
 
 .rightsideArea ul li .workFlowGroup span {
-  position: relative;
-  background-color: transparent;
-  font-size: 9px;
-  left: 0;
-  top: 0;
+    position: relative;
+    background-color: transparent;
+    font-size: 9px;
+    left: 0;
+    top: 0;
 }
 
 .switchToggle input {
-  opacity: 0;
+    opacity: 0;
 }
 
 .switchToggle {
-  position: relative;
-  width: 24px;
-  height: 8px;
-  margin: 10px 8px 0px 22px;
+    position: relative;
+    width: 24px;
+    height: 8px;
+    margin: 10px 8px 0px 22px;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  left: 0px;
-  bottom: -2px;
-  background-color: #0846a9;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 0px;
+    bottom: -2px;
+    background-color: #0846a9;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-.switchToggle input:checked + .slider:before {
-  left: 12px;
+.switchToggle input:checked+.slider:before {
+    left: 12px;
 }
 
 .switchToggle input {
-  opacity: 0;
-  width: 24px;
-  height: 8px;
-  position: relative;
-  top: -8px;
-  z-index: 100;
-  cursor: pointer;
+    opacity: 0;
+    width: 24px;
+    height: 8px;
+    position: relative;
+    top: -8px;
+    z-index: 100;
+    cursor: pointer;
 }
 
 .swithLeft,
 .swithRight {
-  position: absolute;
-  color: #929292;
-  font-size: 10px;
+    position: absolute;
+    color: #929292;
+    font-size: 10px;
 }
 
 .swithLeft {
-  left: -24px;
-  top: -3px;
+    left: -24px;
+    top: -3px;
 }
 
 .swithRight {
-  left: 30px;
-  top: -3px;
+    left: 30px;
+    top: -3px;
 }
 
-.switchToggle input:checked + .swithRight {
-  color: #000;
+.switchToggle input:checked+.swithRight {
+    color: #000;
 }
+
 
 /* Rounded sliders */
 
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
+
 /** header end **/
+
 
 /** footer start **/
 
 footer {
-  height: 20px;
-  background-color: #f8f9fb;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  border-top: 1px solid #e1e1e1;
-  padding: 0px 16px;
+    height: 20px;
+    background-color: #f8f9fb;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #e1e1e1;
+    padding: 0px 16px;
+    z-index: 10;
 }
 
 footer p {
-  font-size: 10px;
-  color: rgba(51, 51, 51, 1);
-  line-height: 20px;
+    font-size: 10px;
+    color: rgba(51, 51, 51, 1);
+    line-height: 20px;
 }
 
 footer p span {
-  font-weight: 600;
-}
-.footerLis li {
-  display: inline-block;
-  position: relative;
-  top: -5px;
-  margin-left: 6px;
+    font-weight: 600;
 }
 
+
 /** footer end **/
+
 
 /** common style start **/
 
 ul {
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
 }
 
 .fa {
-  font-size: 14px !important;
+    font-size: 14px !important;
 }
 
 input,
@@ -366,472 +346,471 @@ button,
 select,
 optgroup,
 textarea {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .iconsSvg {
-  width: 16px;
-  height: 16px;
+    width: 16px;
+    height: 16px;
 }
 
 .iconsSvgWidth {
-  width: 22px;
-  height: 22px;
+    width: 22px;
+    height: 22px;
 }
 
 .btn {
-  font-size: 12px;
-  height: 28px;
-  padding: 0px 20px;
+    font-size: 12px;
+    height: 28px;
+    padding: 0px 20px;
 }
 
 .modal-title {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 .nobg {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .btn-primary-save,
 .btn-primary-save:hover {
-  background-color: #01a450;
-  color: #ffffff;
+    background-color: #01a450;
+    color: #ffffff;
 }
 
 .btn-outline-primary-cancel {
-  background-color: #ffffff;
-  border: 1px solid #33333366;
+    background-color: #ffffff;
+    border: 1px solid #33333366;
 }
 
 .btn .fa {
-  font-size: 10px !important;
+    font-size: 10px !important;
 }
 
 .btn-primary,
 .btn-primary:hover {
-  background-color: #0078d4;
+    background-color: #0078d4;
 }
 
 .btn-outline-primary {
-  color: #0078d4;
-  border-color: #0078d4;
+    color: #0078d4;
+    border-color: #0078d4;
 }
 
 .btn-outline-primary:hover {
-  background-color: transparent;
-  color: #0078d4;
+    background-color: transparent;
+    color: #0078d4;
 }
 
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-  cursor: default;
-  background-color: #c8c6c4;
+    width: 4px;
+    height: 4px;
+    cursor: default;
+    background-color: #c8c6c4;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #8c8b8a;
-  border-radius: 2px;
-  /* outline      : 1px solid slategrey; */
+    background-color: #8c8b8a;
+    border-radius: 2px;
+    /* outline      : 1px solid slategrey; */
 }
 
 .breadcrumb {
-  padding: 0;
-  background: transparent;
-  font-size: 12px;
+    padding: 0;
+    background: transparent;
+    font-size: 12px;
 }
 
 :hover {
-  transition: 0.5s;
+    transition: 0.5s;
 }
 
 .form-group {
-  text-align: left;
+    text-align: left;
 }
 
 .form-group label {
-  font-size: 13px;
-  font-weight: 600;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .form-group label span {
-  font-size: 10px;
-  color: #0078d4;
-  position: relative;
-  top: -4px;
-  left: 2px;
+    font-size: 10px;
+    color: #0078d4;
+    position: relative;
+    top: -4px;
+    left: 2px;
 }
 
 .dataTables_filter label {
-  display: inline;
+    display: inline;
 }
 
 div.dataTables_filter {
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-left: auto;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-left: auto;
 }
 
 .dataTables_filter label input {
-  width: 45% !important;
-  margin-right: 30px;
-  border: 1px solid #e1e1e1;
-  padding: 2px 8px;
-  border-radius: 2px;
-  font-family: system-ui;
+    width: 45% !important;
+    margin-right: 30px;
+    border: 1px solid #e1e1e1;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-family: system-ui;
 }
 
 .dataTables_filter label input::placeholder {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 .dataTables_filter {
-  position: relative;
+    position: relative;
 }
 
 .dataTables_filter:after {
-  font-family: "FontAwesome";
-  content: "\f002";
-  width: 30px;
-  height: 30px;
-  background-color: #0078d4;
-  position: absolute;
-  right: 2px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  text-align: center;
-  color: #fff;
-  line-height: 28px;
+    font-family: "FontAwesome";
+    content: "\f002";
+    width: 30px;
+    height: 30px;
+    background-color: #0078d4;
+    position: absolute;
+    right: 2px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+    color: #fff;
+    line-height: 28px;
 }
 
 .modal-body {
-  min-height: 30vh;
+    min-height: 30vh;
 }
 
 @media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 650px;
-  }
+    .modal-dialog {
+        max-width: 650px;
+    }
 }
 
 .modelAddBtn button {
-  position: relative;
-  top: 30px;
-  height: 32px;
-  width: 100%;
+    position: relative;
+    top: 30px;
+    height: 32px;
+    width: 100%;
 }
 
 .modal-body textarea {
-  min-height: 15vh;
+    min-height: 15vh;
 }
 
+
 /** common style end **/
+
 
 /** leftsidebar start **/
 
 .searchArea {
-  height: 36px;
-  border-bottom: 1px solid #e1e1e1;
+    height: 36px;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .searchArea .input-group,
 .searchArea .form-control {
-  height: 35px;
-  border-radius: 0px;
-  border: none;
-  padding-left: 0px;
+    height: 35px;
+    border-radius: 0px;
+    border: none;
+    padding-left: 0px;
 }
 
 .searchArea .input-group-text {
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 }
 
 .datePickerInput .input-group {
-  width: 175px;
-  color: #fff;
-  position: relative;
+    width: 175px;
+    color: #fff;
+    position: relative;
 }
 
 .datePickerInput .form-control {
-  border-radius: 6px !important;
-  padding-left: 38px;
-  color: #fff;
+    border-radius: 6px !important;
+    padding-left: 38px;
+    color: #fff;
 }
 
 .datePickerInput .fa-calendar {
-  position: absolute;
-  z-index: 10;
-  top: 8px;
-  left: 16px;
+    position: absolute;
+    z-index: 10;
+    top: 8px;
+    left: 16px;
 }
 
 .datePickerInput .fa-sort-desc {
-  position: absolute;
-  z-index: 10;
-  top: 8px;
-  right: 16px;
-  font-size: 10px !important;
+    position: absolute;
+    z-index: 10;
+    top: 8px;
+    right: 16px;
+    font-size: 10px !important;
 }
 
 .datePickerInput .input-group .form-control {
-  background: #0078d4;
-  cursor: pointer;
+    background: #0078d4;
+    cursor: pointer;
 }
 
 .SearchInputArea .input-group-text {
-  background-color: #0078d4;
-  color: #fff;
+    background-color: #0078d4;
+    color: #fff;
 }
 
 .SearchInputArea .input-group {
-  width: 50%;
-  margin-left: auto;
+    width: 50%;
+    margin-left: auto;
 }
 
 .input-group,
 .form-control {
-  height: 32px;
+    height: 32px;
 }
 
 .form-control::placeholder,
 .form-control {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 .form-control:focus {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 .menuArea {
-  height: calc(100vh - 150px);
-  overflow: auto;
+    height: calc(100vh - 100px);
+    overflow: auto;
 }
 
 .menuArea li {
-  padding: 4px;
-  position: relative;
-  padding-left: 16px;
+    padding: 4px;
+    position: relative;
+    padding-left: 16px;
 }
 
 .menuArea li:hover,
 .menuArea li .nav-link.active {
-  background-color: #f8f9fb;
+    background-color: #f8f9fb;
 }
 
 .menuArea li .nav-link:before,
 .menuArea li.activeMenu:before {
-  content: "";
-  width: 3px;
-  height: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  background-color: #0846a9;
+    content: "";
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #0846a9;
 }
 
 .menuArea li .nav-link,
 .menuArea li a {
-  text-decoration: none;
-  display: flex;
-  margin: 0px;
-  color: #333333;
-  font-size: 13px;
-  cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    margin: 0px;
+    color: #333333;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 .menuArea li img {
-  position: absolute;
-  top: 7px;
+    position: absolute;
+    top: 7px;
 }
 
 .menuArea li p {
-  margin: 0px;
-  margin-left: 26px;
-  color: #333333;
-  font-size: 13px;
-  position: relative;
-  width: 100%;
+    margin: 0px;
+    margin-left: 26px;
+    color: #333333;
+    font-size: 13px;
+    position: relative;
+    width: 100%;
 }
 
 .menuArea li p span {
-  position: absolute;
-  right: 10px;
+    position: absolute;
+    right: 10px;
 }
-.menuFooterLog img {
-  width: 100%;
-  height: auto;
-}
-.menuFooterLog {
-  padding: 5px;
-}
+
+
 /** leftsidebar end **/
+
 
 /** container-fluidInner start **/
 
 .container-fluidInner {
-  display: flex;
+    display: flex;
 }
 
 .leftsideBar {
-  width: 200px;
-  border-right: 1px solid #e1e1e1;
-  height: calc(100vh - 60px);
+    width: 200px;
+    border-right: 1px solid #e1e1e1;
+    height: calc(100vh - 60px);
 }
 
 .mainBody {
-  width: calc(100% - 200px);
+    width: calc(100% - 200px);
 }
 
 .mainBodyInner {
-  padding: 16px;
-  height: calc(100vh - 77px);
-  overflow: auto;
+    padding: 16px;
+    height: calc(100vh - 77px);
+    overflow: auto;
 }
 
+
 /** container-fluidInner end **/
+
 
 /** beardScrumList start **/
 
 .beardScrumListTop {
-  border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .beardScrumListTop ul {
-  height: 35px;
+    height: 35px;
 }
 
 .beardScrumListTop ul li {
-  line-height: 35px;
-  padding: 0px 18px;
-  font-size: 1vw;
-  display: inline-block;
+    line-height: 35px;
+    padding: 0px 18px;
+    font-size: 16px;
+    display: inline-block;
 }
 
 .beardScrumListTop ul li.active {
-  border-bottom: 2px solid #2089d9;
+    border-bottom: 2px solid #2089d9;
 }
 
+
 /** beardScrumList end **/
+
 
 /** filter area start **/
 
 .filterArea {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .tab-pane {
-  position: relative;
+    position: relative;
 }
 
 .tab-pane .filterArea {
-  position: absolute;
-  z-index: 1;
+    position: absolute;
+    z-index: 1;
 }
 
 #Queries .filterArea,
 #BookProperties .filterArea,
 #Milestone .filterArea {
-  position: relative;
+    position: relative;
 }
 
+
 /** filter area end **/
+
 
 /** statusListDiv start **/
 
 .statusListDiv {
-  display: flex;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .statusListDivinner {
-  padding: 10px;
-  border: 1px solid #33333329;
-  width: 14.28571428571429%;
-  margin: 8px;
-  border-radius: 4px;
-}
-
-.statusListDivinner:first-child {
-  margin-left: 0px;
-}
-
-.statusListDivinner:last-child {
-  margin-right: 0px;
+    padding: 10px;
+    border: 1px solid #33333329;
+    width: 13.28571428571429%;
+    border-radius: 4px;
 }
 
 .statusListDivinner.active {
-  box-shadow: 0px 0px 4px rgb(0 120 212 / 40%);
+    box-shadow: 0px 0px 4px rgb(0 120 212 / 40%);
 }
 
 .statusListDivinner h1 {
-  font-size: 1.5vw;
-  font-weight: 600;
-  margin: 0px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin: 0px;
 }
 
 .statusListDivinner span {
-  font-size: 13px;
+    font-size: 13px;
 }
 
+
 /** statusListDiv end **/
+
 
 /** table start **/
 
 .tableArea {
-  margin-top: 16px;
-  margin-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .tableFixHead {
-  overflow: auto;
-  max-height: 305px;
+    overflow: auto;
+    max-height: 305px;
 }
 
 .tableFixHead table thead th {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  min-width: 125px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    min-width: 125px;
 }
 
 .tableFixHead table {
-  border-collapse: collapse;
-  width: 100%;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 .tableFixHead thead tr th {
-  background-color: #f3f2f1;
-  height: 38px;
-  line-height: 38px;
-  border-radius: 2px;
+    background-color: #f3f2f1;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 2px;
 }
 
 .tableFixHead th,
 .tableFixHead td,
 .table th,
 .table td {
-  padding: 0px 16px;
-  color: #80807f;
-  font-size: 12px;
+    padding: 0px 16px;
+    color: #80807f;
+    font-size: 12px;
 }
 
 .tableFixHead tbody tr,
 .table tbody tr {
-  background-color: #f8f9fb;
-  border-top: 4px solid #fff;
-  height: 38px;
-  line-height: 38px;
-  border-radius: 2px;
+    background-color: #f8f9fb;
+    border-top: 4px solid #fff;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 2px;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #f8f9fb !important;
+    background-color: #f8f9fb !important;
 }
 
 .dataTables_scrollHeadInner,
 div.dataTables_scrollHead table.table-bordered {
-  width: 100% !important;
+    width: 100% !important;
 }
 
 .table-bordered,
@@ -839,18 +818,18 @@ div.dataTables_scrollHead table.table-bordered {
 .table td,
 .table-bordered th,
 .table-bordered td {
-  border: none;
+    border: none;
 }
 
 .table-bordered thead th,
 .table-bordered thead td {
-  border-bottom-width: 4px;
+    border-bottom-width: 4px;
 }
 
 .table thead th,
 .table-bordered td {
-  vertical-align: bottom;
-  border-bottom: 4px solid #ffffff !important;
+    vertical-align: bottom;
+    border-bottom: 4px solid #ffffff !important;
 }
 
 tbody tr,
@@ -858,816 +837,818 @@ table.dataTable td,
 table.dataTable th,
 tbody tr td,
 tbody tr td p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin: 0px;
-  max-width: 125px;
-  font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0px;
+    max-width: 125px;
+    font-size: 12px;
 }
 
 tbody tr img {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  margin-right: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin-right: 4px;
 }
 
 .actionTable ul li {
-  display: inline;
-  margin-right: 12px;
-  cursor: pointer;
-  color: #a9aaab;
+    display: inline;
+    margin-right: 12px;
+    cursor: pointer;
+    color: #a9aaab;
 }
 
-table.dataTable > thead .sorting:before,
-table.dataTable > thead .sorting:after,
-table.dataTable > thead .sorting_asc:before,
-table.dataTable > thead .sorting_asc:after,
-table.dataTable > thead .sorting_desc:before,
-table.dataTable > thead .sorting_desc:after,
-table.dataTable > thead .sorting_asc_disabled:before,
-table.dataTable > thead .sorting_asc_disabled:after,
-table.dataTable > thead .sorting_desc_disabled:before,
-table.dataTable > thead .sorting_desc_disabled:after {
-  bottom: 0em !important;
+table.dataTable>thead .sorting:before,
+table.dataTable>thead .sorting:after,
+table.dataTable>thead .sorting_asc:before,
+table.dataTable>thead .sorting_asc:after,
+table.dataTable>thead .sorting_desc:before,
+table.dataTable>thead .sorting_desc:after,
+table.dataTable>thead .sorting_asc_disabled:before,
+table.dataTable>thead .sorting_asc_disabled:after,
+table.dataTable>thead .sorting_desc_disabled:before,
+table.dataTable>thead .sorting_desc_disabled:after {
+    bottom: 0em !important;
 }
 
 .statusTxt {
-  position: absolute;
-  top: 6px;
+    position: absolute;
+    top: 6px;
 }
 
 tbody td .completeProgressBar {
-  margin-left: 25px;
+    margin-left: 25px;
 }
+
 
 /**table end **/
 
+
 /** chart area start **/
 
-.chartArea > div {
-  margin-bottom: 16px;
+.chartArea>div {
+    margin-bottom: 16px;
 }
 
 .chartAreaInner {
-  border: 1px solid #e1e1e1;
-  padding: 8px 0px;
-  border-radius: 4px;
-  background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    padding: 8px 0px;
+    border-radius: 4px;
+    background-color: #ffffff;
 }
 
 .highcharts-credits {
-  display: none;
+    display: none;
 }
 
 .highcharts-title {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .highcharts-container {
-  height: 300px !important;
+    height: 300px !important;
 }
 
+
 /** chart area end **/
+
 
 /** book page style start **/
 
 .bookGridInner {
-  box-shadow: 0px 0px 3px #00000029;
-  padding: 10px;
-  border-radius: 4px;
+    box-shadow: 0px 0px 3px #00000029;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 .bookCoverImg {
-  border-radius: 4px;
-  border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
 }
 
 .bookHeadingTop {
-  display: flex;
+    display: flex;
 }
 
 .bookIds {
-  width: 75%;
+    width: 75%;
 }
 
 .bookGridInner {
-  position: relative;
+    position: relative;
 }
 
 .bookGridInner p {
-  font-size: 12px;
+    font-size: 12px;
 }
 
-.bookGrid > div {
-  margin-bottom: 16px;
-  width: 225px;
-  min-width: 225px;
+.bookGrid>div {
+    margin-bottom: 16px;
+    width: 225px;
+    min-width: 225px;
 }
 
 .bookGridInner .col-lg-7 {
-  padding-left: 0px;
+    padding-left: 0px;
 }
 
 .bookIds p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin-bottom: 0;
-  color: #ccc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0;
+    color: #ccc;
 }
 
 .bookIconOption {
-  position: absolute;
-  top: 6px;
-  right: 10px;
-  z-index: 10;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    z-index: 10;
 }
 
 .bookIconOption ul li,
 .listStyle li {
-  list-style: none;
-  display: inline;
-  cursor: pointer;
+    list-style: none;
+    display: inline;
+    cursor: pointer;
 }
 
 .listStyle li {
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-  position: relative;
-  top: 4px;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    position: relative;
+    top: 4px;
 }
 
 .listStyle li.active {
-  color: #1784d7;
+    color: #1784d7;
 }
 
 .SearchInputArea {
-  display: flex;
+    display: flex;
 }
 
 .bookDescGroup h1 {
-  font-size: 16px;
-  font-weight: 600;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin: 8px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 8px 0px;
 }
 
 .bookDescGroup p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin-bottom: 6px;
-  color: #9f9f9f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 6px;
+    color: #9f9f9f;
 }
 
 .bookDescList li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 4px;
-  margin-bottom: 4px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 4px;
 }
 
 .bookDescList li p {
-  background-color: #efefef;
-  border-radius: 25px;
-  padding: 4px 8px;
-  margin-bottom: 0px;
-  font-size: 10px;
-  color: #333333;
+    background-color: #efefef;
+    border-radius: 25px;
+    padding: 4px 8px;
+    margin-bottom: 0px;
+    font-size: 10px;
+    color: #333333;
 }
 
 .updateDesc {
-  margin: 8px 0px !important;
-  font-size: 10px;
+    margin: 8px 0px !important;
+    font-size: 10px;
 }
 
 .updateDesc span {
-  font-weight: 600;
-  color: #333333;
+    font-weight: 600;
+    color: #333333;
 }
 
 .completedStatus {
-  margin-bottom: 6px;
+    margin-bottom: 6px;
 }
 
 .completeProgressBar {
-  height: 5px;
-  background-color: #0846a914;
-  border-radius: 5px;
+    height: 5px;
+    background-color: #0846a914;
+    border-radius: 5px;
 }
 
 .completeProgressBarInner {
-  background-color: #0846a93d;
-  height: 5px;
-  border-radius: 5px;
+    background-color: #0846a93d;
+    height: 5px;
+    border-radius: 5px;
 }
 
 .bookFlipBack {
-  visibility: hidden;
-  position: absolute;
-  top: 10px;
+    visibility: hidden;
+    position: absolute;
+    top: 10px;
 }
 
 .bookFlipBack h2 {
-  font-size: 16px;
-  font-weight: 600;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .bookFlip .bookFlipFront {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .bookFlip .bookFlipBack {
-  visibility: visible;
+    visibility: visible;
 }
 
 .selectProof p {
-  background-color: #48d6d2 !important;
-  color: #fff !important;
+    background-color: #48d6d2 !important;
+    color: #fff !important;
 }
 
 .listGrid {
-  overflow-x: auto;
+    overflow-x: auto;
 }
 
 .listGrid tr {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .listGrid td {
-  max-width: 120px;
-  min-width: 80px;
-  padding: 6px 16px;
-  position: relative;
+    max-width: 120px;
+    min-width: 80px;
+    padding: 6px 16px 6px 6px;
+    position: relative;
 }
 
 .bookViewScreen.active .bookGrid,
 .listGrid {
-  display: none;
+    display: none;
 }
 
 .bookViewScreen.active .listGrid {
-  display: block;
+    display: block;
 }
 
 .listGridImg {
-  border-radius: 2px;
-  height: 40px;
-  width: 28px;
-  margin-right: 8px;
+    border-radius: 2px;
+    height: 40px;
+    width: 28px;
+    margin-right: 8px;
 }
 
 .bookHeadTitle {
-  font-size: 24px;
-  margin: 12px 0px;
+    font-size: 24px;
+    margin: 12px 0px;
 }
 
 .bookDetailTabList {
-  border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .bookDetailTabList li {
-  display: inline-block;
-  font-size: 13px;
-  cursor: pointer;
-  position: relative;
-  padding: 6px 0px;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+    padding: 6px 0px;
 }
 
 .bookDetailTabList a {
-  color: #333333;
-  text-decoration: none;
-  padding: 6px 16px;
+    color: #333333;
+    text-decoration: none;
+    padding: 6px 16px;
 }
 
 .bookDetailTabList li:hover {
-  background-color: #f7f7f7;
+    background-color: #f7f7f7;
 }
 
 .bookDetailTab {
-  margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .bookDetailTabList li a.active:before {
-  content: "";
-  height: 2px;
-  background-color: #0078d4;
-  width: 100%;
-  bottom: -1px;
-  position: absolute;
-  left: 0px;
+    content: "";
+    height: 2px;
+    background-color: #0078d4;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+    left: 0px;
 }
 
 .accordion {
-  background-color: #f8f9fb;
-  color: #575656;
-  cursor: pointer;
-  padding: 0px 16px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 13px;
-  transition: 0.4s;
-  height: 40px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  position: relative;
+    background-color: #f8f9fb;
+    color: #575656;
+    cursor: pointer;
+    padding: 0px 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+    transition: 0.4s;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    position: relative;
 }
 
 .taskLeft .accordion {
-  background-color: #efefef;
+    background-color: #EFEFEF;
 }
 
 .accordionGroup.active .panel {
-  display: block;
-  animation: fade-in 1s;
+    display: block;
+    animation: fade-in 1s;
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  overflow: hidden;
-  /* transition: max-height 0.2s ease-out; */
-  display: none;
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    /* transition: max-height 0.2s ease-out; */
+    display: none;
 }
 
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .accordion .fa {
-  margin-right: 4px;
-  transition: 0.5s;
-  color: #858585;
+    margin-right: 4px;
+    transition: 0.5s;
+    color: #858585;
 }
 
 .accordion.active .fa {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .changeCoverBtn {
-  color: #0078d4;
-  border: 1px solid #0078d4;
-  border-radius: 4px;
-  width: 100%;
-  margin-bottom: 8px;
+    color: #0078d4;
+    border: 1px solid #0078d4;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 8px;
 }
 
 .bookCoverImgAdd img {
-  margin-bottom: 8px;
-  border: 1px solid #e1e1e1;
-  border-radius: 2px;
+    margin-bottom: 8px;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
 }
 
 .customeWidth {
-  max-height: 90%;
+    max-height: 90%;
 }
 
 .form-check-input {
-  position: relative;
-  margin: 0px;
-  top: 2px;
-  margin-right: 4px;
+    position: relative;
+    margin: 0px;
+    top: 2px;
+    margin-right: 4px;
 }
 
 .removeIns {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .removeIns td:nth-child(3) {
-  text-decoration: line-through 1px red;
+    text-decoration: line-through 1px red;
 }
 
 .accordion label {
-  font-size: 11px;
-  position: absolute;
-  right: 16px;
-  top: 12px;
+    font-size: 11px;
+    position: absolute;
+    right: 16px;
+    top: 12px;
 }
 
 .panel .form-group label,
 .panel .form-control {
-  color: #858585;
+    color: #858585;
 }
 
 .profArea {
-  display: flex;
+    display: flex;
 }
 
 .profArea img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid #e1e1e1;
-  margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    margin-right: 10px;
 }
 
 .profArea p {
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0px;
 }
 
 .profAreaOuter {
-  padding: 8px 16px;
+    padding: 8px 16px;
 }
 
 .profArea label {
-  font-size: 10px;
-  margin-bottom: 0px;
-  position: relative;
-  top: -8px;
-  color: #3333339c;
+    font-size: 10px;
+    margin-bottom: 0px;
+    position: relative;
+    top: -8px;
+    color: #3333339c;
 }
 
 .profAreaDif {
-  padding: 8px 16px;
-  background-color: #f2f6f9;
-  border-radius: 7px;
-  font-size: 12px;
-  position: relative;
+    padding: 8px 16px;
+    background-color: #f2f6f9;
+    border-radius: 7px;
+    font-size: 12px;
+    position: relative;
 }
 
 .profAreaDif .profTxt {
-  position: absolute;
-  bottom: -20px;
-  margin: 0;
-  display: block;
-  right: 0px;
-  font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    margin: 0;
+    display: block;
+    right: 0px;
+    font-size: 12px;
 }
 
 .queryBtns {
-  margin-bottom: 8px;
-  margin-top: 12px;
+    margin-bottom: 8px;
+    margin-top: 12px;
 }
 
 .profTxt {
-  margin: 8px 0px;
-  color: #3333339c;
-  font-size: 13px;
+    margin: 8px 0px;
+    color: #3333339c;
+    font-size: 13px;
 }
 
 .MilestoneHeader .row {
-  background-color: #f3f2f1;
-  height: 38px;
-  padding: 0px 16px;
-  margin: 0px;
+    background-color: #f3f2f1;
+    height: 38px;
+    padding: 0px 16px;
+    margin: 0px;
 }
 
 .MilestoneHeader p {
-  font-size: 13px;
-  margin-bottom: 0px;
-  line-height: 38px;
-  font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 0px;
+    line-height: 38px;
+    font-weight: 600;
 }
 
 .timeLineArea li {
-  border-radius: 2px;
-  margin: 5px 0px;
-  padding: 0px 4px;
+    border-radius: 2px;
+    margin: 5px 0px;
+    padding: 0px 4px;
 }
 
 .timeLineArea,
 .timeLineAreaChild,
 .timeLineAreaSecondChild {
-  position: relative;
+    position: relative;
 }
 
 .timeLineAreaSecondChild {
-  padding: 0px 56px;
+    padding: 0px 56px;
 }
 
 .timeLineAreaSecondChild li {
-  display: flex;
-  position: relative;
-  padding: 0px 32px;
+    display: flex;
+    position: relative;
+    padding: 0px 32px;
 }
 
 .timeLineArea:before,
 .timeLineAreaChild:before,
 .timeLineAreaSecondChild:before {
-  content: "";
-  width: 1px;
-  background-color: #e1e1e1;
-  height: 100%;
-  position: absolute;
-  left: 33px;
-  z-index: -1;
+    content: "";
+    width: 1px;
+    background-color: #e1e1e1;
+    height: 100%;
+    position: absolute;
+    left: 33px;
+    z-index: -1;
 }
 
 .timeLineAreaChild:before {
-  left: 77px;
+    left: 77px;
 }
 
 .timeLineAreaSecondChild:before {
-  left: 71px;
-  top: 10px;
-  height: 70%;
+    left: 71px;
+    top: 10px;
+    height: 70%;
 }
 
 .timeLineArea li .row {
-  padding: 0px 16px;
-  margin: 0px;
-  background-color: #f8f9fb;
+    padding: 0px 16px;
+    margin: 0px;
+    background-color: #f8f9fb;
 }
 
 .timeLineAreaSecondChild .circleAreaTime {
-  width: 16px;
-  height: 16px;
-  left: 7px;
-  top: 9px;
+    width: 16px;
+    height: 16px;
+    left: 7px;
+    top: 9px;
 }
 
 .timeLineArea li p {
-  margin: 0px;
-  font-size: 12px;
-  line-height: 34px;
+    margin: 0px;
+    font-size: 12px;
+    line-height: 34px;
 }
 
 .timeLineHead {
-  padding-left: 36px;
-  display: flex;
-  position: relative;
+    padding-left: 36px;
+    display: flex;
+    position: relative;
 }
 
 .timeLineHead p {
-  font-weight: 600;
-  font-size: 14px !important;
+    font-weight: 600;
+    font-size: 14px !important;
 }
 
 .timeLineHead .fa {
-  position: absolute;
-  left: -10px;
-  top: 10px;
-  transition: 0.5s;
-  color: #858585;
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    transition: 0.5s;
+    color: #858585;
 }
 
 .timeLineAreaChild {
-  padding: 0px 42px;
+    padding: 0px 42px;
 }
 
 .circleAreaTime {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  background-color: #efefef;
-  position: absolute;
-  left: 5px;
-  top: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #efefef;
+    position: absolute;
+    left: 5px;
+    top: 6px;
 }
 
+
 /** book page style end **/
+
 
 /** login start **/
 
 .loginPageArea {
-  padding: 48px;
-  background-color: #0846a9;
+    padding: 48px;
+    background-color: #0846a9;
 }
 
 .loginPageAreaInner {
-  border-radius: 5px;
-  background-image: url("../images/bookImg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+    border-radius: 5px;
+    background-image: url("../images/bookImg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.loginPageAreaInner > div {
-  height: calc(100vh - 96px);
-  position: relative;
+.loginPageAreaInner>div {
+    height: calc(100vh - 96px);
+    position: relative;
 }
 
 .loginRightSide {
-  width: 350px;
-  max-width: 350px;
-  text-align: center;
-  margin: 0 auto;
+    width: 350px;
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .loginRightSide input {
-  background-color: #f4f5f7;
-  border-color: #f4f5f7;
+    background-color: #f4f5f7;
+    border-color: #f4f5f7;
 }
 
 .loginRightSideOuter {
-  border-left: 1px solid #e1e1e1;
-  background-color: #fff;
+    border-left: 1px solid #e1e1e1;
+    background-color: #fff;
 }
 
 .loginRightSide {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .loginRightSide h1 {
-  font-size: 44px;
-  margin: 0px;
-  font-size: 600;
+    font-size: 44px;
+    margin: 0px;
+    font-size: 600;
 }
 
 .loginRightSide p {
-  font-size: 14px;
-  color: #858585;
-  margin: 0px;
+    font-size: 14px;
+    color: #858585;
+    margin: 0px;
 }
 
 .loginRightSide .form-group label {
-  color: #858585;
+    color: #858585;
 }
 
 .loginRightSide button {
-  width: 100%;
-  height: 30px;
-  margin-top: 16px;
+    width: 100%;
+    height: 30px;
+    margin-top: 16px;
 }
 
 .checkBoxArea {
-  padding: 0px 16px;
-  font-size: 12px;
-  color: #858585;
+    padding: 0px 16px;
+    font-size: 12px;
+    color: #858585;
 }
 
 .checkBoxArea {
-  display: flex;
-  width: 100%;
+    display: flex;
+    width: 100%;
 }
 
-.checkBoxArea > div {
-  width: 50%;
+.checkBoxArea>div {
+    width: 50%;
 }
 
 .rememberBox {
-  text-align: start;
+    text-align: start;
 }
 
 .forgetPass {
-  text-align: end;
+    text-align: end;
 }
 
 .loginRightSide .form-group {
-  position: relative;
+    position: relative;
 }
 
 .passwordIcons {
-  position: absolute;
-  right: 24px;
-  top: 40px;
-  cursor: pointer;
+    position: absolute;
+    right: 24px;
+    top: 40px;
+    cursor: pointer;
 }
 
 .passwordIcons .fa-eye,
 .passwordIcons.hide .fa-eye-slash {
-  display: none;
+    display: none;
 }
 
 .passwordIcons .fa-eye-slash,
 .passwordIcons.hide .fa-eye {
-  display: block;
+    display: block;
 }
 
 .logoLogin {
-  margin: 28px 16px;
+    margin: 28px 16px;
 }
 
 .versionTextArea h1 {
-  font-size: 24px;
-  margin: 12px 0px;
+    font-size: 24px;
+    margin: 12px 0px;
 }
 
 .versionTextArea {
-  position: absolute;
-  width: 100%;
-  bottom: 32px;
-  left: 0px;
-  padding: 8px 8px 8px 16px;
-  background-image: linear-gradient(to right, #fff, rgb(255 255 255 / 20%));
+    position: absolute;
+    width: 100%;
+    bottom: 32px;
+    left: 0px;
+    padding: 8px 8px 8px 16px;
+    background-image: linear-gradient(to right, #fff, rgb(255 255 255 / 20%));
 }
 
 .versionTextArea p {
-  font-size: 13px;
-  margin: 6px 0px;
+    font-size: 13px;
+    margin: 6px 0px;
 }
 
 .versionTextArea ul {
-  padding-left: 26px;
+    padding-left: 26px;
 }
 
 .versionTextArea ul li {
-  position: relative;
+    position: relative;
 }
 
 .versionTextArea ul li::before {
-  content: "-";
-  position: absolute;
-  left: -10px;
-  top: -4px;
+    content: "-";
+    position: absolute;
+    left: -10px;
+    top: -4px;
 }
 
 .loginFooter {
-  font-size: 12px;
-  margin: 0;
-  position: absolute;
-  bottom: 10px;
-  text-align: center;
-  width: 100%;
-  color: #858585;
-  z-index: 1;
+    font-size: 12px;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: #858585;
+    z-index: 1;
 }
 
+
 /** login end **/
+
 
 /** task page start**/
 
 .mainBodyInner.taskPageInner {
-  display: flex;
-  padding: 0px;
+    display: flex;
+    padding: 0px;
 }
 
 .taskPageInner .panel {
-  padding: 0px;
+    padding: 0px;
 }
 
 .taskRight .panel {
-  padding: 0px 8px;
+    padding: 0px 8px;
 }
 
 .taskPageInner .accordion {
-  margin: 2px 0px;
+    margin: 2px 0px;
 }
 
 .taskPageInner .tab-content {
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: calc(100vh - 220px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(100vh - 220px);
 }
 
 .taskPageInner .bookDetailTab {
-  margin-top: 8px;
+    margin-top: 8px;
 }
 
 .accordion span {
-  position: absolute;
-  right: 16px;
+    position: absolute;
+    right: 16px;
 }
 
+
 /** task page end**/
+
 
 /** media query start **/
 
 @media screen and (max-width: 1300px) {
-  .bookGrid .col-lg-4 {
-    width: 345px;
-    min-width: 345px;
-  }
-  .bookCoverImg {
-    height: 150px;
-  }
-  .updateDesc {
-    margin: 2px 0px !important;
-  }
+    .bookGrid .col-lg-4 {
+        width: 345px;
+        min-width: 345px;
+    }
+    .bookCoverImg {
+        height: 150px;
+    }
+    .updateDesc {
+        margin: 2px 0px !important;
+    }
 }
+
 
 /** media query end**/
 
-.iconMenu{ 
-  width:40px;
+.iconMenu {
+    width: 45px;
 }
-.iconMenu +.mainBody{
-  width:calc(100% - 40px);
+
+.iconMenu+.mainBody {
+    width: calc(100% - 45px);
 }
-.iconMenu .searchArea, .iconMenu li a p, .iconMenu .menuFooterLog, .iconMenu .menuArea li{
-  display: none;
+
+.iconMenu .menuArea p,
+.iconMenu .searchArea {
+    display: none;
 }
-.iconMenu .menuArea li a{
-  height: 30px;
-}
-.iconMenu .menuArea li.ShowMenu{
-  display: block;
-}
-.iconMenu .menuArea{
-  height: calc(100vh - 81px);
-}
-.iconMenu .menuArea li a .iconsSvg {
-  width: 24px;
-  height: 24px;
-}
-.iconMenu .menuArea li img{
-  left:10px;
+
+.menuArea li {
+    height: 30px;
 }
