@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/customstyle.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/media-screen.css">
 </head>
 
 <body>
@@ -25,14 +26,13 @@
                     <li><i class="fa fa-th" aria-hidden="true"></i></li>
                     <li><i class="fa fa-bell" aria-hidden="true"></i> <span></span></li>
                     <li class="userProfile">
-                        <p> <img src="./images/profile.jpg"> Accounts Manager <i class="fa fa-angle-down"
-                                aria-hidden="true"></i></p>
+                        <p> <img src="./images/profile.jpg"> Accounts Manager <i class="fa fa-angle-down" aria-hidden="true"></i></p>
                     </li>
                 </ul>
             </div>
         </header>
         <div class="container-fluidInner">
-            <div class="leftsideBar">
+            <div class="leftsideBar iconMenu">
                 <div class="searchArea">
                     <div class="input-group">
                         <div class="input-group-append">
@@ -43,34 +43,52 @@
                 </div>
                 <div class="menuArea innerScrollBar">
                     <ul>
-                        <li class="activeMenu"><a href="index.html">
+                        <li class="activeMenu">
+                            <a href="index.html">
                                 <img src="./images/icons.svg#dashboard" class="iconsSvg" />
                                 <p>Dashboard</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>General</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>Inflow</p>
-                            </a></li>
-                        <li><a href=""><img src="./images/icons.svg#list" class="iconsSvg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./images/icons.svg#list" class="iconsSvg" />
                                 <p>Personal</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>My Task</p>
-                            </a></li>
-                        <li><a href="allbooks.html">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="allbooks.html">
                                 <p>All Books</p>
-                            </a></li>
-                        <li><a href=""><img src="./images/icons.svg#notification" class="iconsSvg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./images/icons.svg#notification" class="iconsSvg" />
                                 <p>Report</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>File Status</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>BG Health</p>
-                            </a></li>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -94,22 +112,12 @@
                         <div class="col-lg-6 fileListStatus text-right">
                             <span>Status:</span>
                             <ul>
-                                <li class="yts"><span class="material-icons">
-                                        play_circle_filled
-                                    </span>Yet to Start</li>
-                                <li class="inProg"><span class="material-icons">
-                                        check_circle
-                                    </span>Work in Progress</li>
-                                <li class="Pend"><span class="material-icons">
-                                        pause_circle_filled
-                                    </span> Pending</li>
+                                <li class="yts"><i class="fa fa-play-circle" aria-hidden="true"></i> Yet to Start</li>
+                                <li class="inProg"><i class="fa fa-check-circle" aria-hidden="true"></i> Work in Progress</li>
+                                <li class="Pend"><i class="fa fa-pause-circle" aria-hidden="true"></i> Pending</li>
                                 <li class="bgPro">BG Process</li>
-                                <li class="riskI"><span class="material-icons">
-                                        cancel
-                                    </span>Risk</li>
-                                <li class="compl"><span class="material-icons">
-                                        check_circle
-                                    </span>Completed</li>
+                                <li class="riskI"><i class="fa fa-times-circle" aria-hidden="true"></i> Risk</li>
+                                <li class="compl"><i class="fa fa-check-circle" aria-hidden="true"></i> Completed</li>
                             </ul>
                         </div>
                         <div class="col-lg-12 tableFixHead innerScrollBar">

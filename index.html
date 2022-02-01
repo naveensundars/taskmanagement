@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/customstyle.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/media-screen.css">
 </head>
 
 <body>
@@ -40,22 +41,34 @@
                                 <h3>Workflows:</h3>
                                 <div class="workFlowGroup">
                                     <div>
-                                        <input type="checkbox" class="checkBox" checked>
                                         <img src="images/tandf.jpg">
                                         <span>T & F</span>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="checkBox" checked>
                                         <img src="images/tandf.jpg">
                                         <span>Springer</span>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="checkBox" checked>
                                         <img src="images/tandf.jpg">
                                         <span>Asha</span>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="checkBox" checked>
+                                        <img src="images/tandf.jpg">
+                                        <span>Express Lane</span>
+                                    </div>
+                                    <div>
+                                        <img src="images/tandf.jpg">
+                                        <span>T & F</span>
+                                    </div>
+                                    <div>
+                                        <img src="images/tandf.jpg">
+                                        <span>Springer</span>
+                                    </div>
+                                    <div>
+                                        <img src="images/tandf.jpg">
+                                        <span>Asha</span>
+                                    </div>
+                                    <div>
                                         <img src="images/tandf.jpg">
                                         <span>Express Lane</span>
                                     </div>
@@ -90,38 +103,53 @@
                 </div>
                 <div class="menuArea innerScrollBar">
                     <ul>
-                        <li class="activeMenu"><a href="index.html">
+                        <li class="activeMenu">
+                            <a href="index.html">
                                 <img src="./images/icons.svg#dashboard" class="iconsSvg" />
                                 <p>Dashboard</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>General</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>Inflow <span>03</span></p>
-                            </a></li>
-                        <li><a href=""><img src="./images/icons.svg#list" class="iconsSvg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./images/icons.svg#list" class="iconsSvg" />
                                 <p>Personal <span>03</span></p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>My Task <span>03</span></p>
-                            </a></li>
-                        <li><a href="allbooks.html">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="allbooks.html">
                                 <p>All Books</p>
-                            </a></li>
-                        <li><a href=""><img src="./images/icons.svg#notification" class="iconsSvg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./images/icons.svg#notification" class="iconsSvg" />
                                 <p>Report</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>File Status</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>BG Health</p>
-                            </a></li>
+                            </a>
+                        </li>
                     </ul>
-                </div>
-                <div class="menuFooterLog">
-                    <img src="./images/tandf.png">
                 </div>
             </div>
             <div class="mainBody">
@@ -143,7 +171,8 @@
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
                                 <div class="input-group-append">
-                                    <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                    <span class="input-group-text"><i class="fa fa-search"
+                                            aria-hidden="true"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -517,19 +546,14 @@
             </div>
             <footer>
                 <div class="row">
-                    <div class="col-lg-6 text-left">
+                    <div class="col-lg-3 text-left">
+                        <p>Design last updated date: <span>16 July 2021</span></p>
+                    </div>
+                    <div class="col-lg-7 text-center">
                         <p>&#169; 2021 | www.stravie.com. All rights reserved.</p>
                     </div>
-                    <div class="col-lg-6 text-right">
-                        <ul class="footerLis">
-                            <li>
-                                <p>Location: <span>Pondicherry</span></p>
-                            </li>
-                            <li>
-                                <p>Status: <span>Online</span></p>
-                            </li>
-                        </ul>
-
+                    <div class="col-lg-2 text-right">
+                        <p>Status: <span>Online</span></p>
                     </div>
                 </div>
             </footer>
@@ -541,7 +565,7 @@
         <script src="js/highChartData.js"></script>
         <script src="js/Script.js"></script>
         <script type="text/javascript">
-            $(function () {
+            $(function() {
                 $('#txtDate').datepicker({
                     format: "dd MM yyyy"
                 });

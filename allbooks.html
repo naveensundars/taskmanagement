@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/customstyle.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/media-screen.css">
 </head>
 
 <body>
@@ -24,14 +25,13 @@
                     <li><i class="fa fa-th" aria-hidden="true"></i></li>
                     <li><i class="fa fa-bell" aria-hidden="true"></i> <span></span></li>
                     <li class="userProfile">
-                        <p> <img src="./images/profile.jpg"> Accounts Manager <i class="fa fa-angle-down"
-                                aria-hidden="true"></i></p>
+                        <p> <img src="./images/profile.jpg"> Accounts Manager <i class="fa fa-angle-down" aria-hidden="true"></i></p>
                     </li>
                 </ul>
             </div>
         </header>
         <div class="container-fluidInner">
-            <div class="leftsideBar">
+            <div class="leftsideBar iconMenu">
                 <div class="searchArea">
                     <div class="input-group">
                         <div class="input-group-append">
@@ -42,34 +42,52 @@
                 </div>
                 <div class="menuArea innerScrollBar">
                     <ul>
-                        <li><a href="index.html">
+                        <li>
+                            <a href="index.html">
                                 <img src="./images/icons.svg#dashboard" class="iconsSvg" />
                                 <p>Dashboard</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>General</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>Inflow</p>
-                            </a></li>
-                        <li><a href=""><img src="./images/icons.svg#list" class="iconsSvg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./images/icons.svg#list" class="iconsSvg" />
                                 <p>Personal</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>My Task</p>
-                            </a></li>
-                        <li class="activeMenu"><a href="allbooks.html">
+                            </a>
+                        </li>
+                        <li class="activeMenu">
+                            <a href="allbooks.html">
                                 <p>All Books</p>
-                            </a></li>
-                        <li><a href=""><img src="./images/icons.svg#notification" class="iconsSvg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./images/icons.svg#notification" class="iconsSvg" />
                                 <p>Report</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>File Status</p>
-                            </a></li>
-                        <li><a href="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
                                 <p>BG Health</p>
-                            </a></li>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -89,8 +107,7 @@
                         </div>
                         <div class="col-lg-6 SearchInputArea text-right">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search..."
-                                    aria-describedby="basic-addon2">
+                                <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <span class="input-group-text"><i class="fa fa-search"
                                             aria-hidden="true"></i></span>
@@ -98,27 +115,24 @@
                             </div>
                             <ul class="listStyle">
                                 <li title="List" class="listView"><i class="fa fa-list-ul" aria-hidden="true"></i></li>
-                                <li title="Grid" class="gridView active"><i class="fa fa-th-large"
-                                        aria-hidden="true"></i></li>
+                                <li title="Grid" class="gridView active"><i class="fa fa-th-large" aria-hidden="true"></i></li>
                             </ul>
                         </div>
                     </div>
                     <div class="bookViewScreen">
                         <div class="row bookGrid">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-sm-6">
                                 <div class="bookGridInner">
                                     <div class="bookIconOption">
                                         <ul>
                                             <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
                                             </li>
-                                            <li class="flipButton"><img src="./images/icons.svg#flip"
-                                                    class="iconsSvg" />
+                                            <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" />
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="row bookFlipFront">
-                                        <div class="col-lg-5"><img src="./images/book.jpg"
-                                                class="img-fluid bookCoverImg" />
+                                        <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="bookHeadingTop">
@@ -140,8 +154,7 @@
                                                         <p>Yet to Start</p>
                                                     </li>
                                                 </ul>
-                                                <p class="updateDesc"> <img src="./images/icons.svg#update"
-                                                        class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                                <p class="updateDesc"> <img src="./images/icons.svg#update" class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
                                                 <p class="completedStatus">Completed - 0%</p>
                                                 <div class="completeProgressBar">
                                                     <div class="completeProgressBarInner" style="width:0%;"></div>
@@ -186,20 +199,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-sm-6">
                                 <div class="bookGridInner">
                                     <div class="bookIconOption">
                                         <ul>
                                             <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
                                             </li>
-                                            <li class="flipButton"><img src="./images/icons.svg#flip"
-                                                    class="iconsSvg" />
+                                            <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" />
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="row bookFlipFront">
-                                        <div class="col-lg-5"><img src="./images/book.jpg"
-                                                class="img-fluid bookCoverImg" />
+                                        <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="bookHeadingTop">
@@ -221,8 +232,7 @@
                                                         <p>Yet to Start</p>
                                                     </li>
                                                 </ul>
-                                                <p class="updateDesc"> <img src="./images/icons.svg#update"
-                                                        class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                                <p class="updateDesc"> <img src="./images/icons.svg#update" class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
                                                 <p class="completedStatus">Completed - 0%</p>
                                                 <div class="completeProgressBar">
                                                     <div class="completeProgressBarInner" style="width:80%;"></div>
@@ -267,20 +277,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-sm-6">
                                 <div class="bookGridInner">
                                     <div class="bookIconOption">
                                         <ul>
                                             <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
                                             </li>
-                                            <li class="flipButton"><img src="./images/icons.svg#flip"
-                                                    class="iconsSvg" />
+                                            <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" />
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="row bookFlipFront">
-                                        <div class="col-lg-5"><img src="./images/book.jpg"
-                                                class="img-fluid bookCoverImg" />
+                                        <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="bookHeadingTop">
@@ -302,8 +310,7 @@
                                                         <p>Yet to Start</p>
                                                     </li>
                                                 </ul>
-                                                <p class="updateDesc"> <img src="./images/icons.svg#update"
-                                                        class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                                <p class="updateDesc"> <img src="./images/icons.svg#update" class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
                                                 <p class="completedStatus">Completed - 0%</p>
                                                 <div class="completeProgressBar">
                                                     <div class="completeProgressBarInner" style="width:0%;"></div>
@@ -348,20 +355,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-sm-6">
                                 <div class="bookGridInner">
                                     <div class="bookIconOption">
                                         <ul>
                                             <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
                                             </li>
-                                            <li class="flipButton"><img src="./images/icons.svg#flip"
-                                                    class="iconsSvg" />
+                                            <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" />
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="row bookFlipFront">
-                                        <div class="col-lg-5"><img src="./images/book.jpg"
-                                                class="img-fluid bookCoverImg" />
+                                        <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="bookHeadingTop">
@@ -383,8 +388,7 @@
                                                         <p>Yet to Start</p>
                                                     </li>
                                                 </ul>
-                                                <p class="updateDesc"> <img src="./images/icons.svg#update"
-                                                        class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                                <p class="updateDesc"> <img src="./images/icons.svg#update" class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
                                                 <p class="completedStatus">Completed - 0%</p>
                                                 <div class="completeProgressBar">
                                                     <div class="completeProgressBarInner" style="width:10%;"></div>
@@ -429,20 +433,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-sm-6">
                                 <div class="bookGridInner">
                                     <div class="bookIconOption">
                                         <ul>
                                             <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
                                             </li>
-                                            <li class="flipButton"><img src="./images/icons.svg#flip"
-                                                    class="iconsSvg" />
+                                            <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" />
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="row bookFlipFront">
-                                        <div class="col-lg-5"><img src="./images/book.jpg"
-                                                class="img-fluid bookCoverImg" />
+                                        <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="bookHeadingTop">
@@ -464,8 +466,7 @@
                                                         <p>Yet to Start</p>
                                                     </li>
                                                 </ul>
-                                                <p class="updateDesc"> <img src="./images/icons.svg#update"
-                                                        class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                                <p class="updateDesc"> <img src="./images/icons.svg#update" class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
                                                 <p class="completedStatus">Completed - 0%</p>
                                                 <div class="completeProgressBar">
                                                     <div class="completeProgressBarInner" style="width:60%;"></div>
@@ -510,20 +511,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-sm-6">
                                 <div class="bookGridInner">
                                     <div class="bookIconOption">
                                         <ul>
                                             <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
                                             </li>
-                                            <li class="flipButton"><img src="./images/icons.svg#flip"
-                                                    class="iconsSvg" />
+                                            <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" />
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="row bookFlipFront">
-                                        <div class="col-lg-5"><img src="./images/book.jpg"
-                                                class="img-fluid bookCoverImg" />
+                                        <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="bookHeadingTop">
@@ -545,8 +544,7 @@
                                                         <p>Yet to Start</p>
                                                     </li>
                                                 </ul>
-                                                <p class="updateDesc"> <img src="./images/icons.svg#update"
-                                                        class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                                <p class="updateDesc"> <img src="./images/icons.svg#update" class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
                                                 <p class="completedStatus">Completed - 0%</p>
                                                 <div class="completeProgressBar">
                                                     <div class="completeProgressBarInner" style="width:30%;"></div>
@@ -591,20 +589,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-sm-6">
                                 <div class="bookGridInner">
                                     <div class="bookIconOption">
                                         <ul>
                                             <li><img src="./images/icons.svg#bookmark" class="iconsSvg" />
                                             </li>
-                                            <li class="flipButton"><img src="./images/icons.svg#flip"
-                                                    class="iconsSvg" />
+                                            <li class="flipButton"><img src="./images/icons.svg#flip" class="iconsSvg" />
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="row bookFlipFront">
-                                        <div class="col-lg-5"><img src="./images/book.jpg"
-                                                class="img-fluid bookCoverImg" />
+                                        <div class="col-lg-5"><img src="./images/book.jpg" class="img-fluid bookCoverImg" />
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="bookHeadingTop">
@@ -626,8 +622,7 @@
                                                         <p>Yet to Start</p>
                                                     </li>
                                                 </ul>
-                                                <p class="updateDesc"> <img src="./images/icons.svg#update"
-                                                        class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
+                                                <p class="updateDesc"> <img src="./images/icons.svg#update" class="iconsSvg" />Due Date: <span>25 July 2021</span></p>
                                                 <p class="completedStatus">Completed - 0%</p>
                                                 <div class="completeProgressBar">
                                                     <div class="completeProgressBarInner" style="width:20%;"></div>
@@ -712,7 +707,8 @@
                                             Yet to Start
                                         </td>
                                         <td>
-                                            <span class="statusTxt">0%</span><div class="completeProgressBar">
+                                            <span class="statusTxt">0%</span>
+                                            <div class="completeProgressBar">
                                                 <div class="completeProgressBarInner" style="width:5%;"></div>
                                             </div>
                                         </td>
